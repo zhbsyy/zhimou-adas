@@ -126,7 +126,7 @@
       "sha256": "b3a65964bbfdce73501a92ccd6fb3de96257ce3c9fa8caa0698cc4ae3791bd1f"
     },
     "Board_RK3568/README.md": {
-      "source": "docs/reference/rk_runtime/four_camera/README.md",
+      "source": "verification/source_documents/docs/reference/rk_runtime/four_camera/README.md.original",
       "sha256": "b4edd605a81d46b4efa0c8cf3df530d36c49f38f1ad64391cc077ccacb43b0f0"
     },
     "Board_RK3568/START_INFERENCE.sh": {

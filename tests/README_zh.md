@@ -1,10 +1,12 @@
-# 检查范围
+# 软件验证
 
-```powershell
-& "D:\python3.12.4\python.exe" -B -m unittest discover -s ".\tests" -p "test_project.py" -v
-& "D:\python3.12.4\python.exe" -B ".\tests\run_preserved_PC_tests.py"
-```
+验证代码覆盖图像接口、模型输入、类别阈值、结果发布、控制规则和工程相对路径。`test_project.py`描述分类源码与运行布局之间的关系，`legacy_*`保留模块接口回归代码。
 
-第一组检查新目录独立导入、原始文件哈希、四套RK布局、两个模型/录像去重、三个PC启动模式、三份PDS引用闭合和源目录不变。第二组把原PC测试恢复到其相对位置，只运行test_*.py，不运行check_crossing_live.py、check_motion_real_rk.py、pc_integration_check.py等会接管CARLA的脚本。
+|类型|评价对象|
+|---|---|
+|CPU接口与规则|输入输出契约、阈值边界、状态传播和控制仲裁|
+|工程布局|模型路径、PDS源码引用和各模式导入关系|
+|实板链路|实际采集、NPU、编码及网络显示|
+|仿真反馈|车辆状态、执行器和场景交互|
 
-检查会生成工作目录，但不初始化PCIe、不执行RKNN、不编程FPGA、不创建CARLA车辆、不重启当前窗口。运行环境需现有PC Python包。legacy_*中保留原始测试用于来源追溯，不应从分类目录直接运行一个依赖旧相对位置的测试脚本。
+软件契约检查与实板性能分别记录。部分检查会创建运行目录或连接外部场景，按文件实现选择适用环境。现有验证资料的版本和范围见[验证索引](../verification/README.md)。原整包摘要表属于历史归档，不作为新版说明文档的全量校验结果。

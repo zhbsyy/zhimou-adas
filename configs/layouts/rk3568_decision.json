@@ -166,11 +166,11 @@
       "sha256": "fa23d0d06a41285ab5f459e6ef3800d4ed83a0d364ff85fb79639b55d74d274f"
     },
     "Board_RK3568/Inference_and_Rules/signal_reference/README.md": {
-      "source": "software/rk3568/traffic_light/reference_algorithm/README.md",
+      "source": "verification/source_documents/software/rk3568/traffic_light/reference_algorithm/README.md.original",
       "sha256": "08533248752275a08cbf13289c00255aa4c97c5910334e498e63bcb538d6d2d5"
     },
     "Board_RK3568/Inference_and_Rules/signal_reference/README_forced.md": {
-      "source": "software/rk3568/traffic_light/reference_algorithm/README_forced.md",
+      "source": "verification/source_documents/software/rk3568/traffic_light/reference_algorithm/README_forced.md.original",
       "sha256": "a70e20326b1b016f9087ce34db9f9f4d03e0b694fc07a4970f8ed3a6a68dc0af"
     },
     "Board_RK3568/Inference_and_Rules/signal_reference/requirements_pc.txt": {
@@ -294,7 +294,7 @@
       "sha256": "981449aacd648945ce8fee9caaba20cff39a6155cc002980d59db80a0d36224f"
     },
     "Board_RK3568/README.md": {
-      "source": "docs/reference/rk_runtime/README.md",
+      "source": "verification/source_documents/docs/reference/rk_runtime/README.md.original",
       "sha256": "85b66a133d153cae70c611c9a1fbfb45fec3920fd5a5cddb427e9cea7195c5c3"
     },
     "Board_RK3568/START_DECISION.sh": {

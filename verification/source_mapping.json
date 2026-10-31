@@ -249,15 +249,17 @@
     },
     {
       "original": "Decision/Board_RK3568/Inference_and_Rules/signal_reference/README.md",
-      "new": "software/rk3568/traffic_light/reference_algorithm/README.md",
+      "new": "verification/source_documents/software/rk3568/traffic_light/reference_algorithm/README.md.original",
       "sha256": "08533248752275a08cbf13289c00255aa4c97c5910334e498e63bcb538d6d2d5",
-      "bytes": 11684
+      "bytes": 11684,
+      "reading_document": "software/rk3568/traffic_light/reference_algorithm/README.md"
     },
     {
       "original": "Decision/Board_RK3568/Inference_and_Rules/signal_reference/README_forced.md",
-      "new": "software/rk3568/traffic_light/reference_algorithm/README_forced.md",
+      "new": "verification/source_documents/software/rk3568/traffic_light/reference_algorithm/README_forced.md.original",
       "sha256": "a70e20326b1b016f9087ce34db9f9f4d03e0b694fc07a4970f8ed3a6a68dc0af",
-      "bytes": 7071
+      "bytes": 7071,
+      "reading_document": "software/rk3568/traffic_light/reference_algorithm/README_forced.md"
     },
     {
       "original": "Decision/Board_RK3568/Inference_and_Rules/signal_reference/requirements_pc.txt",
@@ -441,9 +443,10 @@
     },
     {
       "original": "Decision/Board_RK3568/README.md",
-      "new": "docs/reference/rk_runtime/README.md",
+      "new": "verification/source_documents/docs/reference/rk_runtime/README.md.original",
       "sha256": "85b66a133d153cae70c611c9a1fbfb45fec3920fd5a5cddb427e9cea7195c5c3",
-      "bytes": 1224
+      "bytes": 1224,
+      "reading_document": "docs/reference/rk_runtime/README.md"
     },
     {
       "original": "Decision/Board_RK3568/START_DECISION.sh",
@@ -675,9 +678,10 @@
     },
     {
       "original": "Cascaded_Four_Camera/Board_RK3568/README.md",
-      "new": "docs/reference/rk_runtime/four_camera/README.md",
+      "new": "verification/source_documents/docs/reference/rk_runtime/four_camera/README.md.original",
       "sha256": "b4edd605a81d46b4efa0c8cf3df530d36c49f38f1ad64391cc077ccacb43b0f0",
-      "bytes": 690
+      "bytes": 690,
+      "reading_document": "docs/reference/rk_runtime/four_camera/README.md"
     },
     {
       "original": "Cascaded_Four_Camera/Board_RK3568/START_INFERENCE.sh",
@@ -939,9 +943,10 @@
     },
     {
       "original": "Offline_Video_Processing/Board_RK3568/Input_Videos/README_zh.md",
-      "new": "docs/reference/rk_runtime/README_zh.md",
+      "new": "verification/source_documents/docs/reference/rk_runtime/README_zh.md.original",
       "sha256": "1cf04047bd797ab2186f3bfab2bcad489cf654246e2cce261f6ed4c7d9c9ae95",
-      "bytes": 404
+      "bytes": 404,
+      "reading_document": "docs/reference/rk_runtime/README_zh.md"
     },
     {
       "original": "Offline_Video_Processing/Board_RK3568/Input_Videos/video_20260929_112507.mp4",
@@ -3729,9 +3734,10 @@
     },
     {
       "original": "Decision/FPGA_PG2L50H/README.md",
-      "new": "hardware/PG2L50H/verification/decision/README.md",
+      "new": "verification/source_documents/hardware/PG2L50H/verification/decision/README.md.original",
       "sha256": "fe4390dfd3050391bd7a39f51b2b8228f45b520293dfd21613cdeef9553f4e0d",
-      "bytes": 974
+      "bytes": 974,
+      "reading_document": "hardware/PG2L50H/verification/decision/README.md"
     },
     {
       "original": "Decision/FPGA_PG2L50H/Timing_Record/image_pcie_capture.rtr",
@@ -6231,9 +6237,10 @@
     },
     {
       "original": "Cascaded_Four_Camera/FPGA_Black_PG2L50H_RX/README.md",
-      "new": "hardware/PG2L50H/verification/four_camera/README.md",
+      "new": "verification/source_documents/hardware/PG2L50H/verification/four_camera/README.md.original",
       "sha256": "ed1ffb269a981cadbe1dd2eb7ca41f5d006d3a23cc969a5fc41b08afdef9566a",
-      "bytes": 937
+      "bytes": 937,
+      "reading_document": "hardware/PG2L50H/verification/four_camera/README.md"
     },
     {
       "original": "Cascaded_Four_Camera/FPGA_Black_PG2L50H_RX/Timing_Records/image_pcie_capture.rtr",
@@ -7305,9 +7312,10 @@
     },
     {
       "original": "Cascaded_Four_Camera/FPGA_Red_PGL50H_TX/README.md",
-      "new": "hardware/PGL50H/verification/rear_camera/README.md",
+      "new": "verification/source_documents/hardware/PGL50H/verification/rear_camera/README.md.original",
       "sha256": "724b9849bdc1ff5c3e9c499a7f38f036ee53bd8632fead20b12fe39e1dd937fb",
-      "bytes": 535
+      "bytes": 535,
+      "reading_document": "hardware/PGL50H/verification/rear_camera/README.md"
     },
     {
       "original": "Cascaded_Four_Camera/FPGA_Red_PGL50H_TX/Timing_Records/hdmi_sfp_tx_top.rtr",
@@ -7419,33 +7427,38 @@
     },
     {
       "original": "Decision/Documentation/ENVIRONMENT_AND_DEPENDENCIES_zh.md",
-      "new": "docs/reference/decision/ENVIRONMENT_AND_DEPENDENCIES_zh.md",
+      "new": "verification/source_documents/docs/reference/decision/ENVIRONMENT_AND_DEPENDENCIES_zh.md.original",
       "sha256": "0355f6beac5f80117ddf19f1faa18296da13e617f898ffd7a946919540a7b1aa",
-      "bytes": 3067
+      "bytes": 3067,
+      "reading_document": "docs/reference/decision/ENVIRONMENT_AND_DEPENDENCIES_zh.md"
     },
     {
       "original": "Decision/Documentation/FROZEN_BEHAVIOR_zh.md",
-      "new": "docs/reference/decision/FROZEN_BEHAVIOR_zh.md",
+      "new": "verification/source_documents/docs/reference/decision/FROZEN_BEHAVIOR_zh.md.original",
       "sha256": "e63972fbf67770a50c020279092aafa0212e89f50fb8ee960cc8e802361b73b7",
-      "bytes": 3986
+      "bytes": 3986,
+      "reading_document": "docs/reference/decision/FROZEN_BEHAVIOR_zh.md"
     },
     {
       "original": "Decision/Documentation/QUICK_START_zh.md",
-      "new": "docs/reference/decision/QUICK_START_zh.md",
+      "new": "verification/source_documents/docs/reference/decision/QUICK_START_zh.md.original",
       "sha256": "ca5aab637b08b7fcf655c915848b6cd5564e087955766c1013bcff3d56859346",
-      "bytes": 6540
+      "bytes": 6540,
+      "reading_document": "docs/reference/decision/QUICK_START_zh.md"
     },
     {
       "original": "Decision/Documentation/VERIFY_FILES_zh.md",
-      "new": "docs/reference/decision/VERIFY_FILES_zh.md",
+      "new": "verification/source_documents/docs/reference/decision/VERIFY_FILES_zh.md.original",
       "sha256": "5987cc95f2e3d6b24427fe1e0e225dd216987cbebc85bf9f717ea9bc941c74a6",
-      "bytes": 1449
+      "bytes": 1449,
+      "reading_document": "docs/reference/decision/VERIFY_FILES_zh.md"
     },
     {
       "original": "Decision/README.md",
-      "new": "docs/reference/decision/README.md",
+      "new": "verification/source_documents/docs/reference/decision/README.md.original",
       "sha256": "fa7be26c3092ab7d583034711905fd29c174461f6fc0037e155a07d29b6e510e",
-      "bytes": 3294
+      "bytes": 3294,
+      "reading_document": "docs/reference/decision/README.md"
     },
     {
       "original": "Decision/MANIFEST.sha256",
@@ -7473,33 +7486,38 @@
     },
     {
       "original": "Cascaded_Four_Camera/Documentation/ARCHITECTURE_AND_FILES_zh.md",
-      "new": "docs/reference/four_camera/ARCHITECTURE_AND_FILES_zh.md",
+      "new": "verification/source_documents/docs/reference/four_camera/ARCHITECTURE_AND_FILES_zh.md.original",
       "sha256": "249b141d3dbbcdc0453c8e1b2ebc8e19a1479f2207009e854ad253daf3a67bae",
-      "bytes": 6479
+      "bytes": 6479,
+      "reading_document": "docs/reference/four_camera/ARCHITECTURE_AND_FILES_zh.md"
     },
     {
       "original": "Cascaded_Four_Camera/Documentation/CLASS10_040_UPDATE_zh.md",
-      "new": "docs/reference/four_camera/CLASS10_040_UPDATE_zh.md",
+      "new": "verification/source_documents/docs/reference/four_camera/CLASS10_040_UPDATE_zh.md.original",
       "sha256": "6112439e737162f88761dfae6156fbea6b18d5547193b172044ae489f7b11549",
-      "bytes": 1681
+      "bytes": 1681,
+      "reading_document": "docs/reference/four_camera/CLASS10_040_UPDATE_zh.md"
     },
     {
       "original": "Cascaded_Four_Camera/Documentation/COLOR_CALIBRATION_zh.md",
-      "new": "docs/reference/four_camera/COLOR_CALIBRATION_zh.md",
+      "new": "verification/source_documents/docs/reference/four_camera/COLOR_CALIBRATION_zh.md.original",
       "sha256": "b73c64750c50e61f3eecabdb544c4a7ce0d04b6ee5a7a49fc2dba7841c19c2ea",
-      "bytes": 2651
+      "bytes": 2651,
+      "reading_document": "docs/reference/four_camera/COLOR_CALIBRATION_zh.md"
     },
     {
       "original": "Cascaded_Four_Camera/Documentation/ENVIRONMENT_AND_RECOVERY_zh.md",
-      "new": "docs/reference/four_camera/ENVIRONMENT_AND_RECOVERY_zh.md",
+      "new": "verification/source_documents/docs/reference/four_camera/ENVIRONMENT_AND_RECOVERY_zh.md.original",
       "sha256": "c216f3d5c82b8a4ef739a5a1179ee8d361db64c825359866883e13b1c75ce762",
-      "bytes": 4243
+      "bytes": 4243,
+      "reading_document": "docs/reference/four_camera/ENVIRONMENT_AND_RECOVERY_zh.md"
     },
     {
       "original": "Cascaded_Four_Camera/Documentation/FROZEN_STATE_AND_LIMITS_zh.md",
-      "new": "docs/reference/four_camera/FROZEN_STATE_AND_LIMITS_zh.md",
+      "new": "verification/source_documents/docs/reference/four_camera/FROZEN_STATE_AND_LIMITS_zh.md.original",
       "sha256": "dec310f667617325753eecf35f2e0e561a46246d5c368eae523ea7b4672d5f4e",
-      "bytes": 4193
+      "bytes": 4193,
+      "reading_document": "docs/reference/four_camera/FROZEN_STATE_AND_LIMITS_zh.md"
     },
     {
       "original": "Cascaded_Four_Camera/Documentation/Hardware_Manuals/MES50HP开发板硬件使用手册_1V1(1).pdf",
@@ -7515,15 +7533,17 @@
     },
     {
       "original": "Cascaded_Four_Camera/Documentation/QUICK_START_zh.md",
-      "new": "docs/reference/four_camera/QUICK_START_zh.md",
+      "new": "verification/source_documents/docs/reference/four_camera/QUICK_START_zh.md.original",
       "sha256": "a2d959770559381479258267825fdae416d3767d7075e5fb0ccf84b493d93d8b",
-      "bytes": 5579
+      "bytes": 5579,
+      "reading_document": "docs/reference/four_camera/QUICK_START_zh.md"
     },
     {
       "original": "Cascaded_Four_Camera/README.md",
-      "new": "docs/reference/four_camera/README.md",
+      "new": "verification/source_documents/docs/reference/four_camera/README.md.original",
       "sha256": "40d982053d4e0e0eb24b53410dced682f3d23a5f7b13a1e99c34fbf1387e6fe2",
-      "bytes": 3133
+      "bytes": 3133,
+      "reading_document": "docs/reference/four_camera/README.md"
     },
     {
       "original": "Cascaded_Four_Camera/MANIFEST.sha256",
@@ -7545,39 +7565,45 @@
     },
     {
       "original": "CARLA_Navigation/Documentation/ARCHITECTURE_AND_PROTOCOL_zh.md",
-      "new": "docs/reference/carla_navigation/ARCHITECTURE_AND_PROTOCOL_zh.md",
+      "new": "verification/source_documents/docs/reference/carla_navigation/ARCHITECTURE_AND_PROTOCOL_zh.md.original",
       "sha256": "a16ae019932ace2ff215e6b93557a16f2db5303a40f5649b8224f02deb785824",
-      "bytes": 3075
+      "bytes": 3075,
+      "reading_document": "docs/reference/carla_navigation/ARCHITECTURE_AND_PROTOCOL_zh.md"
     },
     {
       "original": "CARLA_Navigation/Documentation/FILE_MAP_zh.md",
-      "new": "docs/reference/carla_navigation/FILE_MAP_zh.md",
+      "new": "verification/source_documents/docs/reference/carla_navigation/FILE_MAP_zh.md.original",
       "sha256": "7247912915ae15f535c03e77877dd48ba34d78cffcde260ec5907e0f2d325b53",
-      "bytes": 3275
+      "bytes": 3275,
+      "reading_document": "docs/reference/carla_navigation/FILE_MAP_zh.md"
     },
     {
       "original": "CARLA_Navigation/Documentation/FROZEN_BEHAVIOR_zh.md",
-      "new": "docs/reference/carla_navigation/FROZEN_BEHAVIOR_zh.md",
+      "new": "verification/source_documents/docs/reference/carla_navigation/FROZEN_BEHAVIOR_zh.md.original",
       "sha256": "ec42782c9519d547a35d447d1209f650fa472ba175d3d10f22b297d702b0737b",
-      "bytes": 2753
+      "bytes": 2753,
+      "reading_document": "docs/reference/carla_navigation/FROZEN_BEHAVIOR_zh.md"
     },
     {
       "original": "CARLA_Navigation/Documentation/MAINTENANCE_zh.md",
-      "new": "docs/reference/carla_navigation/MAINTENANCE_zh.md",
+      "new": "verification/source_documents/docs/reference/carla_navigation/MAINTENANCE_zh.md.original",
       "sha256": "b3542e551cfee6329668c2e7c352bdbfc6e94ead68b37ce8173c7ec594bba8d7",
-      "bytes": 2715
+      "bytes": 2715,
+      "reading_document": "docs/reference/carla_navigation/MAINTENANCE_zh.md"
     },
     {
       "original": "CARLA_Navigation/Documentation/QUICK_START_zh.md",
-      "new": "docs/reference/carla_navigation/QUICK_START_zh.md",
+      "new": "verification/source_documents/docs/reference/carla_navigation/QUICK_START_zh.md.original",
       "sha256": "a25f4bc65755f69cdebbdd0bf63c592cec78d42ec80137a5f0bf8d9a4b60e389",
-      "bytes": 3479
+      "bytes": 3479,
+      "reading_document": "docs/reference/carla_navigation/QUICK_START_zh.md"
     },
     {
       "original": "CARLA_Navigation/README.md",
-      "new": "docs/reference/carla_navigation/README.md",
+      "new": "verification/source_documents/docs/reference/carla_navigation/README.md.original",
       "sha256": "f255a245fa255d3867f16387a806d1891e93942a111afecc51985a04803d5460",
-      "bytes": 3007
+      "bytes": 3007,
+      "reading_document": "docs/reference/carla_navigation/README.md"
     },
     {
       "original": "CARLA_Navigation/MANIFEST.sha256",
@@ -7599,21 +7625,24 @@
     },
     {
       "original": "Offline_Video_Processing/Documentation/PIPELINE_AND_ENVIRONMENT_zh.md",
-      "new": "docs/reference/offline/PIPELINE_AND_ENVIRONMENT_zh.md",
+      "new": "verification/source_documents/docs/reference/offline/PIPELINE_AND_ENVIRONMENT_zh.md.original",
       "sha256": "8fa1a8ed990fd50f1e980d85c68630d8d4a224f1fc63d6840310876803762276",
-      "bytes": 2871
+      "bytes": 2871,
+      "reading_document": "docs/reference/offline/PIPELINE_AND_ENVIRONMENT_zh.md"
     },
     {
       "original": "Offline_Video_Processing/Documentation/QUICK_START_zh.md",
-      "new": "docs/reference/offline/QUICK_START_zh.md",
+      "new": "verification/source_documents/docs/reference/offline/QUICK_START_zh.md.original",
       "sha256": "b5a0609bf2860bd7463775569c2085e7a5d74f6534d032609a7ddcbac143b654",
-      "bytes": 4044
+      "bytes": 4044,
+      "reading_document": "docs/reference/offline/QUICK_START_zh.md"
     },
     {
       "original": "Offline_Video_Processing/README.md",
-      "new": "docs/reference/offline/README.md",
+      "new": "verification/source_documents/docs/reference/offline/README.md.original",
       "sha256": "fe1ad4348124abae2d03630a3e036e4c3fa6581ea8204ee7593fa97d67d7c737",
-      "bytes": 2452
+      "bytes": 2452,
+      "reading_document": "docs/reference/offline/README.md"
     },
     {
       "original": "Offline_Video_Processing/MANIFEST.sha256",
@@ -7635,9 +7664,10 @@
     },
     {
       "original": "CARLA_Navigation/Environment/README_zh.md",
-      "new": "environment/snapshots/README_zh.md",
+      "new": "verification/source_documents/environment/snapshots/README_zh.md.original",
       "sha256": "6d49968bdc24e8be905b359614d2949d669633b9e95a9205cc8f083373324a07",
-      "bytes": 2053
+      "bytes": 2053,
+      "reading_document": "environment/snapshots/README_zh.md"
     },
     {
       "original": "CARLA_Navigation/Environment/requirements_PC_snapshot.txt",
@@ -8404,5 +8434,10 @@
       "reason": "PDS generated output, reproducible from retained project/IP; canonical bitstream is stored separately"
     }
   ],
-  "deduplication": "Same basename and SHA256 are stored once; exact variants retain their profile names."
+  "deduplication": "Same basename and SHA256 are stored once; exact variants retain their profile names.",
+  "documentation_views": {
+    "edition": "competition",
+    "source_documents": "verification/source_documents",
+    "note": "Original document bytes retained; reading documents are maintained separately."
+  }
 }

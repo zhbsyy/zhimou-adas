@@ -1,5 +1,7 @@
-# 红色 PGL50H：双目摄像头SFP发送端
+# 双目SFP发送设计
 
-正常下载 `PROGRAM_THIS_BITSTREAM/sfp_tx_camera_frame_fix_20261014.sbit`，SHA256=`104da43e186af66ab4f44ec6566a757e966a949011587c46ca868272e3d7e6d0`。下载到红色PGL50H，SFP0接黑色PG2L50H的SFP1。
+PGL50H采集双OV5640、经DDR帧缓存后从SFP0发送到PG2L50H的SFP1。对应位流为`sfp_tx_camera_frame_fix_20261014.sbit`，顶层为`stereo_sfp_tx_top`。
 
-PDS2022.2-SP6.4打开 `Build_Project/stereo_sfp_tx.pds`，约束`stereo_sfp_tx_top.fdc`，顶层`stereo_sfp_tx_top`。双OV5640采集、DDR帧缓存、SFP发送RTL/IP和69个PDS引用均已复制；本轮保持此发送设计不变。`Timing_Records`为原构建时序记录。
+工程包含摄像头、DDR、SFP逻辑与PDS约束及原时序资料。发送端与接收端使用各自板卡工程，运行位流按硬件角色选取。
+
+硬件工程索引见[FPGA视频采集与传输](../../../README_zh.md)。

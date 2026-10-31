@@ -1,42 +1,28 @@
-# YOLO模块环境与运行
+# YOLOv8n训练环境
 
-## 训练环境
+## 依赖
 
-原A环境记录：Windows，Python **3.12.14**；PyTorch **2.6.0+cu124**；torchvision **0.21.0+cu124**；Ultralytics **8.4.155**；NumPy **1.26.4**；opencv-python **4.11.0.86**；PyYAML **6.0.3**。RTX 4060 Laptop，CUDA 12.4。
+|组件|正式训练版本|
+|---|---|
+|Python|3.12.14|
+|PyTorch / torchvision|2.6.0+cu124 / 0.21.0+cu124|
+|Ultralytics|8.4.155|
+|NumPy|1.26.4|
+|OpenCV|4.11.0.86|
+|PyYAML|6.0.3|
 
-这些版本来自原工程 `environment/runtime_lock.json` 和 `source_requirements_locked.txt`，未复制虚拟环境。主要直接依赖为上述包；未打包安装包或下载新依赖。
+原训练平台为RTX4060 Laptop，CUDA12.4。模型使用BF16前向，TAL、分类、CIoU、DFL及教师约束采用FP32计算。参数与优化器状态保持FP32。
 
-## 训练入口和外部数据
+## 训练输入
 
-唯一入口：`training/object_detection/src/train_joint_v2.py`。`train_joint.py`仅提供原训练实际复用的辅助函数，旧v1训练main已从提交副本移除。
-
-`train_config.json`原样保留正式run协议。实际算法仍在原代码中：seed20261020；640输入；microbatch16、累积2；AdamW；epoch1–3只学习新增分类行，epoch4–10解冻neck/Detect，epoch11起开放backbone6–9；BN统计冻结；BF16前向与FP32损失；旧类教师保护、coverage/UNKNOWN屏蔽与原选模规则均保留。正式run完成30轮，采用第14轮best。
-
-在本机工程数据仍位于原目录的前提下，命令为：
+`training/object_detection/data_config.yaml`配置外部数据资产。恢复图像、检测标签、完整manifest及其锁定记录、10类教师/初始化权重、11类未训练初始化及记录后，从项目根执行：
 
 ```powershell
-cd "F:\智眸领航智能驾驶系统"
-& F:\current9-11\End\yolov8n_11class_detect_20261019\.venv\Scripts\python.exe -B training/object_detection/src/train_joint_v2.py
+python -B training/object_detection/src/train_joint_v2.py
 ```
 
-**本轮未执行训练命令。** 新输出写入提交副本的 `training/object_detection/runs/`，不会写入原正式run；已有输出目录时原脚本拒绝覆盖。
+根目录也可由`YOLO_ASSET_ROOT`、`YOLO_OLD_ROOT`、`YOLO_SEG_ROOT`和`YOLO_CD_ROOT`指定。原始数据与初始化输入不随源码提供；配置中的开发路径表示资产来源，部署时按数据所在位置设置。
 
-训练图片、标签和大型manifest不随包提供。`data_config.yaml`记录原资产目录；异机复现须恢复：
+训练器包含类别coverage、UNKNOWN屏蔽、旧类蒸馏与分阶段冻结，不能用普通单数据集训练调用替代。输出位于`training/object_detection/runs`，与最终部署模型分离。
 
-- 原图片与标注，以及 `configs/manifest.json`、`configs/MANIFEST_FROZEN.json`。
-- 原10类训练初始化 `weights/china_road_10class_INIT.pt`、11类未训练初始化 `weights/eleven_class_untrained_init.pt`、`audit/initialization.json`。
-- 原 `numerical_revision_20261020/NUMERICAL_GATE.json` 及原十类工程的初始化来源文件。
-
-这些外部输入目前在原研发工程中；按本次仅收录最终模型的要求，不额外复制初始化模型。原10→11类初始化代码 `src/initialize.py` 已保留。异机迁移需调整 `data_config.yaml` 的根目录和外部manifest中的图片路径；也可用 `YOLO_ASSET_ROOT / YOLO_OLD_ROOT / YOLO_SEG_ROOT / YOLO_CD_ROOT`覆盖根目录。初始化校验引用的BDD/S²TLD/CDSet/CeyMo原工程数据也须按实际路径恢复。
-
-必须使用自定义coverage-aware训练入口，不能改用普通 `YOLO.train(data=...)`，否则会丢失UNKNOWN监督语义。未恢复上述外部资产前，不是可以直接在任意机器完整重训的自包含包。
-
-## 当前工程的RK3568运行
-
-RK3568推理环境以 [当前工程环境说明](README_zh.md) 为准，板端版本已有归档，不用Windows训练版本代填。检测模型保持640×640 letterbox、padding114、BGR转RGB一次、NHWC uint8输入，Python端不重复 `/255`。
-
-九输出为stride8/16/32，每尺度DFL64、class11概率和辅助class sum1；辅助sum不是objectness。DFL reg_max16。各模式的阈值与NMS沿用原运行代码和配置，不因训练资料补入而改变。
-
-本工程有四种实际运行入口，见 [启动速查表](../docs/START_COMMANDS_zh.md)。不要使用旧暂存模块的 `yolo_inference.py` 命令代替本工程入口：此工程未收录那个独立文件输入适配器。
-
-`reference_conversion/vendor`为历史转换用Ultralytics8.3.163，正式训练需要8.4.155，应分别建立环境。原A转换记录 `conversion_result.json` 未随包取得；已有部署RKNN可直接按工程入口使用，本次不重训或重新量化。
+历史参考转换vendor为Ultralytics8.3.163，仅用于其对应导出材料；正式训练使用上述8.4.155环境。板端运行环境见[运行环境](README_zh.md)。

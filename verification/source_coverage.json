@@ -247,27 +247,32 @@
   {
     "original": "CARLA_Navigation/Documentation/ARCHITECTURE_AND_PROTOCOL_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/carla_navigation/ARCHITECTURE_AND_PROTOCOL_zh.md"
+    "new": "verification/source_documents/docs/reference/carla_navigation/ARCHITECTURE_AND_PROTOCOL_zh.md.original",
+    "reading_document": "docs/reference/carla_navigation/ARCHITECTURE_AND_PROTOCOL_zh.md"
   },
   {
     "original": "CARLA_Navigation/Documentation/FILE_MAP_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/carla_navigation/FILE_MAP_zh.md"
+    "new": "verification/source_documents/docs/reference/carla_navigation/FILE_MAP_zh.md.original",
+    "reading_document": "docs/reference/carla_navigation/FILE_MAP_zh.md"
   },
   {
     "original": "CARLA_Navigation/Documentation/FROZEN_BEHAVIOR_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/carla_navigation/FROZEN_BEHAVIOR_zh.md"
+    "new": "verification/source_documents/docs/reference/carla_navigation/FROZEN_BEHAVIOR_zh.md.original",
+    "reading_document": "docs/reference/carla_navigation/FROZEN_BEHAVIOR_zh.md"
   },
   {
     "original": "CARLA_Navigation/Documentation/MAINTENANCE_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/carla_navigation/MAINTENANCE_zh.md"
+    "new": "verification/source_documents/docs/reference/carla_navigation/MAINTENANCE_zh.md.original",
+    "reading_document": "docs/reference/carla_navigation/MAINTENANCE_zh.md"
   },
   {
     "original": "CARLA_Navigation/Documentation/QUICK_START_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/carla_navigation/QUICK_START_zh.md"
+    "new": "verification/source_documents/docs/reference/carla_navigation/QUICK_START_zh.md.original",
+    "reading_document": "docs/reference/carla_navigation/QUICK_START_zh.md"
   },
   {
     "original": "CARLA_Navigation/Environment/PC_CURRENT_ENVIRONMENT.json",
@@ -277,7 +282,8 @@
   {
     "original": "CARLA_Navigation/Environment/README_zh.md",
     "disposition": "classified",
-    "new": "environment/snapshots/README_zh.md"
+    "new": "verification/source_documents/environment/snapshots/README_zh.md.original",
+    "reading_document": "environment/snapshots/README_zh.md"
   },
   {
     "original": "CARLA_Navigation/Environment/requirements_PC_snapshot.txt",
@@ -437,7 +443,8 @@
   {
     "original": "CARLA_Navigation/README.md",
     "disposition": "classified",
-    "new": "docs/reference/carla_navigation/README.md"
+    "new": "verification/source_documents/docs/reference/carla_navigation/README.md.original",
+    "reading_document": "docs/reference/carla_navigation/README.md"
   },
   {
     "original": "CARLA_Navigation/tests/check_crossing_live.py",
@@ -702,7 +709,8 @@
   {
     "original": "Cascaded_Four_Camera/Board_RK3568/README.md",
     "disposition": "classified",
-    "new": "docs/reference/rk_runtime/four_camera/README.md"
+    "new": "verification/source_documents/docs/reference/rk_runtime/four_camera/README.md.original",
+    "reading_document": "docs/reference/rk_runtime/four_camera/README.md"
   },
   {
     "original": "Cascaded_Four_Camera/Board_RK3568/START_INFERENCE.sh",
@@ -742,27 +750,32 @@
   {
     "original": "Cascaded_Four_Camera/Documentation/ARCHITECTURE_AND_FILES_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/four_camera/ARCHITECTURE_AND_FILES_zh.md"
+    "new": "verification/source_documents/docs/reference/four_camera/ARCHITECTURE_AND_FILES_zh.md.original",
+    "reading_document": "docs/reference/four_camera/ARCHITECTURE_AND_FILES_zh.md"
   },
   {
     "original": "Cascaded_Four_Camera/Documentation/CLASS10_040_UPDATE_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/four_camera/CLASS10_040_UPDATE_zh.md"
+    "new": "verification/source_documents/docs/reference/four_camera/CLASS10_040_UPDATE_zh.md.original",
+    "reading_document": "docs/reference/four_camera/CLASS10_040_UPDATE_zh.md"
   },
   {
     "original": "Cascaded_Four_Camera/Documentation/COLOR_CALIBRATION_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/four_camera/COLOR_CALIBRATION_zh.md"
+    "new": "verification/source_documents/docs/reference/four_camera/COLOR_CALIBRATION_zh.md.original",
+    "reading_document": "docs/reference/four_camera/COLOR_CALIBRATION_zh.md"
   },
   {
     "original": "Cascaded_Four_Camera/Documentation/ENVIRONMENT_AND_RECOVERY_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/four_camera/ENVIRONMENT_AND_RECOVERY_zh.md"
+    "new": "verification/source_documents/docs/reference/four_camera/ENVIRONMENT_AND_RECOVERY_zh.md.original",
+    "reading_document": "docs/reference/four_camera/ENVIRONMENT_AND_RECOVERY_zh.md"
   },
   {
     "original": "Cascaded_Four_Camera/Documentation/FROZEN_STATE_AND_LIMITS_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/four_camera/FROZEN_STATE_AND_LIMITS_zh.md"
+    "new": "verification/source_documents/docs/reference/four_camera/FROZEN_STATE_AND_LIMITS_zh.md.original",
+    "reading_document": "docs/reference/four_camera/FROZEN_STATE_AND_LIMITS_zh.md"
   },
   {
     "original": "Cascaded_Four_Camera/Documentation/Hardware_Manuals/MES50HP开发板硬件使用手册_1V1(1).pdf",
@@ -777,7 +790,8 @@
   {
     "original": "Cascaded_Four_Camera/Documentation/QUICK_START_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/four_camera/QUICK_START_zh.md"
+    "new": "verification/source_documents/docs/reference/four_camera/QUICK_START_zh.md.original",
+    "reading_document": "docs/reference/four_camera/QUICK_START_zh.md"
   },
   {
     "original": "Cascaded_Four_Camera/FPGA_Black_PG2L50H_RX/Build_Project/compile/cmr.db",
@@ -3032,7 +3046,8 @@
   {
     "original": "Cascaded_Four_Camera/FPGA_Black_PG2L50H_RX/README.md",
     "disposition": "classified",
-    "new": "hardware/PG2L50H/verification/four_camera/README.md"
+    "new": "verification/source_documents/hardware/PG2L50H/verification/four_camera/README.md.original",
+    "reading_document": "hardware/PG2L50H/verification/four_camera/README.md"
   },
   {
     "original": "Cascaded_Four_Camera/FPGA_Black_PG2L50H_RX/Timing_Records/image_pcie_capture.rtr",
@@ -4102,7 +4117,8 @@
   {
     "original": "Cascaded_Four_Camera/FPGA_Red_PGL50H_TX/README.md",
     "disposition": "classified",
-    "new": "hardware/PGL50H/verification/rear_camera/README.md"
+    "new": "verification/source_documents/hardware/PGL50H/verification/rear_camera/README.md.original",
+    "reading_document": "hardware/PGL50H/verification/rear_camera/README.md"
   },
   {
     "original": "Cascaded_Four_Camera/FPGA_Red_PGL50H_TX/Timing_Records/hdmi_sfp_tx_top.rtr",
@@ -4342,7 +4358,8 @@
   {
     "original": "Cascaded_Four_Camera/README.md",
     "disposition": "classified",
-    "new": "docs/reference/four_camera/README.md"
+    "new": "verification/source_documents/docs/reference/four_camera/README.md.original",
+    "reading_document": "docs/reference/four_camera/README.md"
   },
   {
     "original": "Cascaded_Four_Camera/Verification/CAMERA_ASSIGNMENT_RESOLVED_20261030.json",
@@ -4667,12 +4684,14 @@
   {
     "original": "Decision/Board_RK3568/Inference_and_Rules/signal_reference/README.md",
     "disposition": "classified",
-    "new": "software/rk3568/traffic_light/reference_algorithm/README.md"
+    "new": "verification/source_documents/software/rk3568/traffic_light/reference_algorithm/README.md.original",
+    "reading_document": "software/rk3568/traffic_light/reference_algorithm/README.md"
   },
   {
     "original": "Decision/Board_RK3568/Inference_and_Rules/signal_reference/README_forced.md",
     "disposition": "classified",
-    "new": "software/rk3568/traffic_light/reference_algorithm/README_forced.md"
+    "new": "verification/source_documents/software/rk3568/traffic_light/reference_algorithm/README_forced.md.original",
+    "reading_document": "software/rk3568/traffic_light/reference_algorithm/README_forced.md"
   },
   {
     "original": "Decision/Board_RK3568/Inference_and_Rules/signal_reference/requirements_pc.txt",
@@ -4827,7 +4846,8 @@
   {
     "original": "Decision/Board_RK3568/README.md",
     "disposition": "classified",
-    "new": "docs/reference/rk_runtime/README.md"
+    "new": "verification/source_documents/docs/reference/rk_runtime/README.md.original",
+    "reading_document": "docs/reference/rk_runtime/README.md"
   },
   {
     "original": "Decision/Board_RK3568/START_DECISION.sh",
@@ -4867,22 +4887,26 @@
   {
     "original": "Decision/Documentation/ENVIRONMENT_AND_DEPENDENCIES_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/decision/ENVIRONMENT_AND_DEPENDENCIES_zh.md"
+    "new": "verification/source_documents/docs/reference/decision/ENVIRONMENT_AND_DEPENDENCIES_zh.md.original",
+    "reading_document": "docs/reference/decision/ENVIRONMENT_AND_DEPENDENCIES_zh.md"
   },
   {
     "original": "Decision/Documentation/FROZEN_BEHAVIOR_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/decision/FROZEN_BEHAVIOR_zh.md"
+    "new": "verification/source_documents/docs/reference/decision/FROZEN_BEHAVIOR_zh.md.original",
+    "reading_document": "docs/reference/decision/FROZEN_BEHAVIOR_zh.md"
   },
   {
     "original": "Decision/Documentation/QUICK_START_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/decision/QUICK_START_zh.md"
+    "new": "verification/source_documents/docs/reference/decision/QUICK_START_zh.md.original",
+    "reading_document": "docs/reference/decision/QUICK_START_zh.md"
   },
   {
     "original": "Decision/Documentation/VERIFY_FILES_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/decision/VERIFY_FILES_zh.md"
+    "new": "verification/source_documents/docs/reference/decision/VERIFY_FILES_zh.md.original",
+    "reading_document": "docs/reference/decision/VERIFY_FILES_zh.md"
   },
   {
     "original": "Decision/FPGA_PG2L50H/Build_Project/BUILD_BITSTREAM.ps1",
@@ -7112,7 +7136,8 @@
   {
     "original": "Decision/FPGA_PG2L50H/README.md",
     "disposition": "classified",
-    "new": "hardware/PG2L50H/verification/decision/README.md"
+    "new": "verification/source_documents/hardware/PG2L50H/verification/decision/README.md.original",
+    "reading_document": "hardware/PG2L50H/verification/decision/README.md"
   },
   {
     "original": "Decision/FPGA_PG2L50H/Timing_Record/image_pcie_capture.rtr",
@@ -7377,7 +7402,8 @@
   {
     "original": "Decision/README.md",
     "disposition": "classified",
-    "new": "docs/reference/decision/README.md"
+    "new": "verification/source_documents/docs/reference/decision/README.md.original",
+    "reading_document": "docs/reference/decision/README.md"
   },
   {
     "original": "Decision/Verification/FROZEN_VERSION.json",
@@ -7492,7 +7518,8 @@
   {
     "original": "Offline_Video_Processing/Board_RK3568/Input_Videos/README_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/rk_runtime/README_zh.md"
+    "new": "verification/source_documents/docs/reference/rk_runtime/README_zh.md.original",
+    "reading_document": "docs/reference/rk_runtime/README_zh.md"
   },
   {
     "original": "Offline_Video_Processing/Board_RK3568/Input_Videos/video_20260929_112507.mp4",
@@ -7537,12 +7564,14 @@
   {
     "original": "Offline_Video_Processing/Documentation/PIPELINE_AND_ENVIRONMENT_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/offline/PIPELINE_AND_ENVIRONMENT_zh.md"
+    "new": "verification/source_documents/docs/reference/offline/PIPELINE_AND_ENVIRONMENT_zh.md.original",
+    "reading_document": "docs/reference/offline/PIPELINE_AND_ENVIRONMENT_zh.md"
   },
   {
     "original": "Offline_Video_Processing/Documentation/QUICK_START_zh.md",
     "disposition": "classified",
-    "new": "docs/reference/offline/QUICK_START_zh.md"
+    "new": "verification/source_documents/docs/reference/offline/QUICK_START_zh.md.original",
+    "reading_document": "docs/reference/offline/QUICK_START_zh.md"
   },
   {
     "original": "Offline_Video_Processing/MANIFEST.sha256",
@@ -7562,7 +7591,8 @@
   {
     "original": "Offline_Video_Processing/README.md",
     "disposition": "classified",
-    "new": "docs/reference/offline/README.md"
+    "new": "verification/source_documents/docs/reference/offline/README.md.original",
+    "reading_document": "docs/reference/offline/README.md"
   },
   {
     "original": "Offline_Video_Processing/Verification/LOCAL_TESTS_20261030.txt",

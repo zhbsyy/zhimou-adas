@@ -1,13 +1,17 @@
-# 部署模型与已归档训练权重
+# 感知模型
 
-|文件|用途|
+|文件|任务与接口|
 |---|---|
-|`object_detection/A_rk3568_int8.rknn`|原A 11类目标检测，class10=crosswalk；顺序见同目录 `classes.txt`|
-|`lane_detection/R15_256x448_patched_native_int8.rknn`|R15车道线，256×448、RGB uint8 NHWC输入|
-|`object_detection/reference/A_original.pt`|按已有来源记录归档的原A正式训练best，保留现有文件名|
-|`lane_detection/R15_twinlitenet_small_direct2_lane3_research.pt`|R15历史训练权重|
-|`lane_detection/onnx/`|R15已归档256×448 ONNX|
+|`object_detection/A_rk3568_int8.rknn`|YOLOv8n 11类检测，640×640输入，九输出头|
+|`lane_detection/R15_256x448_patched_native_int8.rknn`|R15 TwinLiteNet+ Small，道路结构分割，256×448输入|
+|`object_detection/reference/A_original.pt`|原A正式训练权重|
+|`lane_detection/R15_twinlitenet_small_direct2_lane3_research.pt`|R15选中训练权重|
+|`lane_detection/onnx`|R15原始与等价改写ONNX|
 
-四种运行方式共用两份部署RKNN；不同class10阈值来自各模式配置，不是更换模型。阈值、输出语义与模型文件本次均未改动。
+检测类别依次为person、rider、car、truck、bus、train、motor、bike、traffic light、traffic sign、crosswalk；类别表保存在`object_detection/classes.txt`。斑马线采用物理横道整组框定义。
 
-训练代码、配置、权重来源与外部数据要求见 [training](../training/README.md)。原始数据集未随包提供，原A的原始Ubuntu转换记录仍未归档；不能仅凭已有PT和RKNN承诺完全相同的重编译结果。
+两份部署RKNN由四种模式共用。阈值由各模式策略设置，不属于模型权重。R15输出direct两类和lane三类；背景、实线、虚线的类别定义与训练标签一致。
+
+模型训练与转换说明见[训练文档](../training/README.md)。原A的原始Ubuntu转换记录未收录，现有RKNN作为部署资产保留，重新编译的模型需另行评价。
+
+斑马线与箭头、相似路面纹理仍可能混淆，检测结果用于辅助观察；模型表现需结合目标域场景评价。

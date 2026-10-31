@@ -1,9 +1,14 @@
-# RK代码导航
+# RK3568边缘感知
 
-日常运行只用 `scripts/rk3568`。本目录按职责放源文件，不在这些分类文件夹里直接执行一个依赖同目录import的主程序。
+RK程序完成视频输入、双模型推理、灯色与道路状态分析、图像叠加及通信。
 
-主流水线：`fusion/run_vision.py`为Decision，`fusion/quad_infer.py`为物理四路，`fusion/run_carla_aeb.py`及`pcie_stream_r15_async.py`为CARLA，`fusion/process_video_r15_offline.py`为离线处理。`configs/layouts/rk3568_*.json`说明每一种方式实际选择的文件版本。
+|目录|实现|
+|---|---|
+|`video_input`|PCIe、USB、网络视频与媒体编码|
+|`object_detection`|目标检测前后处理、策略和NPU接口|
+|`lane_detection`、`lane_attributes`|R15掩膜、绘制和线型分析|
+|`traffic_light`|候选区域颜色分析|
+|`fusion`|四种模式的主流水线与状态融合|
+|`communication`|PC/OIB/AEB消息、状态服务与驱动|
 
-通用文件只放一份；同名但内容不同的文件放在对应profile子目录。比如检测后处理、R15适配和采集器可能因已验证版本不同而保留多个变体，不能只凭名字用一个覆盖其他版本。所有来源与哈希可在verification/source_mapping.json检索。
-
-runtime_support里保留原启动、校验、私有依赖等兼容文件，是生成工作布局的组成部分；不是要求用户再运行历史升级补丁。统一环境只在项目environment/rk3568内准备一次。
+运行入口统一位于`scripts/rk3568`。布局配置恢复各模块相对导入关系；相机映射、输入尺寸和阈值按模式使用。CPU负责预后处理与规则，检测/分割共享NPU访问锁。技术细节见[系统架构](../../docs/ARCHITECTURE_zh.md)。

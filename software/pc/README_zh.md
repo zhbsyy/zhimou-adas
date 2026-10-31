@@ -1,7 +1,13 @@
-# 唯一新版PC总控台
+# PC总控与仿真交互
 
-用户双击scripts/windows的三个总控台入口之一；它们调用本目录launch_console.py并选择decision、four_camera或carla_navigation。主界面和导航都是navigation_reliability.v1.5，决策页stereo_console.v0.1.5；三个原运行模式保留。
+总控台集成道路视频、感知状态、导航消息和车辆反馈，使用Decision、物理四路与CARLA导航三个入口选择场景。
 
-oib负责界面；carla负责引擎调用、车辆/路线/行人和四相机；communication负责串口、RK请求和视频接收。vendor为已归档agents源码。实际运行前由scripts/runtime_layout.py生成相邻模块布局，不引用原Final submission。
+|目录/文件|职责|
+|---|---|
+|`launch_console.py`|模式选择与总控台启动|
+|`oib/ui`|界面、视频与决策面板|
+|`carla`|车辆、路线、四相机、行人横穿及AEB会话|
+|`communication`|串口、状态请求和视频接收|
+|`diagnostics`、`tools`|相机/执行器检查与离线结果读取|
 
-CARLA导航推流由顶部“连接CARLA与四相机”按钮管理。Decision静止车由决策页自动创建。不要独立运行一个carla_streamer.py重复挂相机，也不要同时打开多个总控台。
+导航控制由PC执行，RK提供视觉感知与关联条件。图像显示、规则反馈与车辆执行状态分别记录，便于观察完整交互链路。启动入口见[功能使用](../../docs/USER_GUIDE_zh.md)。

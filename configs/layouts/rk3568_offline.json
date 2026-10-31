@@ -22,7 +22,7 @@
       "sha256": "cd034459ab5360b84d2c3f01bdcd1750d3686cb904ed8ee14b296bc946eacead"
     },
     "Board_RK3568/Input_Videos/README_zh.md": {
-      "source": "docs/reference/rk_runtime/README_zh.md",
+      "source": "verification/source_documents/docs/reference/rk_runtime/README_zh.md.original",
       "sha256": "1cf04047bd797ab2186f3bfab2bcad489cf654246e2cce261f6ed4c7d9c9ae95"
     },
     "Board_RK3568/Input_Videos/video_20260929_112507.mp4": {

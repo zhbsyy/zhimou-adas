@@ -1,5 +1,10 @@
-# 运行结果
+# 系统输出
 
-RK各方式的结果保存在results/rk3568/<profile>，运行目录通过Linux符号链接写入这里。离线每次run目录含result.mp4、result.summary.json、run.log、invocation.json。
+|输出|内容|
+|---|---|
+|`rk3568/<profile>`|对应模式的视觉结果、调用参数和运行摘要|
+|`rk3568/offline/<run>`|标注MP4、逐次处理摘要与日志|
+|`pc/decision`|道路状态与静止车辆反馈事件|
+|`pc/navigation`|导航与车辆控制事件|
 
-PC主日志在results/pc；Decision事件在results/pc/decision；导航事件在results/pc/navigation/Results/navigation_events.jsonl。运行结果不收入静态MANIFEST，不影响源码校验，不自动删除。
+这些目录在运行时生成，不作为源码提交。离线摘要记录源帧数、实际处理范围和结束原因；实时性能分别观察模型推理、图像发布与界面刷新。

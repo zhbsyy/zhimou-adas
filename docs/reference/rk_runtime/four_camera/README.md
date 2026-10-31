@@ -1,7 +1,8 @@
-# RK3568
+# RK四路视频运行接口
 
-先看模块上一级 `Documentation/QUICK_START_zh.md`。主入口 `START_INFERENCE.sh`，纯预览对照 `START_PREVIEW_ONLY.sh`；正常Ctrl+C退出。
+四路模式合成前、后、左、右画面，统一目标检测并对Front执行R15分割。默认视频端口8083，class10阈值0.40；不执行Decision规则或导航控制。
 
-`Camera_Input`为摄像头／PCIe／USB／校色，`Inference_Four_Views`为双模型和视频HTTP流水线，`Models`为精确INT8权重，`Configuration`为已验收持久颜色，`System_Driver`为内核驱动，`Python_Environment`为离线环境复制工具。日志运行后写入本目录`Results`，存放于`/userdata`。
+运行入口为`scripts/rk3568/START_FOUR_CAMERA.sh`，内部布局由`configs/layouts/rk3568_four_camera.json`组织。相机颜色与角色说明见[四路视频设计](../../four_camera/README.md)。
 
-本模块对四路画面检测，只有前视分割，class10固定0.40；不运行Decision规则或AEB。不要将Decision的位流、颜色文件或0.50阈值策略覆盖到这里。
+
+[文档导航](../../../README.md) · [系统使用](../../../USER_GUIDE_zh.md)

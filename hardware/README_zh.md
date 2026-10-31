@@ -1,11 +1,18 @@
-# 板卡和位流
+# FPGA视频采集与传输
 
-| 使用方式 | 黑板PG2L50H | 红板PGL50H |
+## 设计分工
+
+PGL50H作为后向双目SFP发送端；PG2L50H作为本地双目与SFP图像接收、重组和PCIe传输端。单板决策设计只使用PG2L50H本地双目，级联四路设计同时使用两块FPGA。
+
+|模式|PG2L50H位流|PGL50H位流|
 |---|---|---|
-| Decision | PG2L50H/bitstreams/local_stereo_pg2l50h_20261025.sbit | 不使用 |
-| 物理四路 | PG2L50H/bitstreams/cascade_fov_pg2l50h_20261029.sbit | PGL50H/bitstreams/sfp_tx_camera_frame_fix_20261014.sbit |
-| CARLA导航/离线 | 不读取PCIe，不需为此换位流 | 不使用 |
+|单板双目决策|`PG2L50H/bitstreams/local_stereo_pg2l50h_20261025.sbit`|不使用|
+|双板级联四路|`PG2L50H/bitstreams/cascade_fov_pg2l50h_20261029.sbit`|`PGL50H/bitstreams/sfp_tx_camera_frame_fix_20261014.sbit`|
 
-普通演示只下载上表.sbit。PDS Fabric Configuration选择正确黑/红设备，加载对应文件，Program后确认成功和done bit=1。此项目没有自动烧Flash或操作JTAG；在线下载后重启可能恢复原Flash版本，按实际供电/配置状态核对。
+## 工程实现
 
-源码和IP分开存储以去重，维护重建先运行scripts/windows/PREPARE_FPGA_PROJECTS.cmd，再打开打印的.runtime/hardware/<方式>/project.pds。不要直接在已分类拆开的source目录里编译一个未还原的工程。PDS输入源码、约束和IP引用由布局还原。工程文件还保留历史编译输出位置；generate_netlist/place_route/synthesize等中间产物未复制，PDS若提示旧结果不存在，应从综合开始重新生成。本次没有重跑PDS编译，常规演示使用已验证的归档位流；原交付目录未删除。
+源码包含摄像头接口、初始化表、DDR帧缓存、SFP收发与PCIe逻辑。共用IP位于`common/ip`，各模式的RTL和约束位于对应`source`目录。PDS2022.2-SP6.4工程通过`scripts/windows/PREPARE_FPGA_PROJECTS.cmd`生成可编译布局；常规演示使用对应归档位流。
+
+级联连接采用PGL50H的SFP0与PG2L50H的SFP1。接收端以交替行列抽取重组本地图像，形成供RK处理的图像布局。USB侧向视频由RK软件链路接入。
+
+构建、功能仿真及原时序资料保存在各`verification`目录。位流生成、功能仿真与时序签核分别评价；跨时钟路径仍需结合工程约束复核。当前使用JTAG在线加载，不包含Flash自启动配置。
