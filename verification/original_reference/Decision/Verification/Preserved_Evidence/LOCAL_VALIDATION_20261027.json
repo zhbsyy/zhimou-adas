@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-27",
+  "RK_regression_tests": 138,
+  "PC_feedback_tests": 10,
+  "submission_closure_tests": 8,
+  "total_passed_tests": 156,
+  "python_sources_syntax_checked": 86,
+  "embedded_environment_probe_syntax": "passed",
+  "PowerShell_scripts_syntax": "3 passed",
+  "Bash_scripts_syntax": "3 passed",
+  "PC_relocation_imports": "passed, independent temporary path with spaces",
+  "NPU_or_PCIe_started_in_local_checks": false,
+  "CARLA_actors_created_in_local_checks": false,
+  "board_environment_copy_executed": false,
+  "board_relocated_entry_executed": false,
+  "known_current_effect": "user reported no stripes or ghosting in prior live trial; preserve current behavior, not a new FPS claim",
+  "pcie_recovery_points_into_submission": true
+}

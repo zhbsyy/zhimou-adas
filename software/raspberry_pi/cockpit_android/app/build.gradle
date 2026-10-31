@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'cn.embedded.amapgateway'
+    compileSdk 33
+    buildToolsVersion '36.0.0'
+
+    defaultConfig {
+        applicationId 'cn.embedded.amapgateway'
+        minSdk 23
+        targetSdk 28
+        versionCode 1
+        versionName '1.0'
+    }
+}

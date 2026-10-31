@@ -1,0 +1,6 @@
+Recorded local: 2026-10-30T19:03:17.314757+08:00
+Command: D:/python3.12.4/python.exe -B -m unittest discover -s tests -p "test_*.py" -v
+Result: Ran 49 tests; OK (49 passed, 0 failures, 0 errors)
+Scope: Motion/entry/speed, cockpit protocol/navigation modes, AEB/clearance/lag handling, scene health, GUI mailbox.
+No CARLA connection, physical UART access, RKNN or NPU inference was run by this unit-test command.
+Actual physical-route evidence: Verification/PHYSICAL_COM12_RK_ROUTE.json.

@@ -1,0 +1,2 @@
+# Preserve frozen source/model hashes across Windows/Linux Git checkouts.
+* -text

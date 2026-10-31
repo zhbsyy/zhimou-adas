@@ -1,0 +1,238 @@
+{
+  "schema": "cascade_dual_model.v1",
+  "source": "physical_pcie_and_two_usb",
+  "models": {
+    "det": "/home/linaro/yolov8_deploy/models/A_rk3568_int8.rknn",
+    "lane": "/home/linaro/yolov8_deploy/models/R15_256x448_patched_native_int8.rknn",
+    "sha256": {
+      "det": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543",
+      "lane": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289"
+    }
+  },
+  "class10_min_confidence": 0.6,
+  "class10_name": "crosswalk",
+  "other_min_confidence": 0.25,
+  "threshold_override_supported": false,
+  "detector_scope": "one 640x640 inference on full four-view mosaic",
+  "lane_scope": "Front only, 256x448 uint8 NHWC",
+  "camera_color": {
+    "schema": "cascade_camera_color.v1",
+    "binding": "sfp_tx_camera_frame_fix_20261014+sfp_rx_no_overlay_20261014",
+    "revision": 2,
+    "cameras": {
+      "front": {
+        "crop": [
+          0,
+          0,
+          640,
+          360
+        ],
+        "swap_rb": false,
+        "gains_rgb": [
+          0.928571,
+          1.114286,
+          0.975
+        ],
+        "status": "neutral_calibrated_color_targets_pending",
+        "reference": {
+          "median_bgr": [
+            160.0,
+            140.0,
+            168.0
+          ],
+          "target": 156.0,
+          "sample_count": 9,
+          "first_seq": 2373,
+          "last_seq": 2393,
+          "roi": [
+            0.3,
+            0.3,
+            0.7,
+            0.7
+          ],
+          "stage": "after_fixed_channel_order_before_gain_or_overlay",
+          "source_epoch": "507b6a7c976a0f8f65896917",
+          "recorded_utc": "2025-03-18T21:36:00.211388+00:00",
+          "recorded_board_clock_note": "Board clock may be wrong; revision identifies order"
+        }
+      },
+      "rear": {
+        "crop": [
+          0,
+          360,
+          640,
+          360
+        ],
+        "swap_rb": true,
+        "gains_rgb": [
+          1.0625,
+          0.944444,
+          1.0
+        ],
+        "status": "neutral_calibrated_color_targets_pending",
+        "reference": {
+          "median_bgr": [
+            136.0,
+            144.0,
+            128.0
+          ],
+          "target": 136.0,
+          "sample_count": 9,
+          "first_seq": 2844,
+          "last_seq": 2866,
+          "roi": [
+            0.3,
+            0.3,
+            0.7,
+            0.7
+          ],
+          "stage": "after_fixed_channel_order_before_gain_or_overlay",
+          "source_epoch": "507b6a7c976a0f8f65896917",
+          "recorded_utc": "2025-03-18T21:36:23.435378+00:00",
+          "recorded_board_clock_note": "Board clock may be wrong; revision identifies order"
+        }
+      }
+    },
+    "profile_file": "/userdata/cascade_dual_model_20261029/config/camera_profiles.json",
+    "source_epoch": "888b1a9950fb6bb6b7b8d6ca",
+    "scope": "same corrected input used by detector, R15 and video",
+    "legacy_environment_gains": false
+  },
+  "mosaic_sequence": 11141,
+  "det_sequence": 11138,
+  "lane_sequence": 11138,
+  "jpeg_publish_age_ms": 31.9,
+  "jpeg_size": [
+    1280,
+    720
+  ],
+  "runtime": "native_buffered, shared NPU call lock",
+  "queues": "single latest item per stage; encoder input depth=1",
+  "latency_note": "JPEG publish age is not matched-frame end-to-end latency; capture counters do not prove optical freshness",
+  "running": true,
+  "counts": {
+    "compose": 11141,
+    "det_input_skipped": 7073,
+    "render_input_skipped": 0,
+    "render": 11141,
+    "encode_input_skipped": 0,
+    "encode_submit": 11141,
+    "jpeg": 11140,
+    "pcie_capture": 8909,
+    "det": 4066,
+    "lane": 3704
+  },
+  "fps_5s": {
+    "compose": 20.16,
+    "render": 20.16,
+    "encode_submit": 19.96,
+    "jpeg": 20.16,
+    "pcie_capture": 15.97,
+    "det": 7.38,
+    "lane": 6.59
+  },
+  "stage_ema_ms": {
+    "compose_ms": 25.69,
+    "render_ms": 12.29,
+    "convert_ms": 9.39,
+    "det_pre_ms": 16.93,
+    "det_lock_wait_ms": 52.32,
+    "det_call_ms": 48.46,
+    "det_post_ms": 22.13,
+    "lane_pre_ms": 12.32,
+    "lane_lock_wait_ms": 3.61,
+    "lane_call_ms": 78.82,
+    "lane_post_ms": 16.35
+  },
+  "errors": [],
+  "cameras": {
+    "front": {
+      "capture_seq": 8908,
+      "age_ms": 135.1
+    },
+    "right": {
+      "capture_seq": 14630,
+      "age_ms": 80.6
+    },
+    "rear": {
+      "capture_seq": 8908,
+      "age_ms": 135.1
+    },
+    "left": {
+      "capture_seq": 14787,
+      "age_ms": 79.8
+    }
+  },
+  "usb": {
+    "right": {
+      "label": "right",
+      "device": "/dev/v4l/by-path/platform-xhci-hcd.1.auto-usb-0:1:1.0-video-index0",
+      "decoded_count": 14632,
+      "read_failures": 0,
+      "reconnects": 3,
+      "grab_ms": 30.386,
+      "retrieve_ms": 3.385,
+      "total_ms": 33.771,
+      "grab_ms_ema": 34.584,
+      "retrieve_ms_ema": 3.183,
+      "total_ms_ema": 37.766,
+      "fps": 27.85,
+      "connected": true,
+      "opened": true,
+      "actual": {
+        "width": 320,
+        "height": 240,
+        "fps": 30.0,
+        "fourcc": "MJPG"
+      },
+      "ctrls": {
+        "exposure_dynamic_framerate": "ok",
+        "power_line_frequency": "ok"
+      },
+      "last_error": "",
+      "last_frame_age_ms": 14.69
+    },
+    "left": {
+      "label": "left",
+      "device": "/dev/v4l/by-path/platform-xhci-hcd.0.auto-usb-0:1:1.0-video-index0",
+      "decoded_count": 14789,
+      "read_failures": 0,
+      "reconnects": 0,
+      "grab_ms": 32.254,
+      "retrieve_ms": 4.936,
+      "total_ms": 37.19,
+      "grab_ms_ema": 31.897,
+      "retrieve_ms_ema": 3.222,
+      "total_ms_ema": 35.119,
+      "fps": 29.08,
+      "connected": true,
+      "opened": true,
+      "actual": {
+        "width": 320,
+        "height": 240,
+        "fps": 30.0,
+        "fourcc": "MJPG"
+      },
+      "ctrls": {
+        "exposure_dynamic_framerate": "ok",
+        "power_line_frequency": "ok",
+        "auto_exposure": "ok",
+        "gain": "ok",
+        "white_balance_automatic": "ok"
+      },
+      "last_error": "",
+      "last_frame_age_ms": 14.34
+    }
+  },
+  "encoder": {
+    "hw": 11140,
+    "sw": 0,
+    "hw_ms": 0.0,
+    "sw_ms": 0.0,
+    "submitted": 11141,
+    "cvt_ms": 58499.94937800784,
+    "produced": 11140,
+    "collect_ms": 0.0,
+    "callback_errors": 0
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "cascade_fov_timing_review.v1",
+  "baseline_performance_slack_ns": {
+    "pclk": -0.131,
+    "pclk_div2": 0.395,
+    "sfp_rx_clk": 3.47,
+    "ddrphy_sysclk": 1.2
+  },
+  "candidate_performance_slack_ns": {
+    "pclk": 0.099,
+    "pclk_div2": 0.299,
+    "sfp_rx_clk": 3.718,
+    "ddrphy_sysclk": 1.333
+  },
+  "all_constraints_met": false,
+  "same_clock_failure_rows": [],
+  "remaining_cross_clock_failures": [
+    {
+      "group": "Setup_Slow",
+      "launch": "cmos2_pclk|cmos2_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "capture": "ddrphy_sysclk",
+      "slack_ns": -5.242,
+      "failing_endpoints": 15,
+      "total_endpoints": 15
+    },
+    {
+      "group": "Setup_Slow",
+      "launch": "cmos1_pclk|cmos1_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "capture": "ddrphy_sysclk",
+      "slack_ns": -4.939,
+      "failing_endpoints": 15,
+      "total_endpoints": 15
+    },
+    {
+      "group": "Setup_Slow",
+      "launch": "ddrphy_sysclk",
+      "capture": "clk_50m",
+      "slack_ns": -2.1,
+      "failing_endpoints": 7,
+      "total_endpoints": 7
+    },
+    {
+      "group": "Setup_Slow",
+      "launch": "ddrphy_sysclk",
+      "capture": "cmos2_pclk|cmos2_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "slack_ns": -4.563,
+      "failing_endpoints": 39,
+      "total_endpoints": 39
+    },
+    {
+      "group": "Setup_Slow",
+      "launch": "ddrphy_sysclk",
+      "capture": "cmos1_pclk|cmos1_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "slack_ns": -4.454,
+      "failing_endpoints": 39,
+      "total_endpoints": 39
+    },
+    {
+      "group": "Hold_Slow",
+      "launch": "cmos2_pclk|cmos2_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "capture": "ddrphy_sysclk",
+      "slack_ns": -2.277,
+      "failing_endpoints": 13,
+      "total_endpoints": 15
+    },
+    {
+      "group": "Hold_Slow",
+      "launch": "cmos1_pclk|cmos1_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "capture": "ddrphy_sysclk",
+      "slack_ns": -1.144,
+      "failing_endpoints": 13,
+      "total_endpoints": 15
+    },
+    {
+      "group": "Recovery_Slow",
+      "launch": "ddrphy_sysclk",
+      "capture": "cmos2_pclk|cmos2_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "slack_ns": -5.024,
+      "failing_endpoints": 31,
+      "total_endpoints": 31
+    },
+    {
+      "group": "Recovery_Slow",
+      "launch": "ddrphy_sysclk",
+      "capture": "cmos1_pclk|cmos1_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "slack_ns": -4.956,
+      "failing_endpoints": 31,
+      "total_endpoints": 31
+    },
+    {
+      "group": "Setup_Fast",
+      "launch": "cmos2_pclk|cmos2_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "capture": "ddrphy_sysclk",
+      "slack_ns": -2.277,
+      "failing_endpoints": 14,
+      "total_endpoints": 15
+    },
+    {
+      "group": "Setup_Fast",
+      "launch": "cmos1_pclk|cmos1_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "capture": "ddrphy_sysclk",
+      "slack_ns": -2.243,
+      "failing_endpoints": 15,
+      "total_endpoints": 15
+    },
+    {
+      "group": "Setup_Fast",
+      "launch": "ddrphy_sysclk",
+      "capture": "clk_50m",
+      "slack_ns": -1.652,
+      "failing_endpoints": 7,
+      "total_endpoints": 7
+    },
+    {
+      "group": "Setup_Fast",
+      "launch": "ddrphy_sysclk",
+      "capture": "cmos2_pclk|cmos2_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "slack_ns": -3.556,
+      "failing_endpoints": 39,
+      "total_endpoints": 39
+    },
+    {
+      "group": "Setup_Fast",
+      "launch": "ddrphy_sysclk",
+      "capture": "cmos1_pclk|cmos1_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "slack_ns": -3.498,
+      "failing_endpoints": 39,
+      "total_endpoints": 39
+    },
+    {
+      "group": "Hold_Fast",
+      "launch": "cmos2_pclk|cmos2_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "capture": "ddrphy_sysclk",
+      "slack_ns": -2.232,
+      "failing_endpoints": 15,
+      "total_endpoints": 15
+    },
+    {
+      "group": "Hold_Fast",
+      "launch": "cmos1_pclk|cmos1_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "capture": "ddrphy_sysclk",
+      "slack_ns": -1.502,
+      "failing_endpoints": 15,
+      "total_endpoints": 15
+    },
+    {
+      "group": "Recovery_Fast",
+      "launch": "ddrphy_sysclk",
+      "capture": "cmos2_pclk|cmos2_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "slack_ns": -3.833,
+      "failing_endpoints": 31,
+      "total_endpoints": 31
+    },
+    {
+      "group": "Recovery_Fast",
+      "launch": "ddrphy_sysclk",
+      "capture": "cmos1_pclk|cmos1_8_16bit/u_GTP_IOCLKDIV/CLKDIVOUT_Inferred",
+      "slack_ns": -3.785,
+      "failing_endpoints": 31,
+      "total_endpoints": 31
+    }
+  ],
+  "constraints_changed": false,
+  "limits": "Cross-clock camera/DDR/reset violations remain. Functional build and same-clock positive slack are not complete timing signoff. Optical board acceptance pending.",
+  "parsed_table_rows": {
+    "Setup_Slow": 21,
+    "Hold_Slow": 21,
+    "Recovery_Slow": 9,
+    "Removal_Slow": 9,
+    "Setup_Fast": 21,
+    "Hold_Fast": 21,
+    "Recovery_Fast": 9,
+    "Removal_Fast": 9
+  }
+}

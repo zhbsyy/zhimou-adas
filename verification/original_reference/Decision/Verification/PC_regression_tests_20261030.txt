@@ -1,0 +1,15 @@
+test_clear_and_unknown_hide_pedestrian_row_without_adding_brake (test_console_feedback.Tests.test_clear_and_unknown_hide_pedestrian_row_without_adding_brake) ... ok
+test_emergency_banner_and_no_manual_test_override (test_console_feedback.Tests.test_emergency_banner_and_no_manual_test_override) ... ok
+test_expired_slow_sample_does_not_claim_current_deceleration (test_console_feedback.Tests.test_expired_slow_sample_does_not_claim_current_deceleration) ... ok
+test_idle_and_explicit_stop_have_separate_brake_lamp_feedback (test_console_feedback.Tests.test_idle_and_explicit_stop_have_separate_brake_lamp_feedback) ... ok
+test_manual_alarm_button_removed_and_rejection_visible (test_console_feedback.Tests.test_manual_alarm_button_removed_and_rejection_visible) ... ok
+test_rule_alarm_and_lost_connection_do_not_blink_both_indicators (test_console_feedback.Tests.test_rule_alarm_and_lost_connection_do_not_blink_both_indicators) ... ok
+test_self_test_is_owned_by_worker_and_does_not_mutate_RK_desired (test_console_feedback.Tests.test_self_test_is_owned_by_worker_and_does_not_mutate_RK_desired) ... ok
+test_slow_notice_survives_stop_and_recent_rejection_without_moving_car (test_console_feedback.Tests.test_slow_notice_survives_stop_and_recent_rejection_without_moving_car) ... ok
+test_three_pedestrian_levels_light_brakes_without_automatic_hazards (test_console_feedback.Tests.test_three_pedestrian_levels_light_brakes_without_automatic_hazards) ... ok
+test_valid_turns_still_blink_the_requested_side_only (test_console_feedback.Tests.test_valid_turns_still_blink_the_requested_side_only) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.041s
+
+OK

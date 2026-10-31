@@ -1,0 +1,169 @@
+{
+  "schema": "source_layout.v1",
+  "files": {
+    "aeb_session.py": {
+      "source": "software/pc/carla/aeb_session.py",
+      "sha256": "d9a8d4d611ae1950b25be5ed729540e7565753e2d0e3b88d10f8da8dc9a15af1"
+    },
+    "Console_Application/bridge/__init__.py": {
+      "source": "software/pc/carla/bridge/__init__.py",
+      "sha256": "18dfb51c4c394292657e2169a1e3c4f75cd2727a76239e2ef8effbdb48e88527"
+    },
+    "Console_Application/bridge/arbiter.py": {
+      "source": "software/pc/carla/bridge/arbiter.py",
+      "sha256": "c263913f33601a71174f9f8a09fb5f95526ab6a8e76c47e69f5762c29253d51b"
+    },
+    "Console_Application/bridge/carla_backend.py": {
+      "source": "software/pc/carla/bridge/carla_backend.py",
+      "sha256": "445b50de6cfd5001553182a18ba56ff692c590b33ed49030d5cbf4c32f800bc7"
+    },
+    "Console_Application/bridge/carla_streamer.py": {
+      "source": "software/pc/carla/bridge/carla_streamer.py",
+      "sha256": "87a715256c9b036ec33f9f31966df0f5fe24c158f4c763c28fdd005f61703dbc"
+    },
+    "Console_Application/bridge/kinematic_backend.py": {
+      "source": "software/pc/carla/bridge/kinematic_backend.py",
+      "sha256": "6658fb508ca136edc1a4e910c2b57a547f29249d5c1d4b1cd0ee91eead72c22c"
+    },
+    "Console_Application/bridge/protocol_5aa5.py": {
+      "source": "software/pc/communication/protocol_5aa5.py",
+      "sha256": "a1fef389353065916b5ee89f96b41851dc0a2d02f981ef371b1bb270ecef1cf4"
+    },
+    "Console_Application/bridge/serial_client.py": {
+      "source": "software/pc/communication/serial_client.py",
+      "sha256": "db0e9fd316e5c5a1f70f95d479c5b07a2eb304b86466ffdf5b6f6ec6a675e4ed"
+    },
+    "Console_Application/main.py": {
+      "source": "software/pc/oib/main.py",
+      "sha256": "dac8c7dad988fbd660d658d176c3977bdee8c9d711588c541dff05b86f3836a4"
+    },
+    "Console_Application/ui/__init__.py": {
+      "source": "software/pc/oib/ui/__init__.py",
+      "sha256": "fe15e7911f3fe55fe7699fa2deefb50a1d6d0a92a251505ce270df5addb1f9cc"
+    },
+    "Console_Application/ui/dashboard.py": {
+      "source": "software/pc/oib/ui/dashboard.py",
+      "sha256": "cae5da6fd74c4c1fc94307fe7f951c89537b70d9fb816bc2650d58846e69f467"
+    },
+    "Console_Application/ui/rk_decision_panel.py": {
+      "source": "software/pc/oib/ui/rk_decision_panel.py",
+      "sha256": "27facc1c3202b5473f72b8ba49f5023d058d34884d2a2c4e798a7513088bf3e8"
+    },
+    "Console_Application/ui/rk_decision_transport.py": {
+      "source": "software/pc/communication/rk_decision_transport.py",
+      "sha256": "4a4d627b9ea7c007b26bfa560f0526761b797e4a16757c3a1a7f59d2d2901ab9"
+    },
+    "Console_Application/ui/static_vehicle_session.py": {
+      "source": "software/pc/carla/static_vehicle_session.py",
+      "sha256": "03bc352a62e2b14eadeb35ca4924eeee70d417ebf295195d3a74880f985b08ed"
+    },
+    "control_guard.py": {
+      "source": "software/pc/carla/control_guard.py",
+      "sha256": "1a1ec215ca36d670a30784e1799532e02de2ffa533b543bcdbfd8748ee935864"
+    },
+    "navigation_arbiter.py": {
+      "source": "software/pc/carla/navigation_arbiter.py",
+      "sha256": "96a282cbe060e6364c54abeb728b4c78b3aeaa25fc876e80092588521d4a30d4"
+    },
+    "navigation_motion.py": {
+      "source": "software/pc/carla/navigation_motion.py",
+      "sha256": "0ad5c67f90d043753163a617175b2b793a77fa558e7a84c52acb9a81bbb10ec9"
+    },
+    "navigation_policy.py": {
+      "source": "software/pc/carla/navigation_policy.py",
+      "sha256": "742096053abc0a551c2f353acc4d43d5922bb5bd6190f77de474457041ee08f3"
+    },
+    "navigation_session.py": {
+      "source": "software/pc/carla/navigation_session.py",
+      "sha256": "1520df1bed0f0bb98abff797e92f734ef8c875fd270e91933e2a25f137fe317e"
+    },
+    "pedestrian_crossing.py": {
+      "source": "software/pc/carla/pedestrian_crossing.py",
+      "sha256": "290cb7e06afa3394525c11361dd7a7c0b057b5139771ffd25d19f6ddeec3ac81"
+    },
+    "reliable_streamer.py": {
+      "source": "software/pc/carla/reliable_streamer.py",
+      "sha256": "669b756a98f2c6ea5e14540743b3590c745c72b2983da43ceb15d5abe395bc9a"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/__init__.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/navigation/__init__.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/navigation/basic_agent.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/navigation/basic_agent.py",
+      "sha256": "298d7d7b8d89925b51300179932c18e6a066ab5c3e95708453f7fa020b136ea1"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/navigation/behavior_agent.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/navigation/behavior_agent.py",
+      "sha256": "2b8f046e4e3efa07d6d21b5ea4420a43a232ce297c3932434477563eb04b143f"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/navigation/behavior_types.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/navigation/behavior_types.py",
+      "sha256": "dc6b367dbba0490ae5e86fcbe16b003be4e2f594690b1e0af8ddb2fdbb264e57"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/navigation/constant_velocity_agent.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/navigation/constant_velocity_agent.py",
+      "sha256": "111ec5771c3549d2fb078400286356c39916a4127b930e1d699a7d0e27c89559"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/navigation/controller.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/navigation/controller.py",
+      "sha256": "35dbabac3b7bf69fd7f1272fcd8af97aa7797a537af2e58a31d9d6b67c1f3a0e"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/navigation/global_route_planner.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/navigation/global_route_planner.py",
+      "sha256": "adccc6f5e3290d7fa3c7284bd7597628491da95d817d6015e955fbf37ddfe86e"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/navigation/local_planner.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/navigation/local_planner.py",
+      "sha256": "9250a88536a04ee30ee19b01c3b3764388295cf3f438123e2b2c88b647096b4f"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/requirements.txt": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/requirements.txt",
+      "sha256": "2dee839ae3eda746cbafe9769753611b9b1a1b799cac19de0840642bfaa5efcc"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/tools/__init__.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/tools/hints.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/tools/hints.py",
+      "sha256": "f4800fa514c2e68aa54a729fd5739775e5faa7b0da7434cd88902a74a796b473"
+    },
+    "Runtime_Support/CARLA_PythonAPI/agents/tools/misc.py": {
+      "source": "software/pc/vendor/Runtime_Support/CARLA_PythonAPI/agents/tools/misc.py",
+      "sha256": "8b3ecbd8e07116dc1617114fc2fe03f84fbac2ad323a652c438db8e12b1b49f5"
+    },
+    "safe_arbiter.py": {
+      "source": "software/pc/carla/safe_arbiter.py",
+      "sha256": "ae664dd753454f558be7415c1bc05b52faea258a5d433ae84db60d98ec3a8646"
+    },
+    "video_bridge.py": {
+      "source": "software/pc/communication/video_bridge.py",
+      "sha256": "8bf33147a4588e33bead7dcc9b669e4e24747cc9688696c2d41cf0112f9a7beb"
+    },
+    "Decision_Panel/candidate_panel.py": {
+      "source": "software/pc/oib/ui/rk_decision_panel.py",
+      "sha256": "27facc1c3202b5473f72b8ba49f5023d058d34884d2a2c4e798a7513088bf3e8"
+    },
+    "Decision_Panel/rk_decision_transport.py": {
+      "source": "software/pc/communication/rk_decision_transport.py",
+      "sha256": "4a4d627b9ea7c007b26bfa560f0526761b797e4a16757c3a1a7f59d2d2901ab9"
+    },
+    "Decision_Panel/static_vehicle_session.py": {
+      "source": "software/pc/carla/static_vehicle_session.py",
+      "sha256": "03bc352a62e2b14eadeb35ca4924eeee70d417ebf295195d3a74880f985b08ed"
+    },
+    "check_actuator.py": {
+      "source": "software/pc/diagnostics/check_actuator.py",
+      "sha256": "ebd48154403ac6bbf67b39ebc331077bb3aa316019b5edcf643be7dd33b45ddd"
+    },
+    "probe_cameras.py": {
+      "source": "software/pc/diagnostics/probe_cameras.py",
+      "sha256": "a475f10f3da7e319f382899b16a132d49557a9e4cfd1399ce25f1a2c6f196d86"
+    }
+  }
+}

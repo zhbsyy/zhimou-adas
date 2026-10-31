@@ -1,0 +1,252 @@
+{
+  "version": "navigation_reliability.v1.5",
+  "recorded_local": "2026-10-30T10:49:26.356293",
+  "files": [
+    "PC_Windows/navigation_session.py",
+    "PC_Windows/navigation_policy.py",
+    "PC_Windows/navigation_arbiter.py",
+    "PC_Windows/control_guard.py",
+    "PC_Windows/launch_console.py",
+    "PC_Windows/pedestrian_crossing.py",
+    "tests/test_session_health.py",
+    "tests/test_reliability.py",
+    "tests/pc_integration_check.py",
+    "tests/check_crossing_live.py"
+  ],
+  "backup": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\carla_navigation_reliability_20261030\\Backup_PreFix",
+  "board_protocol_unchanged": "carla_nav_aeb.control.v3",
+  "unit_tests": 49,
+  "crossing_live": {
+    "passed": true,
+    "scope": "actual CARLA crossing geometry and walker movement; ego remains parked",
+    "checks": [
+      {
+        "route_index": 10,
+        "reason": "clear"
+      }
+    ],
+    "start": [
+      14.477422714233398,
+      26.92425537109375,
+      0.9516999125480652
+    ],
+    "site": {
+      "start": [
+        14.477422714233398,
+        26.92425537109375,
+        0.00019989012798760086
+      ],
+      "target": [
+        14.489649772644043,
+        22.52427101135254,
+        0.00020004271937068552
+      ],
+      "center": [
+        14.483536720275879,
+        24.72426414489746,
+        0.0
+      ]
+    },
+    "samples": [
+      {
+        "at": 43058.046,
+        "xyz": [
+          14.477422714233398,
+          26.92425537109375,
+          0.9516999125480652
+        ],
+        "frame": 526705,
+        "alive": true
+      },
+      {
+        "at": 43058.859,
+        "xyz": [
+          14.47838020324707,
+          26.361572265625,
+          0.9516999125480652
+        ],
+        "frame": 526890,
+        "alive": true
+      },
+      {
+        "at": 43059.718,
+        "xyz": [
+          14.481228828430176,
+          25.33191680908203,
+          0.9516999125480652
+        ],
+        "frame": 527093,
+        "alive": true
+      },
+      {
+        "at": 43060.562,
+        "xyz": [
+          14.48432445526123,
+          24.30178451538086,
+          0.9516999125480652
+        ],
+        "frame": 527297,
+        "alive": true
+      },
+      {
+        "at": 43061.375,
+        "xyz": [
+          14.487016677856445,
+          23.33950424194336,
+          0.9516999125480652
+        ],
+        "frame": 527490,
+        "alive": true
+      }
+    ],
+    "blocked": false,
+    "crossing_started": true
+  },
+  "PC_integration": {
+    "passed": true,
+    "scope": "PC test fixtures over UART/UDP + actual CARLA; no physical Android/RK",
+    "phases": [
+      {
+        "name": "pure_navigation_no_RK",
+        "speed_kmh": 9.725146266244147,
+        "gear": "D",
+        "horizontal_speed_kmh": 9.946169879137793,
+        "result": {
+          "drive": true,
+          "brake": false,
+          "phase": "navigation",
+          "reason": "按导航行驶（AEB关闭）",
+          "resumed": false
+        },
+        "position": [
+          -3.4777956008911133,
+          24.695858001708984
+        ],
+        "route_name": "PC协议回归目标",
+        "path_count": 87
+      },
+      {
+        "name": "RK_report_present_but_AEB_off",
+        "speed_kmh": 14.337870710608827,
+        "gear": "D",
+        "horizontal_speed_kmh": 14.360788093839748,
+        "result": {
+          "drive": true,
+          "brake": false,
+          "phase": "navigation",
+          "reason": "按导航行驶（AEB关闭）",
+          "resumed": false
+        },
+        "position": [
+          -1.7515990734100342,
+          24.691722869873047
+        ],
+        "route_name": "PC协议回归目标",
+        "path_count": 87
+      },
+      {
+        "name": "AEB_stop",
+        "speed_kmh": 0.0014753734318631955,
+        "gear": "D",
+        "horizontal_speed_kmh": 0.0004631197552079403,
+        "result": {
+          "drive": false,
+          "brake": true,
+          "phase": "braking",
+          "reason": "前方行人，紧急制动",
+          "resumed": false
+        },
+        "position": [
+          0.40882885456085205,
+          24.68982696533203
+        ],
+        "route_name": "PC协议回归目标",
+        "path_count": 87
+      },
+      {
+        "name": "missing_detection_does_not_resume",
+        "speed_kmh": 0.0005674096277244689,
+        "gear": "D",
+        "horizontal_speed_kmh": 6.038815478230708e-07,
+        "result": {
+          "drive": false,
+          "brake": true,
+          "phase": "waiting_clear",
+          "reason": "车辆已停，确认行人通过",
+          "resumed": false
+        },
+        "position": [
+          0.40922287106513977,
+          24.68982696533203
+        ],
+        "route_name": "PC协议回归目标",
+        "path_count": 87
+      },
+      {
+        "name": "resumed_original_navigation",
+        "speed_kmh": 3.044539027044751,
+        "gear": "D",
+        "horizontal_speed_kmh": 3.325094249891794,
+        "result": {
+          "drive": true,
+          "brake": false,
+          "phase": "navigation",
+          "reason": "按导航行驶（AEB开启）",
+          "resumed": false
+        },
+        "position": [
+          0.5564506649971008,
+          24.689769744873047
+        ],
+        "route_name": "PC协议回归目标",
+        "path_count": 87
+      },
+      {
+        "name": "manual_pause_blocks_auto_resume",
+        "speed_kmh": 0.0,
+        "gear": "P",
+        "horizontal_speed_kmh": 0.0,
+        "result": {
+          "drive": false,
+          "brake": false,
+          "phase": "paused",
+          "reason": "手动暂停/驻车",
+          "resumed": false
+        },
+        "position": [
+          0.8932803273200989,
+          24.689619064331055
+        ],
+        "route_name": "PC协议回归目标",
+        "path_count": 87
+      },
+      {
+        "name": "reconnect_does_not_silently_resume",
+        "speed_kmh": 0.0,
+        "gear": "P",
+        "horizontal_speed_kmh": 0.0,
+        "result": {
+          "drive": false,
+          "brake": false,
+          "phase": "fault",
+          "reason": "测试感知中断；请明确继续",
+          "resumed": false
+        },
+        "position": [
+          0.8933367729187012,
+          24.689619064331055
+        ],
+        "route_name": "PC协议回归目标",
+        "path_count": 87
+      }
+    ],
+    "received_android_telemetry_frames": 54,
+    "control_error": ""
+  },
+  "actual_RK_full_AD_validation": "See VALIDATION.json for realRK/COM12 coverage",
+  "navigation_fix": "Separate 10001 guidance and 12205 standby; preserve explicit cancel and 10s guidance timeout",
+  "automatic_crossing_fix": "same-road approach alignment and speed-timed crossing; arrived state explicit",
+  "motion_check": "MOTION_CHECK.json",
+  "speed_timing_fix": "No blanket20km/h or straight-junction10km/h. Progressive braking envelope for curves and crossings; actual entry7..13.5km/h at9..10.5m. Automatic walker only middle third.",
+  "UI_mailbox": "Control worker publishes owned latest state only; GUI timer coalesces to10Hz. Windows startup crash investigation."
+}

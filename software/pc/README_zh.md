@@ -1,0 +1,7 @@
+# 唯一新版PC总控台
+
+用户双击scripts/windows的三个总控台入口之一；它们调用本目录launch_console.py并选择decision、four_camera或carla_navigation。主界面和导航都是navigation_reliability.v1.5，决策页stereo_console.v0.1.5；三个原运行模式保留。
+
+oib负责界面；carla负责引擎调用、车辆/路线/行人和四相机；communication负责串口、RK请求和视频接收。vendor为已归档agents源码。实际运行前由scripts/runtime_layout.py生成相邻模块布局，不引用原Final submission。
+
+CARLA导航推流由顶部“连接CARLA与四相机”按钮管理。Decision静止车由决策页自动创建。不要独立运行一个carla_streamer.py重复挂相机，也不要同时打开多个总控台。

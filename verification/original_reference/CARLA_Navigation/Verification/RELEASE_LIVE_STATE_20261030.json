@@ -1,0 +1,56 @@
+{
+  "recorded_local": "2026-10-30T13:44:33.559911+08:00",
+  "read_only": true,
+  "sources": {
+    "pc": {
+      "version": "navigation_reliability.v1.5",
+      "mode": "full_ad",
+      "aeb_enabled": true,
+      "serial_connected": true,
+      "serial_port": "COM12",
+      "carla_connected": true,
+      "result": {
+        "drive": false,
+        "brake": false,
+        "phase": "arrived",
+        "reason": "已到达目的地，P挡驻车",
+        "resumed": false
+      },
+      "crossing_entry": {
+        "speed_kmh": 11.141,
+        "forward_gap_m": 9.877,
+        "carla_frame": 2803792,
+        "route_index": 75,
+        "route_fraction": 0.5029
+      },
+      "crossing_site": {
+        "route_index": 75,
+        "route_fraction": 0.5028817892788524,
+        "route_s": 134.11200380325317
+      },
+      "collisions": [],
+      "navigation_destination": [
+        12.3100004196167,
+        -64.4000015258789
+      ],
+      "arrived": true
+    },
+    "streamer": {
+      "ready": true,
+      "seq": 68949,
+      "fps": 20.1,
+      "cameras": 4,
+      "camera_ready": true,
+      "publisher_ready": true,
+      "counts": {
+        "front": 69004,
+        "right": 69002,
+        "rear": 68998,
+        "left": 68998
+      }
+    },
+    "rk": {
+      "error": "<urlopen error timed out>"
+    }
+  }
+}

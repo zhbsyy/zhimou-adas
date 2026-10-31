@@ -1,0 +1,13 @@
+{
+  "name": "decision",
+  "source_module": "Decision",
+  "class10_min_confidence": 0.5,
+  "other_min_confidence": 0.25,
+  "lane_input_hw": [
+    256,
+    448
+  ],
+  "models": "shared models directory; weights byte-identical",
+  "threshold_binding": "Existing algorithm source/CLI; this file records policy, not a silent threshold override",
+  "required_fpga": "decision"
+}

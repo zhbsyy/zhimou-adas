@@ -1,0 +1,14 @@
+# Original datasets/labels/large manifest stay outside the submission.
+asset_root: 'F:/current9-11/End/yolov8n_11class_detect_20261019'
+old_project_root: 'F:/current9-11/End/train_china_road'
+seg_project_root: 'F:/current9-11/End/train_road_yolov8n_seg'
+cd_project_root: 'F:/current9-11/End/cdnet_pretrained_pilot_20261018'
+manifest: configs/manifest.json
+manifest_lock: configs/MANIFEST_FROZEN.json
+initialization_record: audit/initialization.json
+numerical_gate: numerical_revision_20261020/NUMERICAL_GATE.json
+train_partition: train
+validation_partitions: [val_old, val_ceymo, val_road]
+nc: 11
+names: ["person", "rider", "car", "truck", "bus", "train", "motor", "bike", "traffic light", "traffic sign", "crosswalk"]
+coverage_policy: 'Only covered classes/assigned positives receive BCE; unknowns are masked. Use the custom loader.'

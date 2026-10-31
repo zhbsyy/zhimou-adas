@@ -1,0 +1,21 @@
+CARLA engine already running.
+CARLA launch requested. Wait for the map before connecting the console cameras.
+
+test_all_PDS_source_references_close_in_generated_layout (test_project.Tests.test_all_PDS_source_references_close_in_generated_layout) ... ok
+test_classified_files_match_original_hashes (test_project.Tests.test_classified_files_match_original_hashes) ... ok
+test_console_launcher_refuses_an_occupied_diagnostic_port (test_project.Tests.test_console_launcher_refuses_an_occupied_diagnostic_port) ... ok
+test_engine_launcher_reuses_existing_instance_and_keeps_rendering_flags (test_project.Tests.test_engine_launcher_reuses_existing_instance_and_keeps_rendering_flags) ... ok
+test_four_RK_layouts_preserve_all_mapped_bytes_and_entries (test_project.Tests.test_four_RK_layouts_preserve_all_mapped_bytes_and_entries) ... ok
+test_layout_rejects_path_escape_and_modified_runtime (test_project.Tests.test_layout_rejects_path_escape_and_modified_runtime) ... ok
+test_models_and_video_have_single_source_copy (test_project.Tests.test_models_and_video_have_single_source_copy) ... ok
+test_original_final_submission_remained_unchanged (test_project.Tests.test_original_final_submission_remained_unchanged) ... ok
+test_three_PC_profiles_import_without_starting_a_window (test_project.Tests.test_three_PC_profiles_import_without_starting_a_window) ... ok
+test_all_archived_supplement_bytes_match_sources_record (test_supplement.SupplementTests.test_all_archived_supplement_bytes_match_sources_record) ... ok
+test_calibration_images_and_detector_reference_contract (test_supplement.SupplementTests.test_calibration_images_and_detector_reference_contract) ... ok
+test_three_tools_import_in_isolated_layout_without_live_actions (test_supplement.SupplementTests.test_three_tools_import_in_isolated_layout_without_live_actions) ... ok
+test_training_snapshot_and_model_lineage_hashes (test_supplement.SupplementTests.test_training_snapshot_and_model_lineage_hashes) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 26.889s
+
+OK

@@ -1,0 +1,47 @@
+{
+  "epochs": 35,
+  "batch": 12,
+  "lr": 4e-05,
+  "workers": 0,
+  "patience": 15,
+  "overfit": false,
+  "max_train": 0,
+  "samples_per_epoch": 2400,
+  "synthetic_fraction": 0.2,
+  "human_fraction": 0.1,
+  "rlmd_fraction": 0.3,
+  "a2d2_fraction": 0.25,
+  "freeze_bn": true,
+  "lane_only": true,
+  "selection": "0.20 human direct + 0.10 BDD direct + 0.20 human lane harmonic + 0.20 RLMD lane harmonic + 0.20 A2D2 lane harmonic + 0.10 CARLA lane harmonic",
+  "real_only": false,
+  "lane_class_weights": [
+    0.5,
+    1.8,
+    2.2
+  ],
+  "lane_focal_gamma": 0.0,
+  "boundary_bg_weight": 0.0,
+  "lr_groups": {
+    "new_lane_head": 1.0,
+    "lane_decoder": 0.5,
+    "shared": 0.1,
+    "direct_decoder": 0.05
+  },
+  "seed": 114,
+  "data_version": "data_v1",
+  "trainer_sha256": "4753025df162bd01b4c5c1f410f9fdbbab1bf9b0e4064fc36786a7b01ecc2a5c",
+  "manifest_sha256": {
+    "train": "e422cff1460b2c98a87fd84bf0fc18b831c19eb3f0e7d6e4b27bb0980aa5ea85",
+    "val": "f1e70ec857d9a877fab4d3cd0f55a2028ba6e518d45c1fe243ae3308af6e778a"
+  },
+  "weight_source_sha256": "0dd3bd7356a5b70e1d21ae60cd09b55641b48bde738393177f94daff17ab6360",
+  "init_checkpoint": "runs\\R15_external_data_training\\candidate_checkpoints\\targetmix_e15.pt",
+  "init_sha256": "ea6438a37c21d1b390b2b2123546fa29efc489df5b76fff60aaf5f3260375411",
+  "train_rows": 9465,
+  "human_val_rows": 14,
+  "synthetic_val_rows": 432,
+  "rlmd_val_rows": 400,
+  "source_val_rows": 44,
+  "a2d2_val_rows": 300
+}

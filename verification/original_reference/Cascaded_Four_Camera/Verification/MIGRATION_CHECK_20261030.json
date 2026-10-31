@@ -1,0 +1,263 @@
+{
+  "recorded_local": "2026-10-30T19:38:05.551182+08:00",
+  "module": "Cascaded_Four_Camera",
+  "passed": true,
+  "scope": "Actual relocated board runtime and new local console; camera motion/color quality still judged optically by operator. No new performance acceptance claim.",
+  "board_stat": {
+    "schema": "cascade_dual_model.v1",
+    "source": "physical_pcie_and_two_usb",
+    "models": {
+      "det": "/userdata/Cascaded_Four_Camera/Board_RK3568/Models/A_rk3568_int8.rknn",
+      "lane": "/userdata/Cascaded_Four_Camera/Board_RK3568/Models/R15_256x448_patched_native_int8.rknn",
+      "sha256": {
+        "det": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543",
+        "lane": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289"
+      }
+    },
+    "class10_min_confidence": 0.6,
+    "class10_name": "crosswalk",
+    "other_min_confidence": 0.25,
+    "threshold_override_supported": false,
+    "detector_scope": "one 640x640 inference on full four-view mosaic",
+    "lane_scope": "Front only, 256x448 uint8 NHWC",
+    "camera_color": {
+      "schema": "cascade_camera_color.v1",
+      "binding": "sfp_tx_camera_frame_fix_20261014+sfp_rx_no_overlay_20261014",
+      "revision": 2,
+      "cameras": {
+        "front": {
+          "crop": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "swap_rb": false,
+          "gains_rgb": [
+            0.928571,
+            1.114286,
+            0.975
+          ],
+          "status": "neutral_calibrated_color_targets_pending",
+          "reference": {
+            "median_bgr": [
+              160.0,
+              140.0,
+              168.0
+            ],
+            "target": 156.0,
+            "sample_count": 9,
+            "first_seq": 2373,
+            "last_seq": 2393,
+            "roi": [
+              0.3,
+              0.3,
+              0.7,
+              0.7
+            ],
+            "stage": "after_fixed_channel_order_before_gain_or_overlay",
+            "source_epoch": "507b6a7c976a0f8f65896917",
+            "recorded_utc": "2025-03-18T21:36:00.211388+00:00",
+            "recorded_board_clock_note": "Board clock may be wrong; revision identifies order"
+          }
+        },
+        "rear": {
+          "crop": [
+            0,
+            360,
+            640,
+            360
+          ],
+          "swap_rb": true,
+          "gains_rgb": [
+            1.0625,
+            0.944444,
+            1.0
+          ],
+          "status": "neutral_calibrated_color_targets_pending",
+          "reference": {
+            "median_bgr": [
+              136.0,
+              144.0,
+              128.0
+            ],
+            "target": 136.0,
+            "sample_count": 9,
+            "first_seq": 2844,
+            "last_seq": 2866,
+            "roi": [
+              0.3,
+              0.3,
+              0.7,
+              0.7
+            ],
+            "stage": "after_fixed_channel_order_before_gain_or_overlay",
+            "source_epoch": "507b6a7c976a0f8f65896917",
+            "recorded_utc": "2025-03-18T21:36:23.435378+00:00",
+            "recorded_board_clock_note": "Board clock may be wrong; revision identifies order"
+          }
+        }
+      },
+      "profile_file": "/userdata/Cascaded_Four_Camera/Board_RK3568/Configuration/camera_profiles.json",
+      "source_epoch": "59274bb23a28f29191f99987",
+      "scope": "same corrected input used by detector, R15 and video",
+      "legacy_environment_gains": false
+    },
+    "mosaic_sequence": 7927,
+    "det_sequence": 7923,
+    "lane_sequence": 7923,
+    "jpeg_publish_age_ms": 49.1,
+    "jpeg_size": [
+      1280,
+      720
+    ],
+    "runtime": "native_buffered, shared NPU call lock",
+    "queues": "single latest item per stage; encoder input depth=1",
+    "latency_note": "JPEG publish age is not matched-frame end-to-end latency; capture counters do not prove optical freshness",
+    "running": true,
+    "counts": {
+      "compose": 7927,
+      "det_input_skipped": 4777,
+      "render_input_skipped": 0,
+      "render": 7927,
+      "encode_input_skipped": 0,
+      "encode_submit": 7927,
+      "jpeg": 7926,
+      "pcie_capture": 6610,
+      "lane": 2726,
+      "det": 3147
+    },
+    "fps_5s": {
+      "compose": 19.99,
+      "render": 19.99,
+      "encode_submit": 19.99,
+      "jpeg": 19.99,
+      "pcie_capture": 16.19,
+      "lane": 7.0,
+      "det": 7.4
+    },
+    "stage_ema_ms": {
+      "compose_ms": 26.46,
+      "render_ms": 11.57,
+      "convert_ms": 7.26,
+      "lane_pre_ms": 14.29,
+      "lane_lock_wait_ms": 9.22,
+      "lane_call_ms": 76.5,
+      "lane_post_ms": 18.14,
+      "det_pre_ms": 15.4,
+      "det_lock_wait_ms": 43.39,
+      "det_call_ms": 46.58,
+      "det_post_ms": 20.12
+    },
+    "errors": [],
+    "cameras": {
+      "front": {
+        "capture_seq": 6609,
+        "age_ms": 125.8
+      },
+      "right": {
+        "capture_seq": 10514,
+        "age_ms": 87.2
+      },
+      "rear": {
+        "capture_seq": 6609,
+        "age_ms": 125.8
+      },
+      "left": {
+        "capture_seq": 11268,
+        "age_ms": 99.7
+      }
+    },
+    "usb": {
+      "right": {
+        "label": "right",
+        "device": "/dev/v4l/by-path/platform-xhci-hcd.1.auto-usb-0:1:1.0-video-index0",
+        "decoded_count": 10516,
+        "read_failures": 0,
+        "reconnects": 0,
+        "grab_ms": 31.1,
+        "retrieve_ms": 2.981,
+        "total_ms": 34.081,
+        "grab_ms_ema": 32.276,
+        "retrieve_ms_ema": 2.602,
+        "total_ms_ema": 34.878,
+        "fps": 29.08,
+        "connected": true,
+        "opened": true,
+        "actual": {
+          "width": 320,
+          "height": 240,
+          "fps": 30.0,
+          "fourcc": "MJPG"
+        },
+        "ctrls": {
+          "exposure_dynamic_framerate": "ok",
+          "power_line_frequency": "ok"
+        },
+        "last_error": "",
+        "last_frame_age_ms": 21.26
+      },
+      "left": {
+        "label": "left",
+        "device": "/dev/v4l/by-path/platform-xhci-hcd.0.auto-usb-0:1:1.0-video-index0",
+        "decoded_count": 11269,
+        "read_failures": 0,
+        "reconnects": 0,
+        "grab_ms": 34.186,
+        "retrieve_ms": 2.582,
+        "total_ms": 36.768,
+        "grab_ms_ema": 33.138,
+        "retrieve_ms_ema": 2.637,
+        "total_ms_ema": 35.775,
+        "fps": 28.62,
+        "connected": true,
+        "opened": true,
+        "actual": {
+          "width": 320,
+          "height": 240,
+          "fps": 30.0,
+          "fourcc": "MJPG"
+        },
+        "ctrls": {
+          "exposure_dynamic_framerate": "ok",
+          "power_line_frequency": "ok",
+          "auto_exposure": "ok",
+          "gain": "ok",
+          "white_balance_automatic": "ok"
+        },
+        "last_error": "",
+        "last_frame_age_ms": 63.54
+      }
+    },
+    "encoder": {
+      "hw": 7926,
+      "sw": 0,
+      "hw_ms": 0.0,
+      "sw_ms": 0.0,
+      "submitted": 7927,
+      "cvt_ms": 39958.63258598626,
+      "produced": 7926,
+      "collect_ms": 0.0,
+      "callback_errors": 0
+    }
+  },
+  "PC_status": {
+    "version": "navigation_reliability.v1.5",
+    "mode": "cockpit_sim",
+    "aeb_enabled": false,
+    "gear": "P",
+    "speed_kmh": 0.0,
+    "result": {
+      "drive": false,
+      "brake": false,
+      "phase": "waiting",
+      "reason": "等待树莓派座舱串口",
+      "resumed": false
+    },
+    "serial_port": null,
+    "carla_connected": false
+  },
+  "visual_check": "Sky screenshot confirmed new-console title, PCIe selected and all four video tiles displayed.",
+  "board_environment_ready": "User provided ENVIRONMENT_READY and Mem+/BusMaster+ nonzero BAR1 output",
+  "USB": "User restored original controller ports; both resolved stable by-path identities, connected true and no read failures."
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "CPU software contracts and relocation, not RK3568 real capture/model or hardware JPEG performance",
+  "checks": [
+    {
+      "check": "inference_contracts",
+      "exit_code": 0,
+      "output": "test_all_stage_smoke_with_synthetic_runtime (test_integration.Integration.test_all_stage_smoke_with_synthetic_runtime)\nRun production workers together, substituting only hardware boundaries. ... ok\ntest_calibrated_model_inputs (test_integration.Integration.test_calibrated_model_inputs) ... ok\ntest_class10_boundary_and_other_classes (test_integration.Integration.test_class10_boundary_and_other_classes) ... ok\ntest_detector_to_render_and_http (test_integration.Integration.test_detector_to_render_and_http) ... ok\ntest_invalid_and_seam_boxes (test_integration.Integration.test_invalid_and_seam_boxes) ... ok\ntest_jpeg_workers_join_and_callback_publication (test_integration.Integration.test_jpeg_workers_join_and_callback_publication)\nA real child pipe emits minimal JPEG markers; no MPP performance claim. ... ok\ntest_latest_has_one_item_and_independent_consumers (test_integration.Integration.test_latest_has_one_item_and_independent_consumers) ... ok\ntest_layout_and_ownership (test_integration.Integration.test_layout_and_ownership) ... ok\ntest_stale_result_and_color_revision (test_integration.Integration.test_stale_result_and_color_revision) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 3.109s\n\nOK\n"
+    },
+    {
+      "check": "collected_paths",
+      "exit_code": 0,
+      "output": "test_board_command_uses_collected_files (test_collected_paths.CollectedPaths.test_board_command_uses_collected_files) ... ok\ntest_both_fpga_projects_have_all_local_references (test_collected_paths.CollectedPaths.test_both_fpga_projects_have_all_local_references) ... ok\ntest_models_and_fixed_thresholds (test_collected_paths.CollectedPaths.test_models_and_fixed_thresholds) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.377s\n\nOK\n"
+    },
+    {
+      "check": "board_launch_paths",
+      "exit_code": 0,
+      "output": "{\n  \"python\": \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Python_Environment\\\\venv\\\\bin\\\\python\",\n  \"command\": [\n    \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Python_Environment\\\\venv\\\\bin\\\\python\",\n    \"-u\",\n    \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Inference_Four_Views\\\\quad_infer.py\",\n    \"--model\",\n    \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Models\\\\A_rk3568_int8.rknn\",\n    \"--lane-model\",\n    \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Models\\\\R15_256x448_patched_native_int8.rknn\",\n    \"--classes\",\n    \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Models\\\\classes_11.txt\",\n    \"--color-profile\",\n    \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Configuration\\\\camera_profiles.json\",\n    \"--cap-reader\",\n    \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Camera_Input\\\\cap_reader.py\",\n    \"--port\",\n    \"8083\",\n    \"--video-fps\",\n    \"20\",\n    \"--seconds\",\n    \"0\"\n  ],\n  \"environment\": {\n    \"PYTHONDONTWRITEBYTECODE\": \"1\",\n    \"PYTHONPATH\": \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Camera_Input;C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\Board_RK3568\\\\Inference_Four_Views\",\n    \"CAP_DELAY\": \"0.00004\",\n    \"CAP_ROLL_FIX\": \"0\",\n    \"CAP_CHUNK\": \"0\",\n    \"CAP_TRANS\": \"0\"\n  },\n  \"capture_or_NPU_started\": false\n}\n"
+    },
+    {
+      "check": "pc_console_imports",
+      "exit_code": 0,
+      "output": "{\n  \"video_url\": \"http://192.168.2.3:8083/stream\",\n  \"module_paths\": {\n    \"dashboard\": \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\PC_Windows\\\\Console_Application\\\\ui\\\\dashboard.py\",\n    \"arbiter\": \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\PC_Windows\\\\Console_Application\\\\bridge\\\\arbiter.py\",\n    \"carla_backend\": \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\PC_Windows\\\\Console_Application\\\\bridge\\\\carla_backend.py\",\n    \"serial_client\": \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\PC_Windows\\\\Console_Application\\\\bridge\\\\serial_client.py\",\n    \"video_bridge\": \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\MES2L50H_DualCam_PCIe\\\\Final submission\\\\Cascaded_Four_Camera\\\\PC_Windows\\\\video_bridge.py\"\n  },\n  \"source\": \"physical cascaded four views\",\n  \"console_version\": \"navigation_reliability.v1.5\",\n  \"default_source\": \"pcie\",\n  \"model_drawing\": \"RK3568 draws detections and Front R15; PC decodes JPEG and fits the display\",\n  \"carla_engine_started_by_launcher\": false,\n  \"installed_console_modified\": false\n}\n"
+    }
+  ],
+  "python_sources_parsed": 65,
+  "passed": true,
+  "GUI_opened": false,
+  "board_processes_or_current_console_changed": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "camera_input_color.v1",
+  "source": "pcie",
+  "gains_rgb": [
+    0.916667,
+    1.137931,
+    0.970588
+  ],
+  "reference": {
+    "roi_normalized": [
+      0.3,
+      0.3,
+      0.7,
+      0.7
+    ],
+    "median_bgr": [
+      136.0,
+      116.0,
+      144.0
+    ],
+    "p90_minus_p10_bgr": [
+      24.0,
+      24.0,
+      8.0
+    ],
+    "target": 132.0,
+    "source_epoch": "5f67b927c73e4132b9901b51e6f7dc97",
+    "frame_seq": 936,
+    "recorded_utc": "2025-03-14T12:19:10.779438+00:00"
+  },
+  "provenance": "Reconstructed from user-pasted board calibration output; gains separately confirmed via live HTTP. Not a direct copy of the board file.",
+  "status": "neutral_reference_estimate_pending_red_green_scene_check"
+}

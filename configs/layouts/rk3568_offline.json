@@ -1,0 +1,61 @@
+{
+  "schema": "source_layout.v1",
+  "files": {
+    "Board_RK3568/Configuration/offline_defaults.json": {
+      "source": "configs/rk3568/offline_defaults.json",
+      "sha256": "faa3c6266f730833281f9817f2491a83ecab195078c39b201ad3ef83a208f0c0"
+    },
+    "Board_RK3568/Inference_and_Postprocess/offline_pipeline.py": {
+      "source": "software/rk3568/fusion/offline_pipeline.py",
+      "sha256": "8e7578cdb63c5de3b04531087c7df22bc774e6161734e5b7311bcdbd677a3605"
+    },
+    "Board_RK3568/Inference_and_Postprocess/pcie_post.py": {
+      "source": "software/rk3568/object_detection/pcie_post.py",
+      "sha256": "ce2e707a4ba1f50f321079b194b73811dcbdfd95c78ea6d8a961a83a499570b6"
+    },
+    "Board_RK3568/Inference_and_Postprocess/process_video_r15_offline.py": {
+      "source": "software/rk3568/fusion/process_video_r15_offline.py",
+      "sha256": "dcfaf3c5851758158de106e2b629dce33c08e8cd38320fbc4a60f79241e41476"
+    },
+    "Board_RK3568/Inference_and_Postprocess/r15_front_fast.py": {
+      "source": "software/rk3568/lane_detection/offline/r15_front_fast.py",
+      "sha256": "cd034459ab5360b84d2c3f01bdcd1750d3686cb904ed8ee14b296bc946eacead"
+    },
+    "Board_RK3568/Input_Videos/README_zh.md": {
+      "source": "docs/reference/rk_runtime/README_zh.md",
+      "sha256": "1cf04047bd797ab2186f3bfab2bcad489cf654246e2cce261f6ed4c7d9c9ae95"
+    },
+    "Board_RK3568/Input_Videos/video_20260929_112507.mp4": {
+      "source": "assets/videos/video_20260929_112507.mp4",
+      "sha256": "b1e2e90674030485f78bea66b1984a18df3bd6142ce1c5372d5f10fd0456ebcd"
+    },
+    "Board_RK3568/launch_offline.py": {
+      "source": "software/rk3568/runtime_support/launch_offline.py",
+      "sha256": "6d9709913ba1d65945dbef786604d2775fc05dd6c385860e980c7d5720f99498"
+    },
+    "Board_RK3568/Models/A_rk3568_int8.rknn": {
+      "source": "models/object_detection/A_rk3568_int8.rknn",
+      "sha256": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543"
+    },
+    "Board_RK3568/Models/classes_11.txt": {
+      "source": "models/object_detection/classes.txt",
+      "sha256": "ebe61c75ee4588b20b0a42792bba119021f9ef8bed196300b170ebdc060f8dbe"
+    },
+    "Board_RK3568/Models/R15_256x448_patched_native_int8.rknn": {
+      "source": "models/lane_detection/R15_256x448_patched_native_int8.rknn",
+      "sha256": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289"
+    },
+    "Board_RK3568/PREPARE_PYTHON_ENVIRONMENT.sh": {
+      "source": "software/rk3568/runtime_support/offline/PREPARE_PYTHON_ENVIRONMENT.sh",
+      "sha256": "19c72d496e921cdbce3841bd395fcece11dc712cb38f03432a6d66c59b812383"
+    },
+    "Board_RK3568/Python_Environment/prepare_environment.py": {
+      "source": "software/rk3568/runtime_support/offline/prepare_environment.py",
+      "sha256": "b74285439679c607a62e26ce80dfe36d7529550ed1463612e7f939af971d3b67"
+    },
+    "Board_RK3568/START_OFFLINE.sh": {
+      "source": "software/rk3568/runtime_support/START_OFFLINE.sh",
+      "sha256": "c56c6456be24951b7f01fe6519ab4a4a3735bab86ce91d070b1def62756dc833"
+    }
+  }
+}

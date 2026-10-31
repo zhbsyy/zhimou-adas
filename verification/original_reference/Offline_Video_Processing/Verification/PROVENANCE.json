@@ -1,0 +1,63 @@
+{
+  "collected_date": "2026-10-30",
+  "copied_files": [
+    {
+      "destination": "Board_RK3568/Inference_and_Postprocess/r15_front_fast.py",
+      "source": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\r15_256x448_video_trial_20261023\\r15_front_fast.py",
+      "sha256": "cd034459ab5360b84d2c3f01bdcd1750d3686cb904ed8ee14b296bc946eacead",
+      "operation": "byte_for_byte_copy"
+    },
+    {
+      "destination": "Board_RK3568/Inference_and_Postprocess/pcie_post.py",
+      "source": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\r15_int8_dual_model_bundle_20261024\\pcie_post.py",
+      "sha256": "ce2e707a4ba1f50f321079b194b73811dcbdfd95c78ea6d8a961a83a499570b6",
+      "operation": "byte_for_byte_copy"
+    },
+    {
+      "destination": "Board_RK3568/Models/A_rk3568_int8.rknn",
+      "source": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\Final submission\\Decision\\Board_RK3568\\Models\\A_rk3568_int8.rknn",
+      "sha256": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543",
+      "operation": "byte_for_byte_copy"
+    },
+    {
+      "destination": "Board_RK3568/Models/R15_256x448_patched_native_int8.rknn",
+      "source": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\Final submission\\Decision\\Board_RK3568\\Models\\R15_256x448_patched_native_int8.rknn",
+      "sha256": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289",
+      "operation": "byte_for_byte_copy"
+    },
+    {
+      "destination": "Board_RK3568/Models/classes_11.txt",
+      "source": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\Final submission\\Decision\\Board_RK3568\\Models\\classes_11.txt",
+      "sha256": "ebe61c75ee4588b20b0a42792bba119021f9ef8bed196300b170ebdc060f8dbe",
+      "operation": "byte_for_byte_copy"
+    },
+    {
+      "destination": "Board_RK3568/Input_Videos/video_20260929_112507.mp4",
+      "source": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\Final submission\\Decision\\Board_RK3568\\Startup_Selfcheck_Video\\video_20260929_112507.mp4",
+      "sha256": "b1e2e90674030485f78bea66b1984a18df3bd6142ce1c5372d5f10fd0456ebcd",
+      "operation": "byte_for_byte_copy"
+    },
+    {
+      "destination": "Board_RK3568/Python_Environment/prepare_environment.py",
+      "source": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\Final submission\\Decision\\Board_RK3568\\Python_Environment\\prepare_environment.py",
+      "sha256": "b74285439679c607a62e26ce80dfe36d7529550ed1463612e7f939af971d3b67",
+      "operation": "copy with module name in error message updated"
+    }
+  ],
+  "offline_script_base": {
+    "source": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\r15_256x448_video_trial_20261023\\process_video_r15_offline.py",
+    "sha256": "76899be468b060b235a156bf05482f1788c4a5d4e33eed2922de7a2b5123559c"
+  },
+  "changes": [
+    "Replace live profile import with only local pre/postprocessing adapter",
+    "Class10 filter defaults to 0.60; other classes 0.25",
+    "Default stride1 and seconds0 (EOF), no finite45s cap",
+    "Persist summary; report partial/low disk/interruption as unsuccessful completion",
+    "No camera correction, stereo range, CARLA/OIB/HTTP or FPGA capture"
+  ],
+  "models": {
+    "A_rk3568_int8.rknn": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543",
+    "R15_256x448_patched_native_int8.rknn": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289"
+  },
+  "real_RK_run_in_this_packaging": false
+}

@@ -1,0 +1,43 @@
+{
+  "recorded_local": "2026-10-30T21:18:21.315231+08:00",
+  "updated_in_place": true,
+  "module": "Cascaded_Four_Camera",
+  "current": {
+    "class10": 0.4,
+    "other_detector_classes": 0.25,
+    "R15_lane_confidence": 0.6,
+    "console_version": "navigation_reliability.v1.5",
+    "PC_default_source": "pcie",
+    "video_url": "http://192.168.2.3:8083/stream",
+    "camera_color_revision": 2,
+    "camera_profile_sha256": "5fb68d1649310f348fa0770b104e6b88b54a3b3510248dcb8aba97ae60787348"
+  },
+  "current_code_scope": "Same Final submission/Cascaded_Four_Camera directory; latest files replace the former entry, no second runtime folder.",
+  "unchanged": [
+    "two RKNN weights",
+    "camera color gains/channel mapping",
+    "FPGA bitstreams",
+    "capture parameters",
+    "Decision module",
+    "CARLA_Navigation module"
+  ],
+  "board_status": {
+    "user_reported_update_done": true,
+    "HTTP8083_observation": "Connection refused during sync; no new live0.40check claimed"
+  },
+  "PC_status": {
+    "HTTP18090": "version navigation_reliability.v1.5;AEBoff;gearP;CARLAdisconnected"
+  },
+  "software_checks": {
+    "pipeline_contract_tests": 9,
+    "collected_path_tests": 3,
+    "entry_imports_passed": true,
+    "manifest_update_tests_previously_passed": 3,
+    "updater_known_source_and_idempotence_tests_previously_passed": true
+  },
+  "models": {
+    "A_rk3568_int8.rknn": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543",
+    "R15_256x448_patched_native_int8.rknn": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289"
+  },
+  "historical_evidence": "Original threshold0.60 snapshots are retained as historical measured records, not old runtime code."
+}

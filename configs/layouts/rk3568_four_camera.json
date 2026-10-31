@@ -1,0 +1,161 @@
+{
+  "schema": "source_layout.v1",
+  "files": {
+    "Board_RK3568/APPLY_CLASS10_040.py": {
+      "source": "software/rk3568/runtime_support/APPLY_CLASS10_040.py",
+      "sha256": "2f6a3e5204e2128f2c86c9cf8412e47a725cf1b37e3c8bc0182bf83e8f571c4c"
+    },
+    "Board_RK3568/CALIBRATE_COLORS.py": {
+      "source": "software/rk3568/runtime_support/CALIBRATE_COLORS.py",
+      "sha256": "e832c090e673c4d3abdec0f57459867c017e357805d47218449635cc6c5cbf8f"
+    },
+    "Board_RK3568/Camera_Input/camera_ports.py": {
+      "source": "software/rk3568/video_input/camera_ports.py",
+      "sha256": "f20fafc2bf65d6d1552d8481fc1e96e08e4ca9faa9cf48374c4bca509711fb5a"
+    },
+    "Board_RK3568/Camera_Input/cap_reader.py": {
+      "source": "software/rk3568/video_input/four_camera/cap_reader.py",
+      "sha256": "5e6ea5bee63a5e60f544951a30c7e216071f222cb8eb4a7d3a16e118b8451170"
+    },
+    "Board_RK3568/Camera_Input/color_profiles.py": {
+      "source": "software/rk3568/video_input/color_profiles.py",
+      "sha256": "024c75993b8c67e6e3bb6cf2acdcaf213c1e88e1fbd10eec0a496213158b89e4"
+    },
+    "Board_RK3568/Camera_Input/frame_align.py": {
+      "source": "software/rk3568/video_input/frame_align.py",
+      "sha256": "fac44b85e6c8d27adf11c3af489cdf998cdd3377991afa291d535dfd372245b9"
+    },
+    "Board_RK3568/Camera_Input/pcie_frame.py": {
+      "source": "software/rk3568/video_input/pcie_frame.py",
+      "sha256": "ae16df95d3b59a431cb88f7ae8f81767e24b2abdc2a74b5594acf02d6d441038"
+    },
+    "Board_RK3568/Camera_Input/usb_source.py": {
+      "source": "software/rk3568/video_input/usb_source.py",
+      "sha256": "aa811589c1f9ae3f1c27ec94979bf785c288f4a3b75af002ec040b373da3996b"
+    },
+    "Board_RK3568/Configuration/camera_profiles.json": {
+      "source": "configs/rk3568/camera_profiles.json",
+      "sha256": "5fb68d1649310f348fa0770b104e6b88b54a3b3510248dcb8aba97ae60787348"
+    },
+    "Board_RK3568/Inference_Four_Views/cached_display.py": {
+      "source": "software/rk3568/lane_detection/four_camera/cached_display.py",
+      "sha256": "12806ff5f4c87f99c8a369ae2da50a81422f5d595655160388036927f2f3c844"
+    },
+    "Board_RK3568/Inference_Four_Views/detection_policy.py": {
+      "source": "software/rk3568/object_detection/detection_policy.py",
+      "sha256": "f630839f0b0dd4518e434eaf989a2d41a8eb1e387ecb78d412cba963a3cfbbd8"
+    },
+    "Board_RK3568/Inference_Four_Views/hw_jpeg.py": {
+      "source": "software/rk3568/video_input/encoding/hw_jpeg.py",
+      "sha256": "7b29e93be2d6d4310efae99f26319da43ef7a00ba961ff1264e79fa87f9effff"
+    },
+    "Board_RK3568/Inference_Four_Views/jpeg_lifecycle.py": {
+      "source": "software/rk3568/video_input/encoding/jpeg_lifecycle.py",
+      "sha256": "47ce63d8ad3994f56fca6d730093b0768ba48b9c305bb2e9698a16d77bdf7b84"
+    },
+    "Board_RK3568/Inference_Four_Views/native_api.py": {
+      "source": "software/rk3568/object_detection/runtime/native_api.py",
+      "sha256": "590eb31bae0f604fb031c2219978c2c15f7a97a7ebb059300d7d40a5ed55b92e"
+    },
+    "Board_RK3568/Inference_Four_Views/pcie_post.py": {
+      "source": "software/rk3568/object_detection/pcie_post.py",
+      "sha256": "ce2e707a4ba1f50f321079b194b73811dcbdfd95c78ea6d8a961a83a499570b6"
+    },
+    "Board_RK3568/Inference_Four_Views/pcie_preflight.py": {
+      "source": "software/rk3568/communication/pcie_preflight.py",
+      "sha256": "94c93946c461d18a025e4c544171e06608cdab1d1ed3905679f3306e95d34446"
+    },
+    "Board_RK3568/Inference_Four_Views/pipeline.py": {
+      "source": "software/rk3568/fusion/pipeline.py",
+      "sha256": "3657756ebdf26ba3f735dc297422f56f9643057210a1e3aa0c7c5019d718d485"
+    },
+    "Board_RK3568/Inference_Four_Views/postprocess_candidate.py": {
+      "source": "software/rk3568/lane_detection/postprocess_candidate.py",
+      "sha256": "832146ae05f4ee0eb6d3d1f6373a82bd4523cae4a35e0b0ca059c49bb5d62588"
+    },
+    "Board_RK3568/Inference_Four_Views/quad_infer.py": {
+      "source": "software/rk3568/fusion/quad_infer.py",
+      "sha256": "551a3f6eec1b0918d5d4e8f0a29a9e753e5a09627e956a7cd9d6f7c845ecf050"
+    },
+    "Board_RK3568/Inference_Four_Views/r15_front_fast.py": {
+      "source": "software/rk3568/lane_detection/r15_front_fast.py",
+      "sha256": "0208e9a02b6abf47595f3b916a699ddeebae0be8bff457abcff3f929458ed652"
+    },
+    "Board_RK3568/Inference_Four_Views/runtime_backend.py": {
+      "source": "software/rk3568/object_detection/runtime/runtime_backend.py",
+      "sha256": "44cb715d1ac7fd7398721025d65bf41596bf8ac5545896d5e225ec9987752fa9"
+    },
+    "Board_RK3568/Inference_Four_Views/tests/test_integration.py": {
+      "source": "tests/legacy_rk/test_integration.py",
+      "sha256": "512fade8fb9174c3330d1d5b916561266fe6b7eea726ec706a775f688f772c4b"
+    },
+    "Board_RK3568/INITIALIZE_PCIE.sh": {
+      "source": "software/rk3568/runtime_support/four_camera/INITIALIZE_PCIE.sh",
+      "sha256": "aab65629c3d3296f7b9160afd413d76c162798527fd82757c580a1ed0682919c"
+    },
+    "Board_RK3568/launch_cameras.py": {
+      "source": "software/rk3568/runtime_support/launch_cameras.py",
+      "sha256": "9b7c36b2a114bbb3d2b15388e1fcc8a42cf7482d51c150c0666c8856c694bd6d"
+    },
+    "Board_RK3568/Models/A_rk3568_int8.rknn": {
+      "source": "models/object_detection/A_rk3568_int8.rknn",
+      "sha256": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543"
+    },
+    "Board_RK3568/Models/classes_11.txt": {
+      "source": "models/object_detection/classes.txt",
+      "sha256": "ebe61c75ee4588b20b0a42792bba119021f9ef8bed196300b170ebdc060f8dbe"
+    },
+    "Board_RK3568/Models/R15_256x448_patched_native_int8.rknn": {
+      "source": "models/lane_detection/R15_256x448_patched_native_int8.rknn",
+      "sha256": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289"
+    },
+    "Board_RK3568/PREPARE_PYTHON_ENVIRONMENT.sh": {
+      "source": "software/rk3568/runtime_support/PREPARE_PYTHON_ENVIRONMENT.sh",
+      "sha256": "52e77b0485436a1c1de9643aff63390d6e80dbac43c1b18d99314cf80682a0c0"
+    },
+    "Board_RK3568/Preview_Only/hw_jpeg.py": {
+      "source": "software/rk3568/video_input/encoding/four_camera/hw_jpeg.py",
+      "sha256": "18faba6f03fdd5baada7525c122ea258be17842b0f92cf686080e1465b4f46b9"
+    },
+    "Board_RK3568/Preview_Only/quad_view.py": {
+      "source": "software/rk3568/runtime_support/quad_view.py",
+      "sha256": "ff4baf5b2cc749c2875dbff6e2356958d813f746e48323839dc316272d30cbfd"
+    },
+    "Board_RK3568/Python_Environment/prepare_environment.py": {
+      "source": "software/rk3568/runtime_support/four_camera/prepare_environment.py",
+      "sha256": "b3a65964bbfdce73501a92ccd6fb3de96257ce3c9fa8caa0698cc4ae3791bd1f"
+    },
+    "Board_RK3568/README.md": {
+      "source": "docs/reference/rk_runtime/four_camera/README.md",
+      "sha256": "b4edd605a81d46b4efa0c8cf3df530d36c49f38f1ad64391cc077ccacb43b0f0"
+    },
+    "Board_RK3568/START_INFERENCE.sh": {
+      "source": "software/rk3568/runtime_support/START_INFERENCE.sh",
+      "sha256": "8a3874dd7c22e979f548a945cad7f2ae117bef0e98d5b1b7429a44f5427ac00e"
+    },
+    "Board_RK3568/START_PREVIEW_ONLY.sh": {
+      "source": "software/rk3568/runtime_support/START_PREVIEW_ONLY.sh",
+      "sha256": "982c48e968c1cec166d33866f78e04eb2a3f2ec856359de9f6a9327eb5bc2571"
+    },
+    "Board_RK3568/System_Driver/Driver_Source/id_config.h": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Driver_Source/id_config.h",
+      "sha256": "5bbf7b788df8a114b3f799b5bd178b5bb174d5a5e5950102fe5224dbb05ec0eb"
+    },
+    "Board_RK3568/System_Driver/Driver_Source/Makefile": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Driver_Source/Makefile",
+      "sha256": "2c0f2b3eefa7b97f5e769468180e22157f34021a98656b10d64d9c8e63add902"
+    },
+    "Board_RK3568/System_Driver/Driver_Source/pango_pci_driver.c": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Driver_Source/pango_pci_driver.c",
+      "sha256": "c84a254b6efd55f0b0c8881495f0c5c2a776e1be3a7cb16ccdf80b875401e28d"
+    },
+    "Board_RK3568/System_Driver/Driver_Source/pango_pci_driver.h": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Driver_Source/pango_pci_driver.h",
+      "sha256": "624e7a3a52dcbc87712c972ad7ce3383e007d8b9b799bb4607780fc7ee76144b"
+    },
+    "Board_RK3568/System_Driver/Prebuilt_Kernel_6.1.99/pango_pci_driver.ko": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Prebuilt_Kernel_6.1.99/pango_pci_driver.ko",
+      "sha256": "5f3569540877893e05b303a4668747f8a42141bea0bc1cb6ca5344fc7e298598"
+    }
+  }
+}

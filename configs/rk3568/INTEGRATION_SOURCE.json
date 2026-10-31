@@ -1,0 +1,11 @@
+{
+  "source_directory": "C:\\Users\\lenovo\\Desktop\\traffic_light\\traffic_light_video_demo",
+  "source_module_sha256": "1bb26edad00244c2557d1263436d7f0e24fd64f906a2ca6a59b2dc1a92a97603",
+  "local_extension": "Optional classifier callback plus diagnostic passthrough; tracking, lamp-based merge, conservative and forced formulas retained",
+  "input_classes": "Actual RK classes_11.txt remains in use, no fixed BDD class-ID replacement",
+  "new_NPU_models": 0,
+  "source_modified": false,
+  "local_module_sha256": "ff5a4d1711726fdc8316df73b63a0d306eb2c213112a211d06d560ef2d24cb23",
+  "upstream_bundle_manifest_is_source_reference": true,
+  "local_checksums": "../MANIFEST.sha256"
+}

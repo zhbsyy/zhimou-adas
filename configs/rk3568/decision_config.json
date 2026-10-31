@@ -1,0 +1,55 @@
+{
+  "rules": {
+    "signal_ttl_s": 0.75,
+    "lane_ttl_s": 0.75,
+    "source_ttl_s": 1.0,
+    "command_lease_s": 3.0,
+    "alarm_auto_clear_s": 3.0,
+    "normal_driving_default": true,
+    "red_only_stop": true
+  },
+  "scene": {
+    "signal_rois": {
+      "default": [
+        0.0,
+        0.0,
+        1.0,
+        0.75
+      ]
+    },
+    "screen_capture_color": true,
+    "unanimous_lights": true,
+    "signal_algorithm": "traffic_light_pixel_ratio_rg"
+  },
+  "boundaries": {
+    "classification": "length_ratio",
+    "anchor_mode": "road_center",
+    "anchor_x": 0.5,
+    "row_start": 0.45,
+    "row_end": 0.94,
+    "rows": 24,
+    "min_samples": 4,
+    "dashed_ratio_threshold": 0.4,
+    "dashed_exit_ratio": 0.4,
+    "min_length_ratio": 0.06,
+    "min_vertical_span_ratio": 0.04,
+    "min_marked_pixels": 24,
+    "min_road_area_ratio": 0.002,
+    "max_boundary_width_ratio": 0.06,
+    "confirm_samples": 2
+  },
+  "aeb": {
+    "enabled": true,
+    "mode": "video_demo",
+    "min_confidence": 0.5,
+    "confirm_samples": 2,
+    "release_hold_s": 1.2,
+    "ttl_s": 0.6,
+    "warning_height_ratio": 0.15,
+    "slow_height_ratio": 0.25,
+    "brake_height_ratio": 0.4,
+    "warning_m": 3.0,
+    "slow_m": 2.0,
+    "brake_m": 1.0
+  }
+}

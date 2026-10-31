@@ -1,0 +1,13 @@
+{
+  "name": "four_camera",
+  "source_module": "Cascaded_Four_Camera",
+  "class10_min_confidence": 0.4,
+  "other_min_confidence": 0.25,
+  "lane_input_hw": [
+    256,
+    448
+  ],
+  "models": "shared models directory; weights byte-identical",
+  "threshold_binding": "Existing algorithm source/CLI; this file records policy, not a silent threshold override",
+  "required_fpga": "four_camera + rear_camera"
+}

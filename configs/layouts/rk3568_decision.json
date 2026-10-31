@@ -1,0 +1,329 @@
+{
+  "schema": "source_layout.v1",
+  "files": {
+    "Board_RK3568/Camera_PCIe/cap_reader.py": {
+      "source": "software/rk3568/video_input/cap_reader.py",
+      "sha256": "272615731407e1f8ebac0d32be9c8d79ffbef0402e0c55286e6a5317390863a2"
+    },
+    "Board_RK3568/Camera_PCIe/frame_align.py": {
+      "source": "software/rk3568/video_input/frame_align.py",
+      "sha256": "fac44b85e6c8d27adf11c3af489cdf998cdd3377991afa291d535dfd372245b9"
+    },
+    "Board_RK3568/Camera_PCIe/mmio32.so": {
+      "source": "software/rk3568/video_input/mmio32.so",
+      "sha256": "911b9d318a362693ee905ad3dcd7714356110707811a1a209404a4a4dfbd1b0c"
+    },
+    "Board_RK3568/Camera_PCIe/Native_Source/mmio32.c": {
+      "source": "software/rk3568/video_input/mmio32.c",
+      "sha256": "51a5f7e1e60ab28afff98bc6a95d6f45585222a008db71187bde88517a811761"
+    },
+    "Board_RK3568/Camera_PCIe/pcie_frame.py": {
+      "source": "software/rk3568/video_input/pcie_frame.py",
+      "sha256": "ae16df95d3b59a431cb88f7ae8f81767e24b2abdc2a74b5594acf02d6d441038"
+    },
+    "Board_RK3568/Configuration/camera_color_profile.json": {
+      "source": "configs/rk3568/camera_color_profile.json",
+      "sha256": "e7e2cc406d24a6707a734dd9506fa489a6d39f004c256989f9cc7698d23e98d8"
+    },
+    "Board_RK3568/Configuration/reference_stereo_8params.json": {
+      "source": "configs/rk3568/reference_stereo_8params.json",
+      "sha256": "dea7998bfac1579ca41e9391360887460e4c36d21f066a0308ffb7c0248d17f3"
+    },
+    "Board_RK3568/Dependencies/carla_source.py": {
+      "source": "software/rk3568/video_input/carla_source.py",
+      "sha256": "35aa2245a9ea4966c421258328fa6c4d8cbdaab7f9d8b971bf65bbb587b595ae"
+    },
+    "Board_RK3568/Dependencies/oib_link.py": {
+      "source": "software/rk3568/communication/oib_link.py",
+      "sha256": "bd39c183dd84163c9be14eda7108b0804f2fabbd1ad889d1d285b5e0a2fe73c7"
+    },
+    "Board_RK3568/Dependencies/pcie_post.py": {
+      "source": "software/rk3568/object_detection/pcie_post.py",
+      "sha256": "ce2e707a4ba1f50f321079b194b73811dcbdfd95c78ea6d8a961a83a499570b6"
+    },
+    "Board_RK3568/Dependencies/stereo_range.py": {
+      "source": "software/rk3568/fusion/stereo_range.py",
+      "sha256": "a4581c311fbd764ba2a7163f0e633d14d14390b4ee45ecac3e61815a6407378f"
+    },
+    "Board_RK3568/Inference_and_Rules/boundary_ratio.py": {
+      "source": "software/rk3568/lane_attributes/boundary_ratio.py",
+      "sha256": "1faac2de9a40d64fdc7e9e808ad946c57ff228d583dd63963a6986bf48b92633"
+    },
+    "Board_RK3568/Inference_and_Rules/cached_display.py": {
+      "source": "software/rk3568/lane_detection/cached_display.py",
+      "sha256": "55fe498ac711be80684565c06d5e4559bd7c37e6f7cfae016774b83bd6da4aa8"
+    },
+    "Board_RK3568/Inference_and_Rules/calibrate_camera_color.py": {
+      "source": "software/rk3568/runtime_support/calibrate_camera_color.py",
+      "sha256": "9cc2da1c0588ff35416491c413321534c57a78514fdfc584f8fe8cc0e67f4cff"
+    },
+    "Board_RK3568/Inference_and_Rules/camera_input_color.py": {
+      "source": "software/rk3568/runtime_support/camera_input_color.py",
+      "sha256": "01abf40067f80eb25d3ce31cf28dadc2f0b4103e47ea291c38185c85c5d7bfdb"
+    },
+    "Board_RK3568/Inference_and_Rules/decision_config.json": {
+      "source": "configs/rk3568/decision_config.json",
+      "sha256": "c0902888ac9f2a47545348ceb6b16ebded272322bad11aaf2994736776b9a6b0"
+    },
+    "Board_RK3568/Inference_and_Rules/decision_core.py": {
+      "source": "software/rk3568/fusion/decision_core.py",
+      "sha256": "0e92d5191465ea7956c24a47257100a95336680e042ad22ab0baf772eb61688f"
+    },
+    "Board_RK3568/Inference_and_Rules/decision_service.py": {
+      "source": "software/rk3568/communication/decision_service.py",
+      "sha256": "b350d6c2366a8c5a380c7693ecdaa589b6ffbc0cf2228f6fecb31c00b81708c9"
+    },
+    "Board_RK3568/Inference_and_Rules/detector_thresholds.py": {
+      "source": "software/rk3568/object_detection/detector_thresholds.py",
+      "sha256": "2b03581e2e83aefde220b1de9abcf7422f58e884b37ea8414ebcac89f71f777e"
+    },
+    "Board_RK3568/Inference_and_Rules/hw_jpeg.py": {
+      "source": "software/rk3568/video_input/encoding/hw_jpeg.py",
+      "sha256": "7b29e93be2d6d4310efae99f26319da43ef7a00ba961ff1264e79fa87f9effff"
+    },
+    "Board_RK3568/Inference_and_Rules/native_api.py": {
+      "source": "software/rk3568/object_detection/runtime/native_api.py",
+      "sha256": "590eb31bae0f604fb031c2219978c2c15f7a97a7ebb059300d7d40a5ed55b92e"
+    },
+    "Board_RK3568/Inference_and_Rules/overlay_roi_candidate.py": {
+      "source": "software/rk3568/lane_detection/overlay_roi_candidate.py",
+      "sha256": "5af1b560d5ea1590377d6332acd2234f274196dfa723d5568965bf9890bbbc2c"
+    },
+    "Board_RK3568/Inference_and_Rules/pc_client.py": {
+      "source": "software/rk3568/communication/pc_client.py",
+      "sha256": "ab4832f439b390a5bafbf799ba8fdade51a0a5ef7a3e2742830b38923b8a2aa5"
+    },
+    "Board_RK3568/Inference_and_Rules/pcie_preflight.py": {
+      "source": "software/rk3568/communication/pcie_preflight.py",
+      "sha256": "94c93946c461d18a025e4c544171e06608cdab1d1ed3905679f3306e95d34446"
+    },
+    "Board_RK3568/Inference_and_Rules/pcie_stream_r15_profile.py": {
+      "source": "software/rk3568/fusion/pcie_stream_r15_profile.py",
+      "sha256": "b5f7776aa4c6bca03a914a5aa6f0de279d59a2c0634cbf671fb8edf0d3be2564"
+    },
+    "Board_RK3568/Inference_and_Rules/pedestrian_aeb.py": {
+      "source": "software/rk3568/fusion/pedestrian_aeb.py",
+      "sha256": "adf474226fd89a050a82f053eada8b5172ec77016618601657740429c2ba74c9"
+    },
+    "Board_RK3568/Inference_and_Rules/perception_summary.py": {
+      "source": "software/rk3568/fusion/perception_summary.py",
+      "sha256": "bd4bc441ff811d43b6418a9ecf2b9eeb803d53df4b7c7761ffd30441d48ec273"
+    },
+    "Board_RK3568/Inference_and_Rules/postprocess_candidate.py": {
+      "source": "software/rk3568/lane_detection/postprocess_candidate.py",
+      "sha256": "832146ae05f4ee0eb6d3d1f6373a82bd4523cae4a35e0b0ca059c49bb5d62588"
+    },
+    "Board_RK3568/Inference_and_Rules/publication_candidate.py": {
+      "source": "software/rk3568/video_input/encoding/publication_candidate.py",
+      "sha256": "15146fe9d9ca16d3004aa5bacb2acd3f2d57d6b3c4bad9a05fa42a2fab218617"
+    },
+    "Board_RK3568/Inference_and_Rules/r15_front_fast.py": {
+      "source": "software/rk3568/lane_detection/r15_front_fast.py",
+      "sha256": "0208e9a02b6abf47595f3b916a699ddeebae0be8bff457abcff3f929458ed652"
+    },
+    "Board_RK3568/Inference_and_Rules/reference_signal.py": {
+      "source": "software/rk3568/traffic_light/reference_signal.py",
+      "sha256": "346e92ee8f643c96df07fe98f15df7eba97c8a5d9c1eaff2666de65346577c93"
+    },
+    "Board_RK3568/Inference_and_Rules/run_fixture.py": {
+      "source": "software/rk3568/runtime_support/run_fixture.py",
+      "sha256": "78e37ca4f8d171d124230127f778d961515348f7aee01e162df2e610c2902f26"
+    },
+    "Board_RK3568/Inference_and_Rules/run_vision.py": {
+      "source": "software/rk3568/fusion/run_vision.py",
+      "sha256": "5850eabb816a836a35700e4e8101d97e935e5d8da61e1be41f194c224f61059e"
+    },
+    "Board_RK3568/Inference_and_Rules/runtime_backend.py": {
+      "source": "software/rk3568/object_detection/runtime/runtime_backend.py",
+      "sha256": "44cb715d1ac7fd7398721025d65bf41596bf8ac5545896d5e225ec9987752fa9"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/__init__.py": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/__init__.py",
+      "sha256": "43461d30566e920986f1c9caf6f3af8ea8756af49e0fdc2f634c499301f6d514"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/bundle_manifest.json": {
+      "source": "configs/rk3568/bundle_manifest.json",
+      "sha256": "6d2e38b401f0517954432d154e03da7bfeaf0648ef667f8c45b9a70b812cc0e9"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/classes_bdd100k.txt": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/classes_bdd100k.txt",
+      "sha256": "86debfa83f3b1dc7e0881c39cb9a2ddef7ba67401d00e9355250f5022b49126e"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/hsv_config.json": {
+      "source": "configs/rk3568/hsv_config.json",
+      "sha256": "724bed2dc1228d3552b8c23084c9a104280fa2e21a6e3410e3621eed61a29aad"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/hsv_config_forced_rg.json": {
+      "source": "configs/rk3568/hsv_config_forced_rg.json",
+      "sha256": "7989effdc04fbdc31d2dad1fba324786f8c0dc8279ebb700227ab86580f5edec"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/hsv_config_forced_ryg.json": {
+      "source": "configs/rk3568/hsv_config_forced_ryg.json",
+      "sha256": "62c3214b752f52d7c0d0bc588a109170b018632402e8aab0c2cd17d4e916f53c"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/INTEGRATION_SOURCE.json": {
+      "source": "configs/rk3568/INTEGRATION_SOURCE.json",
+      "sha256": "fa23d0d06a41285ab5f459e6ef3800d4ed83a0d364ff85fb79639b55d74d274f"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/README.md": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/README.md",
+      "sha256": "08533248752275a08cbf13289c00255aa4c97c5910334e498e63bcb538d6d2d5"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/README_forced.md": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/README_forced.md",
+      "sha256": "a70e20326b1b016f9087ce34db9f9f4d03e0b694fc07a4970f8ed3a6a68dc0af"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/requirements_pc.txt": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/requirements_pc.txt",
+      "sha256": "2f72d51f1636e272655d4a7beaf1b052618336f36784db1f896660af7e66968f"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/test_color.py": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/test_color.py",
+      "sha256": "422de773607cdc95aea519e1260b4e70893ffbb31ef8c2f54619f9aa2fba3f82"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/test_forced_color.py": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/test_forced_color.py",
+      "sha256": "b1b46daefbee4d6b6405d6f660d12b7bf655b512870d582c6bd4f4d22b0c7fe5"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/traffic_light_color.py": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/traffic_light_color.py",
+      "sha256": "ff5a4d1711726fdc8316df73b63a0d306eb2c213112a211d06d560ef2d24cb23"
+    },
+    "Board_RK3568/Inference_and_Rules/signal_reference/video_test.py": {
+      "source": "software/rk3568/traffic_light/reference_algorithm/video_test.py",
+      "sha256": "664262008ea0917c6ee8dd0e1f7a010fb3d2914366a775805ad5b8ea2d11b118"
+    },
+    "Board_RK3568/Inference_and_Rules/single_sources.py": {
+      "source": "software/rk3568/video_input/single_sources.py",
+      "sha256": "f5596ec942da6c8f1d2cbd26068cf7fbedfff3c89572bc00f8deb215631573cc"
+    },
+    "Board_RK3568/Inference_and_Rules/stereo_roi_range.py": {
+      "source": "software/rk3568/fusion/stereo_roi_range.py",
+      "sha256": "507c4fc4dceaa7da03207f8076bc2a3bba299f2d8b4accef126524fa7a41e3af"
+    },
+    "Board_RK3568/Inference_and_Rules/stereo_source.py": {
+      "source": "software/rk3568/video_input/stereo_source.py",
+      "sha256": "8267c61d5eb579319153173887aaec15dbdb0eb97f6dc698b846a9d98dfa4df4"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_boundary_ratio.py": {
+      "source": "tests/legacy_rk/test_boundary_ratio.py",
+      "sha256": "3387e59ddc7cba47a470f6d8af72e9654fa4f53523e96b2d3ec71dd90aa7d8dc"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_camera_input_color.py": {
+      "source": "tests/legacy_rk/test_camera_input_color.py",
+      "sha256": "1658249837ca6cd570e1cc4e745643cbe33b380d94c5fa7e7887879fb1144f3c"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_decision.py": {
+      "source": "tests/legacy_rk/test_decision.py",
+      "sha256": "df0932c114d8d8d46ab3ed88baa35e138b245ef3266b1f76dde3f2fb28d1fe39"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_pcie_preflight.py": {
+      "source": "tests/legacy_rk/test_pcie_preflight.py",
+      "sha256": "eaa026998a363a59260d49caf4c2f0bc4bbfed5c62e4977a11cf8a12770cf7c5"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_pipeline_hooks.py": {
+      "source": "tests/legacy_rk/test_pipeline_hooks.py",
+      "sha256": "ba7cdb5089c393c791867039385928f2c2ab1a274089c7f07175cec945614a20"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_pixel_ratio_pipeline.py": {
+      "source": "tests/legacy_rk/test_pixel_ratio_pipeline.py",
+      "sha256": "32f4d0b34a0268aac896f3c762aa5a8018c540de7347601aca2947645ccf5f92"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_red_green_drive_policy.py": {
+      "source": "tests/legacy_rk/test_red_green_drive_policy.py",
+      "sha256": "8d2dbde86595f2695b84b6f529a9dfe630c3850ed4438898eb29631553d0f56b"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_reference_signal.py": {
+      "source": "tests/legacy_rk/test_reference_signal.py",
+      "sha256": "b150c07f2f5b180f572493a3f5aa1871fec37eaa14bfae2909af30bd0f4d6c49"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_reference_signal_http.py": {
+      "source": "tests/legacy_rk/test_reference_signal_http.py",
+      "sha256": "c77d72203fe2f40e2538f77673972b5d9f41020a01faf6e132dbad1ff88a11ce"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_signal_diagnostics.py": {
+      "source": "tests/legacy_rk/test_signal_diagnostics.py",
+      "sha256": "910938a44b4e4f8c31003477fda17a10ef071190c9a0be0587052c5c12552313"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_stable_rules.py": {
+      "source": "tests/legacy_rk/test_stable_rules.py",
+      "sha256": "636487b716eb2aa671be3898d60820771d09267f250ba36b3e40b5e7d51f535e"
+    },
+    "Board_RK3568/Inference_and_Rules/tests/test_stereo_aeb.py": {
+      "source": "tests/legacy_rk/test_stereo_aeb.py",
+      "sha256": "a1936454e1198e652540c89f262a0ec88bb3435443a47cb708c394fb2310899a"
+    },
+    "Board_RK3568/Inference_and_Rules/traffic_light_color.py": {
+      "source": "software/rk3568/traffic_light/traffic_light_color.py",
+      "sha256": "210bbcb19272d333caf619f8448611e6a77ed4dc15e8a60edc7527afdd66e552"
+    },
+    "Board_RK3568/Inference_and_Rules/trial_metrics.py": {
+      "source": "software/rk3568/runtime_support/trial_metrics.py",
+      "sha256": "cabcf7d961d11d813908bcc9941b67cea2c20a03a4e5483c1fe7e34fe1706554"
+    },
+    "Board_RK3568/Inference_and_Rules/video_source.py": {
+      "source": "software/rk3568/video_input/video_source.py",
+      "sha256": "1cf5c5a628164ded4cd7dd87e71e30be4e84338630d38e2ae26f2f2c0cc41c55"
+    },
+    "Board_RK3568/INITIALIZE_PCIE.sh": {
+      "source": "software/rk3568/runtime_support/INITIALIZE_PCIE.sh",
+      "sha256": "0a9190cadf4c393a81c24bdba0129c3dbcf9c024bb6a902f3b8771cba4290090"
+    },
+    "Board_RK3568/launch_decision.py": {
+      "source": "software/rk3568/runtime_support/launch_decision.py",
+      "sha256": "e3858cfb6e15bd3a782984755b4d982cc711e9a7f58d4b554a6f6d17fe1129e8"
+    },
+    "Board_RK3568/Models/A_rk3568_int8.rknn": {
+      "source": "models/object_detection/A_rk3568_int8.rknn",
+      "sha256": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543"
+    },
+    "Board_RK3568/Models/classes_11.txt": {
+      "source": "models/object_detection/classes.txt",
+      "sha256": "ebe61c75ee4588b20b0a42792bba119021f9ef8bed196300b170ebdc060f8dbe"
+    },
+    "Board_RK3568/Models/R15_256x448_patched_native_int8.rknn": {
+      "source": "models/lane_detection/R15_256x448_patched_native_int8.rknn",
+      "sha256": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289"
+    },
+    "Board_RK3568/PREPARE_PYTHON_ENVIRONMENT.sh": {
+      "source": "software/rk3568/runtime_support/PREPARE_PYTHON_ENVIRONMENT.sh",
+      "sha256": "52e77b0485436a1c1de9643aff63390d6e80dbac43c1b18d99314cf80682a0c0"
+    },
+    "Board_RK3568/Python_Environment/prepare_environment.py": {
+      "source": "software/rk3568/runtime_support/prepare_environment.py",
+      "sha256": "981449aacd648945ce8fee9caaba20cff39a6155cc002980d59db80a0d36224f"
+    },
+    "Board_RK3568/README.md": {
+      "source": "docs/reference/rk_runtime/README.md",
+      "sha256": "85b66a133d153cae70c611c9a1fbfb45fec3920fd5a5cddb427e9cea7195c5c3"
+    },
+    "Board_RK3568/START_DECISION.sh": {
+      "source": "software/rk3568/runtime_support/START_DECISION.sh",
+      "sha256": "b35569dd7ebf5b0bd7c8fd4e42dd974a83324a3376b53ce1b2d6ca083dd14dc8"
+    },
+    "Board_RK3568/Startup_Selfcheck_Video/video_20260929_112507.mp4": {
+      "source": "assets/videos/video_20260929_112507.mp4",
+      "sha256": "b1e2e90674030485f78bea66b1984a18df3bd6142ce1c5372d5f10fd0456ebcd"
+    },
+    "Board_RK3568/System_Driver/Driver_Source/id_config.h": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Driver_Source/id_config.h",
+      "sha256": "5bbf7b788df8a114b3f799b5bd178b5bb174d5a5e5950102fe5224dbb05ec0eb"
+    },
+    "Board_RK3568/System_Driver/Driver_Source/Makefile": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Driver_Source/Makefile",
+      "sha256": "2c0f2b3eefa7b97f5e769468180e22157f34021a98656b10d64d9c8e63add902"
+    },
+    "Board_RK3568/System_Driver/Driver_Source/pango_pci_driver.c": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Driver_Source/pango_pci_driver.c",
+      "sha256": "c84a254b6efd55f0b0c8881495f0c5c2a776e1be3a7cb16ccdf80b875401e28d"
+    },
+    "Board_RK3568/System_Driver/Driver_Source/pango_pci_driver.h": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Driver_Source/pango_pci_driver.h",
+      "sha256": "624e7a3a52dcbc87712c972ad7ce3383e007d8b9b799bb4607780fc7ee76144b"
+    },
+    "Board_RK3568/System_Driver/Prebuilt_Kernel_6.1.99/pango_pci_driver.ko": {
+      "source": "software/rk3568/communication/pcie_driver/System_Driver/Prebuilt_Kernel_6.1.99/pango_pci_driver.ko",
+      "sha256": "5f3569540877893e05b303a4668747f8a42141bea0bc1cb6ca5344fc7e298598"
+    }
+  }
+}

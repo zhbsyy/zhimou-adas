@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-29",
+  "user_confirmation": "颜色问题已经解决，现在验证和解决视野问题",
+  "profile_revision": 2,
+  "front_gains_rgb": [
+    0.928571,
+    1.114286,
+    0.975
+  ],
+  "rear_gains_rgb": [
+    1.0625,
+    0.944444,
+    1.0
+  ],
+  "backup_method": "Logical profile fields from live HTTP /camera/info, not a byte-for-byte board file copy",
+  "geometry_unchanged_at_capture": true
+}

@@ -1,0 +1,9 @@
+# Maintenance dependencies; not a recovered exact environment lock.
+torch>=2.0
+numpy
+opencv-python
+matplotlib
+# Needed only for ONNX export/equivalence:
+onnx
+onnxruntime
+# RKNN conversion separately requires Linux x86_64 RKNN-Toolkit2 2.3.0.

@@ -1,0 +1,20 @@
+{
+  "original_static_files": 1519,
+  "original_static_bytes": 554992048,
+  "classified_physical_files": 1284,
+  "classified_bytes": 159715423,
+  "source_mappings": 1330,
+  "excluded_generated_files": 105,
+  "models_stored_once": true,
+  "example_video_stored_once": true,
+  "algorithm_sources_modified": false,
+  "supplemented_files": 503,
+  "coverage_counts": {
+    "classified": 1279,
+    "historical_reference_preserved": 51,
+    "old_upgrade_installer_not_needed_by_current_sources": 2,
+    "duplicate_content": 67,
+    "superseded_PC_entry_or_old_duplicate_variant": 21,
+    "rebuildable_PDS_output": 99
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:/pango/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+    "-project",
+    "project.pds",
+    "-run",
+    "gen_bit_stream"
+  ],
+  "exit_code": 0,
+  "elapsed_s": 410.83,
+  "hardware_programmed": false,
+  "build_success": true,
+  "errors": [],
+  "bitstream": "cascade_fov_fpga_trial_20261029\\cascade_fov_pg2l50h_20261029.sbit",
+  "sha256": "d63eee870d652f49cce62ffd62c460c4fdf3d70414320e35e3bec8271ce8c6a7",
+  "bytes": 1839324,
+  "optical_acceptance": false,
+  "timing_review_required": true
+}

@@ -1,0 +1,25 @@
+{
+  "panel_version": "stereo_console.v0.1.5",
+  "source_module": "Decision",
+  "scope": "Only stationary decision panel, transport and vehicle feedback; navigation v1.5 and four-camera policy unchanged",
+  "copied_files": [
+    {
+      "file": "PC_Windows/Console_Application/ui/rk_decision_panel.py",
+      "source": "Final submission/Decision/PC_Windows/Decision_Panel/candidate_panel.py",
+      "previous_sha256": "af697b6d40f88222f8121183056ae8daa6d086d2642fa0215bf0e0914c3f56ba",
+      "sha256": "27facc1c3202b5473f72b8ba49f5023d058d34884d2a2c4e798a7513088bf3e8"
+    },
+    {
+      "file": "PC_Windows/Console_Application/ui/rk_decision_transport.py",
+      "source": "Final submission/Decision/PC_Windows/Decision_Panel/rk_decision_transport.py",
+      "previous_sha256": "9de1f87cddfa49c78b02a1064d459eed23872103fbf1b7ac8ce43975a10bd597",
+      "sha256": "4a4d627b9ea7c007b26bfa560f0526761b797e4a16757c3a1a7f59d2d2901ab9"
+    },
+    {
+      "file": "PC_Windows/Console_Application/ui/static_vehicle_session.py",
+      "source": "Final submission/Decision/PC_Windows/Decision_Panel/static_vehicle_session.py",
+      "previous_sha256": "d27954a652d7ab3f421b44248577899a081b649466c59bdc23931c2421444d0d",
+      "sha256": "03bc352a62e2b14eadeb35ca4924eeee70d417ebf295195d3a74880f985b08ed"
+    }
+  ]
+}

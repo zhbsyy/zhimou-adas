@@ -1,0 +1,16 @@
+{
+  "schema": "offline_video.v1",
+  "size": 640,
+  "lane_height": 256,
+  "lane_width": 448,
+  "lane_input_mode": "uint8_nhwc",
+  "lane_conf": 0.6,
+  "class10_conf": 0.6,
+  "other_min_conf": 0.25,
+  "stride": 1,
+  "seconds": 0,
+  "start": 0,
+  "max_width": 1280,
+  "seconds_zero_means": "read to EOF",
+  "threshold_source": "Last explicit offline video request: class10=0.60; independent of other modules"
+}

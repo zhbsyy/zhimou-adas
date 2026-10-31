@@ -1,0 +1,24 @@
+{
+  "updated_local": "2026-10-30T19:32:42.677087+08:00",
+  "console_version": "navigation_reliability.v1.5",
+  "source": "Final submission/CARLA_Navigation/PC_Windows, copied independently",
+  "default_source": "pcie",
+  "video_url": "http://192.168.2.3:8083/stream",
+  "sibling_business_files_required": false,
+  "board_files_unchanged": 37,
+  "board_class10": 0.6,
+  "AEB_default": false,
+  "CARLA_engine_auto_started": false,
+  "PC_changes": [
+    "local copy of latest Console_Application and ten support modules",
+    "launch_console.py reads own settings, installs latest GUI/video hooks and defaults to PCIe",
+    "COM12/CH340 strict auto-selection retained"
+  ],
+  "rollback_backup": "four_camera_console_refresh_20261030/Backup_PC_Before_Refresh in project root",
+  "board_deployment": "User confirmed environment ready, nonzero BAR1, Mem+/BusMaster+,37 board file hashes; USB moved back to original ports after mapping error.",
+  "local_checks_passed": true,
+  "local_checks": "Verification/LOCAL_VALIDATION.json",
+  "GUI_opened_and_four_tiles_displayed": true,
+  "board_relocated_runtime_verified": true,
+  "migration_record": "Verification/MIGRATION_CHECK_20261030.json"
+}

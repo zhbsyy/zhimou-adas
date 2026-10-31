@@ -1,0 +1,9 @@
+# 来源与第三方组件
+
+来源为本机Final submission，完整映射在verification/source_mapping.json。PANGO IP/PDS生成源码、CARLA agents、Android依赖和项目原有第三方内容继续遵守各自许可；本次不为它们擅自声明新的开源许可证。
+
+原目录保持不变；本目录不包含完整操作系统、CARLA引擎、已安装Android APK或原始训练数据集。静态资料与旧验收证据分开记录，不把历史验收冒充新部署测试。
+
+2026-10-31补充材料另见verification/SUPPLEMENT_PROVENANCE.json。TwinLiteNetPlus原许可保存在training/lane_detection/third_party/TwinLiteNetPlus/LICENSE；检测模型比较导出的本机Ultralytics源码及原许可保存在training/object_detection/reference_conversion/vendor。新增训练材料保留其原始状态记录；参考模型不自动替换部署模型。
+
+YOLO正式训练代码及配置后续由本机提交暂存目录补入，来源与外部数据要求见 `training/object_detection/README_zh.md`。独立倒车影像App不在本仓库提交范围。原整包校验和来源清单保留历史快照，不声称包含本次新增资料及文档更新的全量复核。

@@ -1,0 +1,31 @@
+{
+  "color": {
+    "red_ranges": [[0, 10], [170, 179]],
+    "yellow_ranges": [[15, 35]],
+    "green_ranges": [[40, 95]],
+    "min_saturation": 90,
+    "min_value": 120,
+    "min_mean_value": 175.0,
+    "min_component_aspect": 0.45,
+    "min_circularity": 0.45,
+    "roi_padding": 0.25,
+    "max_center_outside": 0.20,
+    "min_pixels": 4,
+    "min_box_side": 5,
+    "min_area_ratio": 0.003,
+    "min_contrast": 15.0,
+    "ambiguity_ratio": 0.55,
+    "max_roi_side": 192
+  },
+  "state": {
+    "confirm_samples": 2,
+    "confirm_seconds": 0.05,
+    "max_sample_gap": 0.75,
+    "hold_seconds": 0.30,
+    "track_ttl": 0.75,
+    "min_iou": 0.15,
+    "max_center_distance": 0.65,
+    "max_area_ratio": 2.5,
+    "duplicate_lamp_distance": 0.60
+  }
+}

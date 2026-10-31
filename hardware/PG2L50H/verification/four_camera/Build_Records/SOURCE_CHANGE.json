@@ -1,0 +1,26 @@
+{
+  "schema": "cascade_fov_trial.v1",
+  "base_bitstream_sha256": "da947ba6fbf906ff814bbceb54f878fd3e6ff69f3c89eb0bb087d75246a3b260",
+  "changed_design_files": [
+    "source/user/image_reshape.v"
+  ],
+  "all_other_referenced_rtl_ip_constraints_identical": true,
+  "original_geometry_module_sha256": "c08668839f80e54177c838e8f168e285e910fa6ec6d878d368dfaa84c00673d9",
+  "candidate_geometry_module_sha256": "3e9ee8dcd8d618678b98907437a0b397938c92cbcfd1d8ced34dedb4ce3f445b",
+  "sensor_registers_changed": false,
+  "optical_lens_changed": false,
+  "mosaic_size": [
+    1280,
+    720
+  ],
+  "per_eye_size": [
+    640,
+    360
+  ],
+  "expected_pixels_per_local_eye": 230400,
+  "frame_words_128bit_per_eye": 28800,
+  "pds_references_present": 226,
+  "hardware_programmed": false,
+  "preserved_color_profile_snapshot": "analysis/cascade_fov_20261029/BOARD_COLOR_PROFILE_FROM_API.json",
+  "requires": "RTL simulation, successful PDS build, timing review, and real optical before/after acceptance"
+}

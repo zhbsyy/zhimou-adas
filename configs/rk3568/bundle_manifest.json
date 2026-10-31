@@ -1,0 +1,52 @@
+{
+  "version": "forced_candidates_20261025",
+  "files": [
+    {
+      "name": "traffic_light_color.py",
+      "sha256": "1bb26edad00244c2557d1263436d7f0e24fd64f906a2ca6a59b2dc1a92a97603"
+    },
+    {
+      "name": "video_test.py",
+      "sha256": "664262008ea0917c6ee8dd0e1f7a010fb3d2914366a775805ad5b8ea2d11b118"
+    },
+    {
+      "name": "hsv_config.json",
+      "sha256": "724bed2dc1228d3552b8c23084c9a104280fa2e21a6e3410e3621eed61a29aad"
+    },
+    {
+      "name": "hsv_config_forced_ryg.json",
+      "sha256": "62c3214b752f52d7c0d0bc588a109170b018632402e8aab0c2cd17d4e916f53c"
+    },
+    {
+      "name": "hsv_config_forced_rg.json",
+      "sha256": "7989effdc04fbdc31d2dad1fba324786f8c0dc8279ebb700227ab86580f5edec"
+    },
+    {
+      "name": "classes_bdd100k.txt",
+      "sha256": "86debfa83f3b1dc7e0881c39cb9a2ddef7ba67401d00e9355250f5022b49126e"
+    },
+    {
+      "name": "README.md",
+      "sha256": "08533248752275a08cbf13289c00255aa4c97c5910334e498e63bcb538d6d2d5"
+    },
+    {
+      "name": "README_forced.md",
+      "sha256": "a70e20326b1b016f9087ce34db9f9f4d03e0b694fc07a4970f8ed3a6a68dc0af"
+    },
+    {
+      "name": "test_color.py",
+      "sha256": "422de773607cdc95aea519e1260b4e70893ffbb31ef8c2f54619f9aa2fba3f82"
+    },
+    {
+      "name": "test_forced_color.py",
+      "sha256": "b1b46daefbee4d6b6405d6f660d12b7bf655b512870d582c6bd4f4d22b0c7fe5"
+    },
+    {
+      "name": "requirements_pc.txt",
+      "sha256": "2f72d51f1636e272655d4a7beaf1b052618336f36784db1f896660af7e66968f"
+    }
+  ],
+  "includes_models": false,
+  "requires_new_RKNN": false,
+  "board_tested_this_revision": false
+}

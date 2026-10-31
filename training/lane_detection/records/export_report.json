@@ -1,0 +1,34 @@
+{
+  "checkpoint": "D:\\YOLOP\\projects\\twinlitenet_plus_small\\runs\\R15_external_data_training\\selected_model\\R15_twinlitenet_small_direct2_lane3_research.pt",
+  "checkpoint_sha256": "664b642c8476fc1bdcfb39dec04db05c8173651b398a8cf711a92918338a77c0",
+  "original_onnx_sha256": "e6cce210147f09fc125631f894d1b0a0a9569bbd3b7f1a645a588d418ff0bc86",
+  "patched_onnx_sha256": "34c21d6d1cc2d2a595ab2b68c2f4289cec6bea43b88dd4599a35ccc00f51298b",
+  "input": "RGB float NCHW [1,3,256,448], range 0..1",
+  "outputs": [
+    [
+      1,
+      2,
+      256,
+      448
+    ],
+    [
+      1,
+      3,
+      256,
+      448
+    ]
+  ],
+  "parity": [
+    {
+      "task": "direct",
+      "max_abs_logit_diff": 1.3470649719238281e-05,
+      "class_pixel_agreement": 1.0
+    },
+    {
+      "task": "lane",
+      "max_abs_logit_diff": 9.775161743164062e-06,
+      "class_pixel_agreement": 1.0
+    }
+  ],
+  "status": "PyTorch/ONNX agreement only; RKNN speed and accuracy untested"
+}

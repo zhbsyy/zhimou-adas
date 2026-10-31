@@ -1,0 +1,11 @@
+{
+  "kind": "CPU-only contracts",
+  "exit_code": 0,
+  "output": "test_all_stage_smoke_with_synthetic_runtime (test_integration.Integration.test_all_stage_smoke_with_synthetic_runtime)\nRun production workers together, substituting only hardware boundaries. ... ok\ntest_calibrated_model_inputs (test_integration.Integration.test_calibrated_model_inputs) ... ok\ntest_class10_boundary_and_other_classes (test_integration.Integration.test_class10_boundary_and_other_classes) ... ok\ntest_detector_to_render_and_http (test_integration.Integration.test_detector_to_render_and_http) ... ok\ntest_invalid_and_seam_boxes (test_integration.Integration.test_invalid_and_seam_boxes) ... ok\ntest_jpeg_workers_join_and_callback_publication (test_integration.Integration.test_jpeg_workers_join_and_callback_publication)\nA real child pipe emits minimal JPEG markers; no MPP performance claim. ... ok\ntest_latest_has_one_item_and_independent_consumers (test_integration.Integration.test_latest_has_one_item_and_independent_consumers) ... ok\ntest_layout_and_ownership (test_integration.Integration.test_layout_and_ownership) ... ok\ntest_stale_result_and_color_revision (test_integration.Integration.test_stale_result_and_color_revision) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 1.692s\n\nOK\n",
+  "does_not_validate": [
+    "RKNN native inference on RK3568",
+    "optical capture",
+    "hardware JPEG throughput",
+    "board FPS"
+  ]
+}

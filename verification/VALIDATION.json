@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-31",
+  "source_directory": "Final submission",
+  "new_directory": "Final submission 2",
+  "original_static_files_checked": 1519,
+  "original_static_files_unchanged": true,
+  "new_layout_tests_passed": 13,
+  "preserved_PC_control_and_feedback_tests_passed": 59,
+  "total_tests_passed": 72,
+  "Python_sources_syntax_checked": 320,
+  "Bash_public_wrappers_syntax": "7 passed in previous audit; unchanged SHA256 verified. Rerun blocked by MSYS named-object initialization in sandbox.",
+  "RK_profiles_checked": [
+    "decision",
+    "four_camera",
+    "carla_navigation",
+    "offline"
+  ],
+  "PC_import_profiles_checked": [
+    "decision",
+    "four_camera",
+    "carla_navigation"
+  ],
+  "PDS_input_source_and_IP_references_checked": [
+    "decision",
+    "four_camera",
+    "rear_camera"
+  ],
+  "PDS_generated_result_cache": "Intentionally not copied; original PDS output paths retained and rebuilt when needed",
+  "algorithm_sources": "Copied byte-for-byte; routing, file preparation and startup wrappers are new",
+  "models": "Two original INT8 files, single source copy each; no retraining/conversion",
+  "real_NPU_or_PCIe_or_JTAG_or_CARLA_actors_started": false,
+  "engine_launcher_test": "subprocess mocked; no game process was actually started by the tests",
+  "real_board_acceptance_after_reorganization": false,
+  "not_repeated": [
+    "Full on-board four-camera acceptance",
+    "Full Decision red/green/line/pedestrian scenarios",
+    "New full CARLA COM12/RK navigation route",
+    "PDS rebuild"
+  ],
+  "source_provenance": "source_mapping.json and source_coverage.json",
+  "historical_live_evidence": "preserved_evidence; original paths/versions, not new deployment acceptance",
+  "supplemented_source_hashes_checked": 503,
+  "PC_tools_import_checked": 3,
+  "R15_calibration_images_checked": 160,
+  "R15_archived_PT_ONNX_CPU_parity": "passed; see SUPPLEMENT_CPU_MODEL_CHECK.json",
+  "model_source_limits": "R15 training/export lineage recorded; detector comparison PT is not asserted as deployed RKNN source",
+  "missing_materials": [
+    "Standalone cn.embedded.dualcamera APK/application source",
+    "Raw training images/masks",
+    "Verified detector formal training recipe and final RKNN source chain"
+  ]
+}

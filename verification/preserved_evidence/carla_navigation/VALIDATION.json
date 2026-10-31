@@ -1,0 +1,60 @@
+{
+  "recorded_local": "2026-10-30T19:03:17.314757+08:00",
+  "module": "CARLA_Navigation",
+  "current_PC_version": "navigation_reliability.v1.5",
+  "packaging_complete": true,
+  "runtime_code_changed_by_packaging": false,
+  "frozen_detector_class10": 0.3,
+  "other_detector_classes": 0.25,
+  "person_association_threshold": 0.4,
+  "unit_tests": {
+    "count": 49,
+    "passed": true,
+    "command": "python -B -m unittest discover -s tests -p \"test_*.py\"",
+    "record": "UNIT_TESTS.txt"
+  },
+  "relocation_check": {
+    "passed": true,
+    "PC_entry": true,
+    "RK_owned_modules_imported": 22,
+    "board_package_hashes": 30,
+    "record": "PACKAGING_CHECK.json"
+  },
+  "runtime_files_protected_unchanged": 66,
+  "physical_COM12_RK_route": {
+    "passed": true,
+    "mode": "full_ad",
+    "crossing_route_fraction": 0.5029,
+    "stopped": true,
+    "automatic_resume": true,
+    "arrived_P": true,
+    "collision_events": [],
+    "record": "PHYSICAL_COM12_RK_ROUTE.json"
+  },
+  "PC_selected_route_real_RK": {
+    "passed": true,
+    "scope": "No cockpit UART in this separate earlier test",
+    "record": "MOTION_CHECK.json"
+  },
+  "PC_integration_fixture": {
+    "passed": true,
+    "scope": "Test UART/UDP plus actual CARLA; not physical Android/RK proof",
+    "record": "PC_INTEGRATION_CHECK.json"
+  },
+  "other_modules_unchanged_and_hash_verified": {
+    "Decision": 585,
+    "Cascaded_Four_Camera": 761
+  },
+  "distance_source": "CARLA_actor_truth; simulation geometry, not stereo",
+  "not_performed_during_packaging": [
+    "No CARLA vehicle movement test repeated",
+    "No board deployment or aarch64 decoder rebuild",
+    "No SSH comparison of all currently installed board files",
+    "No installed Android APK hash comparison",
+    "No model/NPU speed or accuracy retest"
+  ],
+  "environment_required": "Retain installed Python/CARLA, RK OS/drivers/offline venv, and current Android cockpit. See Environment/README_zh.md.",
+  "no_model_or_NPU_FPS_improvement_claim": true,
+  "read_only_status_record": "RELEASE_LIVE_STATE_20261030.json (RK HTTP timeout in that one read preserved)",
+  "result": "Static release organized; same PC/RK runtime files; 49 unit tests and offline relocation/threshold/hash checks passed."
+}

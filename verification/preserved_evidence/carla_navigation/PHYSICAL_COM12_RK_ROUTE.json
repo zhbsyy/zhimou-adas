@@ -1,0 +1,883 @@
+{
+  "extracted_local": "2026-10-30T18:58:14.149819+08:00",
+  "passed": true,
+  "source": "PC_Windows/Results/navigation_events.jsonl; immutable selected records below",
+  "scope": "Recorded actual Android COM12 + CARLA + physical RK; not a new route run during packaging.",
+  "identity": {
+    "scene_revision": 96,
+    "actor_id": 250,
+    "session_id": "81b095e74d3644d89bcf637fe800f58e",
+    "destination": [
+      12.3100004196167,
+      -64.4000015258789
+    ]
+  },
+  "summary": {
+    "sampled_rows": 1600,
+    "phase_counts": {
+      "paused": 10,
+      "waiting": 20,
+      "navigation": 55,
+      "braking": 1,
+      "waiting_clear": 3,
+      "arrived": 1511
+    },
+    "crossing_entry": {
+      "speed_kmh": 11.141,
+      "forward_gap_m": 9.877,
+      "carla_frame": 2803792,
+      "route_index": 75,
+      "route_fraction": 0.5029
+    },
+    "max_sampled_speed_kmh": 35.09032332276082,
+    "automatic_resumes_before": 5,
+    "automatic_resumes_after": 6,
+    "collision_events": [],
+    "stopped": true,
+    "resumed": true,
+    "arrived_P": true
+  },
+  "limits": [
+    "Runtime board clock differs from PC wall clock; group by session/scene/frame, not board timestamps.",
+    "Class10 threshold is not logged in each PC snapshot. Current release is 0.30; these records prove flow, not a per-threshold accuracy comparison.",
+    "This successful route does not guarantee every map, route or crowded scene."
+  ],
+  "events": {
+    "cockpit_route_ready": {
+      "schema": "navigation_modes.v1",
+      "mode": "full_ad",
+      "aeb_enabled": true,
+      "gear": "P",
+      "speed_kmh": 0.0,
+      "result": {
+        "drive": false,
+        "brake": false,
+        "phase": "paused",
+        "reason": "手动暂停/驻车",
+        "resumed": false
+      },
+      "requested_gear": "P",
+      "requested_running": false,
+      "serial_connected": true,
+      "arrived": false,
+      "automatic_resumes": 5,
+      "serial_port": "COM12",
+      "serial_reader_running": true,
+      "speed_cap_kmh": 40.0,
+      "speed_plan_reason": "正常路段按座舱目标/道路限速行驶",
+      "effective_target_kmh": 0.0,
+      "crossing_entry": {},
+      "crossing_site": {
+        "route_index": 75,
+        "route_fraction": 0.5028817892788524,
+        "route_s": 134.11200380325317
+      },
+      "collisions": [],
+      "navigation_active": true,
+      "navigation_age_s": 0.25,
+      "navigation_diagnostics": {
+        "guidance_frames": 861,
+        "cruise_frames": 1903,
+        "last_key_type": 12205
+      },
+      "navigation_destination": [
+        12.3100004196167,
+        -64.4000015258789
+      ],
+      "carla_connected": true,
+      "route": "路网坐标 (12.3, -64.4)",
+      "route_remaining_m": 266.6869364976883,
+      "camera_health": {
+        "ready": true,
+        "camera_ready": true,
+        "counts": {
+          "front": 38328,
+          "right": 38326,
+          "rear": 38322,
+          "left": 38322
+        },
+        "age_ms": {
+          "front": 0.0,
+          "right": 32.0,
+          "rear": 16.0,
+          "left": 0.0
+        },
+        "carla_frames": {
+          "front": 2793623,
+          "right": 2793616,
+          "rear": 2793619,
+          "left": 2793621
+        },
+        "error": "",
+        "publisher_ready": true,
+        "seq": 38273,
+        "fps": 23.0
+      },
+      "scene": {
+        "valid": true,
+        "range_source": "CARLA_actor_truth",
+        "carla_frame": 2793622,
+        "scene_revision": 96,
+        "front_size": [
+          640,
+          360
+        ],
+        "forward_gap_m": 110.304,
+        "lateral_m": 31.327,
+        "actor_id": 250,
+        "bbox_front": [
+          161.87,
+          179.35,
+          164.29,
+          188.68
+        ],
+        "pedestrian_phase": "等待车辆驶入横穿路段",
+        "clear_state": "outside"
+      },
+      "scene_age_ms": 16.0,
+      "scene_sample_max_ms": 47.00000000593718,
+      "scene_error": "",
+      "rk_control_age_ms": 110.0,
+      "version": "navigation_reliability.v1.5",
+      "rk_connected": true,
+      "rk_report": {
+        "aeb_triggered": false,
+        "brake_pressure": 0.0,
+        "action": "正常巡航",
+        "vehicle_speed": null,
+        "steering_angle": 0.0,
+        "lane_change_state": "idle",
+        "stop_line_m": null,
+        "light_distance_m": null,
+        "veto": "",
+        "domain": "ADAS",
+        "range_source": "CARLA_actor_truth",
+        "evidence": {
+          "visual_person_matched": false,
+          "confirmed_hits": 0,
+          "actor_id": 250,
+          "telemetry_age_ms": 7.4,
+          "forward_gap_m": 110.3,
+          "lateral_m": 31.33,
+          "ttc_s": null,
+          "carla_frame": 2793599,
+          "valid_scene": true,
+          "path_clear": true,
+          "clear_actor_id": 250,
+          "other_in_path_person": false,
+          "clear_state": "outside",
+          "capture_age_ms": 118.4,
+          "capture_fresh": true
+        },
+        "stamp": 1742397536.522,
+        "det_report_seq": 2457,
+        "schema": "carla_nav_aeb.control.v3",
+        "source": "carla",
+        "run_id": "4182fb5566224d768dfe71f05b71b9c9",
+        "session_id": "81b095e74d3644d89bcf637fe800f58e",
+        "epoch": 20
+      },
+      "control_error": "",
+      "last_event": "四相机已连接。原三种模式可用；座舱模式等待串口导航，AEB可独立开关"
+    },
+    "navigation_before_crossing": {
+      "schema": "navigation_modes.v1",
+      "mode": "full_ad",
+      "aeb_enabled": true,
+      "gear": "D",
+      "speed_kmh": 7.830039717405569,
+      "result": {
+        "drive": true,
+        "brake": false,
+        "phase": "navigation",
+        "reason": "按导航行驶（AEB开启）",
+        "resumed": false
+      },
+      "requested_gear": "D",
+      "requested_running": true,
+      "serial_connected": true,
+      "arrived": false,
+      "automatic_resumes": 5,
+      "serial_port": "COM12",
+      "serial_reader_running": true,
+      "speed_cap_kmh": 40.0,
+      "speed_plan_reason": "正常路段按座舱目标/道路限速行驶",
+      "effective_target_kmh": 40.0,
+      "crossing_entry": {},
+      "crossing_site": {
+        "route_index": 75,
+        "route_fraction": 0.5028817892788524,
+        "route_s": 134.11200380325317
+      },
+      "collisions": [],
+      "navigation_active": true,
+      "navigation_age_s": 0.48399999999674037,
+      "navigation_diagnostics": {
+        "guidance_frames": 865,
+        "cruise_frames": 1940,
+        "last_key_type": 10001
+      },
+      "navigation_destination": [
+        12.3100004196167,
+        -64.4000015258789
+      ],
+      "carla_connected": true,
+      "route": "路网坐标 (12.3, -64.4)",
+      "route_remaining_m": 264.8869364976883,
+      "camera_health": {
+        "ready": true,
+        "camera_ready": true,
+        "counts": {
+          "front": 38992,
+          "right": 38991,
+          "rear": 38987,
+          "left": 38987
+        },
+        "age_ms": {
+          "front": 31.0,
+          "right": 31.0,
+          "rear": 15.0,
+          "left": 15.0
+        },
+        "carla_frames": {
+          "front": 2799507,
+          "right": 2799507,
+          "rear": 2799509,
+          "left": 2799510
+        },
+        "error": "",
+        "publisher_ready": true,
+        "seq": 38938,
+        "fps": 22.6
+      },
+      "scene": {
+        "valid": true,
+        "range_source": "CARLA_actor_truth",
+        "carla_frame": 2799506,
+        "scene_revision": 96,
+        "front_size": [
+          640,
+          360
+        ],
+        "forward_gap_m": 108.967,
+        "lateral_m": 30.592,
+        "actor_id": 250,
+        "bbox_front": [
+          163.51,
+          179.52,
+          165.96,
+          188.97
+        ],
+        "pedestrian_phase": "等待车辆驶入横穿路段",
+        "clear_state": "outside"
+      },
+      "scene_age_ms": 62.0,
+      "scene_sample_max_ms": 47.00000000593718,
+      "scene_error": "",
+      "rk_control_age_ms": 15.0,
+      "version": "navigation_reliability.v1.5",
+      "rk_connected": true,
+      "rk_report": {
+        "aeb_triggered": false,
+        "brake_pressure": 0.0,
+        "action": "正常巡航",
+        "vehicle_speed": null,
+        "steering_angle": 0.0,
+        "lane_change_state": "idle",
+        "stop_line_m": null,
+        "light_distance_m": null,
+        "veto": "",
+        "domain": "ADAS",
+        "range_source": "CARLA_actor_truth",
+        "evidence": {
+          "visual_person_matched": false,
+          "confirmed_hits": 0,
+          "actor_id": 250,
+          "telemetry_age_ms": 88.0,
+          "forward_gap_m": 109.15,
+          "lateral_m": 30.54,
+          "ttc_s": null,
+          "carla_frame": 2799492,
+          "valid_scene": true,
+          "path_clear": true,
+          "clear_actor_id": 250,
+          "other_in_path_person": false,
+          "clear_state": "outside",
+          "capture_age_ms": 181.2,
+          "capture_fresh": true
+        },
+        "stamp": 1742397569.853,
+        "det_report_seq": 2736,
+        "schema": "carla_nav_aeb.control.v3",
+        "source": "carla",
+        "run_id": "4182fb5566224d768dfe71f05b71b9c9",
+        "session_id": "81b095e74d3644d89bcf637fe800f58e",
+        "epoch": 20
+      },
+      "control_error": "",
+      "last_event": "四相机已连接。原三种模式可用；座舱模式等待串口导航，AEB可独立开关"
+    },
+    "real_rk_emergency": {
+      "schema": "navigation_modes.v1",
+      "mode": "full_ad",
+      "aeb_enabled": true,
+      "gear": "D",
+      "speed_kmh": 11.189342941702563,
+      "result": {
+        "drive": false,
+        "brake": true,
+        "phase": "braking",
+        "reason": "前方行人，紧急制动",
+        "resumed": false
+      },
+      "requested_gear": "D",
+      "requested_running": true,
+      "serial_connected": true,
+      "arrived": false,
+      "automatic_resumes": 5,
+      "serial_port": "COM12",
+      "serial_reader_running": true,
+      "speed_cap_kmh": 12.0,
+      "speed_plan_reason": "横穿路段前渐进减速，接近时上限12km/h",
+      "effective_target_kmh": 12.0,
+      "crossing_entry": {
+        "speed_kmh": 11.141,
+        "forward_gap_m": 9.877,
+        "carla_frame": 2803792,
+        "route_index": 75,
+        "route_fraction": 0.5029
+      },
+      "crossing_site": {
+        "route_index": 75,
+        "route_fraction": 0.5028817892788524,
+        "route_s": 134.11200380325317
+      },
+      "collisions": [],
+      "navigation_active": true,
+      "navigation_age_s": 0.06300000000192085,
+      "navigation_diagnostics": {
+        "guidance_frames": 911,
+        "cruise_frames": 1946,
+        "last_key_type": 10001
+      },
+      "navigation_destination": [
+        12.3100004196167,
+        -64.4000015258789
+      ],
+      "carla_connected": true,
+      "route": "路网坐标 (12.3, -64.4)",
+      "route_remaining_m": 140.6869364976883,
+      "camera_health": {
+        "ready": true,
+        "camera_ready": true,
+        "counts": {
+          "front": 39466,
+          "right": 39464,
+          "rear": 39460,
+          "left": 39460
+        },
+        "age_ms": {
+          "front": 0.0,
+          "right": 47.0,
+          "rear": 16.0,
+          "left": 0.0
+        },
+        "carla_frames": {
+          "front": 2804058,
+          "right": 2804052,
+          "rear": 2804054,
+          "left": 2804056
+        },
+        "error": "",
+        "publisher_ready": true,
+        "seq": 39411,
+        "fps": 23.4
+      },
+      "scene": {
+        "valid": true,
+        "range_source": "CARLA_actor_truth",
+        "carla_frame": 2804055,
+        "scene_revision": 96,
+        "front_size": [
+          640,
+          360
+        ],
+        "forward_gap_m": 5.587,
+        "lateral_m": -1.243,
+        "actor_id": 250,
+        "bbox_front": [
+          415.7,
+          167.42,
+          459.16,
+          347.85
+        ],
+        "pedestrian_phase": "正在横穿",
+        "clear_state": "not_clear"
+      },
+      "scene_age_ms": 31.0,
+      "scene_sample_max_ms": 47.00000000593718,
+      "scene_error": "",
+      "rk_control_age_ms": 47.0,
+      "version": "navigation_reliability.v1.5",
+      "rk_connected": true,
+      "rk_report": {
+        "aeb_triggered": true,
+        "brake_pressure": 1.0,
+        "action": "紧急制动-行人",
+        "vehicle_speed": null,
+        "steering_angle": 0.0,
+        "lane_change_state": "idle",
+        "stop_line_m": null,
+        "light_distance_m": null,
+        "veto": "RK检出行人；仿真前向间距5.8m，TTC=1.86s",
+        "domain": "ADAS",
+        "range_source": "CARLA_actor_truth",
+        "evidence": {
+          "visual_person_matched": true,
+          "confirmed_hits": 4,
+          "actor_id": 250,
+          "telemetry_age_ms": 26.8,
+          "forward_gap_m": 5.79,
+          "lateral_m": -1.3,
+          "ttc_s": 1.86,
+          "carla_frame": 2804041,
+          "valid_scene": true,
+          "path_clear": false,
+          "clear_actor_id": null,
+          "other_in_path_person": false,
+          "clear_state": "not_clear",
+          "capture_age_ms": 132.8,
+          "capture_fresh": true
+        },
+        "stamp": 1742397593.491,
+        "det_report_seq": 2937,
+        "schema": "carla_nav_aeb.control.v3",
+        "source": "carla",
+        "run_id": "4182fb5566224d768dfe71f05b71b9c9",
+        "session_id": "81b095e74d3644d89bcf637fe800f58e",
+        "epoch": 20
+      },
+      "control_error": "",
+      "last_event": "四相机已连接。原三种模式可用；座舱模式等待串口导航，AEB可独立开关"
+    },
+    "stopped_waiting_for_person": {
+      "schema": "navigation_modes.v1",
+      "mode": "full_ad",
+      "aeb_enabled": true,
+      "gear": "D",
+      "speed_kmh": 0.0,
+      "result": {
+        "drive": false,
+        "brake": true,
+        "phase": "waiting_clear",
+        "reason": "车辆已停，确认行人通过",
+        "resumed": false
+      },
+      "requested_gear": "D",
+      "requested_running": true,
+      "serial_connected": true,
+      "arrived": false,
+      "automatic_resumes": 5,
+      "serial_port": "COM12",
+      "serial_reader_running": true,
+      "speed_cap_kmh": 12.0,
+      "speed_plan_reason": "横穿路段前渐进减速，接近时上限12km/h",
+      "effective_target_kmh": 12.0,
+      "crossing_entry": {
+        "speed_kmh": 11.141,
+        "forward_gap_m": 9.877,
+        "carla_frame": 2803792,
+        "route_index": 75,
+        "route_fraction": 0.5029
+      },
+      "crossing_site": {
+        "route_index": 75,
+        "route_fraction": 0.5028817892788524,
+        "route_s": 134.11200380325317
+      },
+      "collisions": [],
+      "navigation_active": true,
+      "navigation_age_s": 0.09399999999732245,
+      "navigation_diagnostics": {
+        "guidance_frames": 913,
+        "cruise_frames": 1946,
+        "last_key_type": 10001
+      },
+      "navigation_destination": [
+        12.3100004196167,
+        -64.4000015258789
+      ],
+      "carla_connected": true,
+      "route": "路网坐标 (12.3, -64.4)",
+      "route_remaining_m": 140.6869364976883,
+      "camera_health": {
+        "ready": true,
+        "camera_ready": true,
+        "counts": {
+          "front": 39487,
+          "right": 39486,
+          "rear": 39482,
+          "left": 39482
+        },
+        "age_ms": {
+          "front": 47.0,
+          "right": 32.0,
+          "rear": 16.0,
+          "left": 0.0
+        },
+        "carla_frames": {
+          "front": 2804284,
+          "right": 2804286,
+          "rear": 2804290,
+          "left": 2804294
+        },
+        "error": "",
+        "publisher_ready": true,
+        "seq": 39433,
+        "fps": 22.0
+      },
+      "scene": {
+        "valid": true,
+        "range_source": "CARLA_actor_truth",
+        "carla_frame": 2804295,
+        "scene_revision": 96,
+        "front_size": [
+          640,
+          360
+        ],
+        "forward_gap_m": 4.303,
+        "lateral_m": -0.167,
+        "actor_id": 250,
+        "bbox_front": [
+          317.1,
+          163.79,
+          364.57,
+          359.0
+        ],
+        "pedestrian_phase": "正在横穿",
+        "clear_state": "not_clear"
+      },
+      "scene_age_ms": 0.0,
+      "scene_sample_max_ms": 47.00000000593718,
+      "scene_error": "",
+      "rk_control_age_ms": 63.0,
+      "version": "navigation_reliability.v1.5",
+      "rk_connected": true,
+      "rk_report": {
+        "aeb_triggered": false,
+        "brake_pressure": 0.0,
+        "action": "正常巡航",
+        "vehicle_speed": null,
+        "steering_angle": 0.0,
+        "lane_change_state": "idle",
+        "stop_line_m": null,
+        "light_distance_m": null,
+        "veto": "",
+        "domain": "ADAS",
+        "range_source": "CARLA_actor_truth",
+        "evidence": {
+          "visual_person_matched": false,
+          "confirmed_hits": 0,
+          "actor_id": 250,
+          "telemetry_age_ms": 39.0,
+          "forward_gap_m": 4.31,
+          "lateral_m": -0.29,
+          "ttc_s": null,
+          "carla_frame": 2804267,
+          "valid_scene": true,
+          "path_clear": false,
+          "clear_actor_id": null,
+          "other_in_path_person": false,
+          "clear_state": "not_clear",
+          "capture_age_ms": 141.9,
+          "capture_fresh": true
+        },
+        "stamp": 1742397594.554,
+        "det_report_seq": 2946,
+        "schema": "carla_nav_aeb.control.v3",
+        "source": "carla",
+        "run_id": "4182fb5566224d768dfe71f05b71b9c9",
+        "session_id": "81b095e74d3644d89bcf637fe800f58e",
+        "epoch": 20
+      },
+      "control_error": "",
+      "last_event": "四相机已连接。原三种模式可用；座舱模式等待串口导航，AEB可独立开关"
+    },
+    "resumed_after_clearance": {
+      "schema": "navigation_modes.v1",
+      "mode": "full_ad",
+      "aeb_enabled": true,
+      "gear": "D",
+      "speed_kmh": 4.539106782857439,
+      "result": {
+        "drive": true,
+        "brake": false,
+        "phase": "navigation",
+        "reason": "按导航行驶（AEB开启）",
+        "resumed": false
+      },
+      "requested_gear": "D",
+      "requested_running": true,
+      "serial_connected": true,
+      "arrived": false,
+      "automatic_resumes": 6,
+      "serial_port": "COM12",
+      "serial_reader_running": true,
+      "speed_cap_kmh": 31.313911818238925,
+      "speed_plan_reason": "弯道前渐进减速，弯中上限15km/h",
+      "effective_target_kmh": 31.313911818238925,
+      "crossing_entry": {
+        "speed_kmh": 11.141,
+        "forward_gap_m": 9.877,
+        "carla_frame": 2803792,
+        "route_index": 75,
+        "route_fraction": 0.5029
+      },
+      "crossing_site": {
+        "route_index": 75,
+        "route_fraction": 0.5028817892788524,
+        "route_s": 134.11200380325317
+      },
+      "collisions": [],
+      "navigation_active": true,
+      "navigation_age_s": 0.17199999999866122,
+      "navigation_diagnostics": {
+        "guidance_frames": 921,
+        "cruise_frames": 1947,
+        "last_key_type": 10001
+      },
+      "navigation_destination": [
+        12.3100004196167,
+        -64.4000015258789
+      ],
+      "carla_connected": true,
+      "route": "路网坐标 (12.3, -64.4)",
+      "route_remaining_m": 138.88693649768828,
+      "camera_health": {
+        "ready": true,
+        "camera_ready": true,
+        "counts": {
+          "front": 39575,
+          "right": 39574,
+          "rear": 39569,
+          "left": 39569
+        },
+        "age_ms": {
+          "front": 32.0,
+          "right": 16.0,
+          "rear": 47.0,
+          "left": 32.0
+        },
+        "carla_frames": {
+          "front": 2805189,
+          "right": 2805194,
+          "rear": 2805184,
+          "left": 2805187
+        },
+        "error": "",
+        "publisher_ready": true,
+        "seq": 39521,
+        "fps": 20.6
+      },
+      "scene": {
+        "valid": true,
+        "range_source": "CARLA_actor_truth",
+        "carla_frame": 2805196,
+        "scene_revision": 96,
+        "front_size": [
+          640,
+          360
+        ],
+        "forward_gap_m": 4.242,
+        "lateral_m": 2.309,
+        "actor_id": 250,
+        "bbox_front": null,
+        "clear_state": "completed",
+        "pedestrian_phase": "已通过"
+      },
+      "scene_age_ms": 16.0,
+      "scene_sample_max_ms": 47.00000000593718,
+      "scene_error": "",
+      "rk_control_age_ms": 125.0,
+      "version": "navigation_reliability.v1.5",
+      "rk_connected": true,
+      "rk_report": {
+        "aeb_triggered": false,
+        "brake_pressure": 0.0,
+        "action": "正常巡航",
+        "vehicle_speed": null,
+        "steering_angle": 0.0,
+        "lane_change_state": "idle",
+        "stop_line_m": null,
+        "light_distance_m": null,
+        "veto": "",
+        "domain": "ADAS",
+        "range_source": "CARLA_actor_truth",
+        "evidence": {
+          "visual_person_matched": false,
+          "confirmed_hits": 0,
+          "actor_id": 250,
+          "telemetry_age_ms": 9.4,
+          "forward_gap_m": 4.24,
+          "lateral_m": 2.31,
+          "ttc_s": null,
+          "carla_frame": 2805153,
+          "valid_scene": true,
+          "path_clear": true,
+          "clear_actor_id": 250,
+          "other_in_path_person": false,
+          "clear_state": "completed",
+          "capture_age_ms": 176.0,
+          "capture_fresh": true
+        },
+        "stamp": 1742397598.881,
+        "det_report_seq": 2982,
+        "schema": "carla_nav_aeb.control.v3",
+        "source": "carla",
+        "run_id": "4182fb5566224d768dfe71f05b71b9c9",
+        "session_id": "81b095e74d3644d89bcf637fe800f58e",
+        "epoch": 20
+      },
+      "control_error": "",
+      "last_event": "四相机已连接。原三种模式可用；座舱模式等待串口导航，AEB可独立开关"
+    },
+    "arrived_parked": {
+      "schema": "navigation_modes.v1",
+      "mode": "full_ad",
+      "aeb_enabled": true,
+      "gear": "P",
+      "speed_kmh": 0.0,
+      "result": {
+        "drive": false,
+        "brake": false,
+        "phase": "arrived",
+        "reason": "已到达目的地，P挡驻车",
+        "resumed": false
+      },
+      "requested_gear": "P",
+      "requested_running": false,
+      "serial_connected": true,
+      "arrived": true,
+      "automatic_resumes": 6,
+      "serial_port": "COM12",
+      "serial_reader_running": true,
+      "speed_cap_kmh": 40.0,
+      "speed_plan_reason": "正常路段按座舱目标/道路限速行驶",
+      "effective_target_kmh": 0.0,
+      "crossing_entry": {
+        "speed_kmh": 11.141,
+        "forward_gap_m": 9.877,
+        "carla_frame": 2803792,
+        "route_index": 75,
+        "route_fraction": 0.5029
+      },
+      "crossing_site": {
+        "route_index": 75,
+        "route_fraction": 0.5028817892788524,
+        "route_s": 134.11200380325317
+      },
+      "collisions": [],
+      "navigation_active": true,
+      "navigation_age_s": 0.3280000000013388,
+      "navigation_diagnostics": {
+        "guidance_frames": 985,
+        "cruise_frames": 1955,
+        "last_key_type": 10001
+      },
+      "navigation_destination": [
+        12.3100004196167,
+        -64.4000015258789
+      ],
+      "carla_connected": true,
+      "route": "路网坐标 (12.3, -64.4)",
+      "route_remaining_m": 0.28693649768825935,
+      "camera_health": {
+        "ready": true,
+        "camera_ready": true,
+        "counts": {
+          "front": 40251,
+          "right": 40249,
+          "rear": 40245,
+          "left": 40245
+        },
+        "age_ms": {
+          "front": 0.0,
+          "right": 31.0,
+          "rear": 31.0,
+          "left": 16.0
+        },
+        "carla_frames": {
+          "front": 2812222,
+          "right": 2812216,
+          "rear": 2812219,
+          "left": 2812221
+        },
+        "error": "",
+        "publisher_ready": true,
+        "seq": 40196,
+        "fps": 19.8
+      },
+      "scene": {
+        "valid": true,
+        "range_source": "CARLA_actor_truth",
+        "carla_frame": 2812221,
+        "scene_revision": 96,
+        "front_size": [
+          640,
+          360
+        ],
+        "forward_gap_m": 4.242,
+        "lateral_m": 2.309,
+        "actor_id": 250,
+        "bbox_front": null,
+        "clear_state": "completed",
+        "pedestrian_phase": "已通过"
+      },
+      "scene_age_ms": 16.0,
+      "scene_sample_max_ms": 47.00000000593718,
+      "scene_error": "",
+      "rk_control_age_ms": 94.0,
+      "version": "navigation_reliability.v1.5",
+      "rk_connected": true,
+      "rk_report": {
+        "aeb_triggered": false,
+        "brake_pressure": 0.0,
+        "action": "正常巡航",
+        "vehicle_speed": null,
+        "steering_angle": 0.0,
+        "lane_change_state": "idle",
+        "stop_line_m": null,
+        "light_distance_m": null,
+        "veto": "",
+        "domain": "ADAS",
+        "range_source": "CARLA_actor_truth",
+        "evidence": {
+          "visual_person_matched": false,
+          "confirmed_hits": 0,
+          "actor_id": 250,
+          "telemetry_age_ms": 16.0,
+          "forward_gap_m": 4.24,
+          "lateral_m": 2.31,
+          "ttc_s": null,
+          "carla_frame": 2812198,
+          "valid_scene": true,
+          "path_clear": true,
+          "clear_actor_id": 250,
+          "other_in_path_person": false,
+          "clear_state": "completed",
+          "capture_age_ms": 177.7,
+          "capture_fresh": true
+        },
+        "stamp": 1742397632.68,
+        "det_report_seq": 3267,
+        "schema": "carla_nav_aeb.control.v3",
+        "source": "carla",
+        "run_id": "4182fb5566224d768dfe71f05b71b9c9",
+        "session_id": "81b095e74d3644d89bcf637fe800f58e",
+        "epoch": 20
+      },
+      "control_error": "",
+      "last_event": "四相机已连接。原三种模式可用；座舱模式等待串口导航，AEB可独立开关"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "color": {
+    "decision_mode": "forced",
+    "candidates": ["red", "yellow", "green"],
+    "force_hue_sigma": 8.0,
+    "force_top_fraction": 0.05,
+    "max_roi_side": 192
+  },
+  "state": {
+    "force_smoothing_seconds": 0.15,
+    "track_ttl": 0.75
+  }
+}

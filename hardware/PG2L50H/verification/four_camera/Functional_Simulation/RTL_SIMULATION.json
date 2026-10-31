@@ -1,0 +1,24 @@
+{
+  "schema": "cascade_fov_simulation.v1",
+  "functional_divider_surrogate": true,
+  "full_DDR_not_simulated": true,
+  "real_sensor_timing_not_measured": true,
+  "frames_tested": 2,
+  "bytes_per_sensor_line": 2560,
+  "pixels_per_sensor_line": 1280,
+  "input_per_frame": 921600,
+  "active_lines": 720,
+  "legacy_output_per_frame": 460800,
+  "legacy_x_range": [
+    0,
+    639
+  ],
+  "candidate_output_per_frame": 230400,
+  "candidate_x_range": [
+    0,
+    1278
+  ],
+  "pass": true,
+  "source": "Icarus testbench stdout recorded in this session",
+  "testbench": "analysis/cascade_fov_20261029/tb_fov.v"
+}

@@ -1,0 +1,75 @@
+{
+  "checked_local": "2026-10-30T22:16:32.171447",
+  "source_status": "C:\\Users\\lenovo\\Desktop\\MES2L50H_DualCam_PCIe\\Final submission\\Cascaded_Four_Camera\\PC_Windows\\Results\\Decision_Events\\20261030_221451\\status.json",
+  "observation": {
+    "pc_panel_version": "stereo_console.v0.1.5",
+    "rk_online": true,
+    "video_frames_seen": {
+      "rk": 1888,
+      "rear": 100837,
+      "front": 100832
+    },
+    "banner": "■ 停止 · 停止请求",
+    "feedback": {
+      "turn": "off",
+      "brake_lamp": true,
+      "wheel": "center",
+      "body_locked": true,
+      "reaction": "manual_stop"
+    },
+    "last_request": {
+      "command": {
+        "client_id": "console_171adc0b778545e3",
+        "request_id": "1e9e34485f904359a72e6cb03bca44e5",
+        "seq": 1,
+        "source_epoch": "67d831116db546be946a4067ff08ee94",
+        "action": "stop"
+      },
+      "ack": {
+        "request_id": "1e9e34485f904359a72e6cb03bca44e5",
+        "client_id": "console_171adc0b778545e3",
+        "seq": 1,
+        "accepted": true,
+        "reason_code": "STOP_REQUEST",
+        "message": "停止请求",
+        "duplicate": false
+      }
+    },
+    "vehicle": {
+      "vehicle_id": 24,
+      "turn": "off",
+      "brake_lamp": true,
+      "visual_wheel_command_deg": 0.0,
+      "drift_m": 0.0,
+      "max_drift_m": 0.0,
+      "lock_corrections": 0,
+      "speed_kmh": 0.0,
+      "physics_disable_command_sent": true,
+      "expected_light_flags": 9,
+      "position_lamp": true,
+      "actual_light_flags": 9,
+      "visible_light_flags": 9,
+      "throttle": 0.0,
+      "world_frame": 100826,
+      "world_frames_advanced": 10058,
+      "world_sim_seconds_advanced": 99.75675270333886,
+      "camera_frames": {
+        "rear": {
+          "frame": 100823,
+          "age_ms": 31.0
+        },
+        "front": {
+          "frame": 100823,
+          "age_ms": 31.0
+        }
+      },
+      "note": "Wheel value is the requested VISUAL angle; physical wheel readback is not a visual verification.",
+      "self_test_phase": null,
+      "reaction": "manual_stop"
+    }
+  },
+  "offline_feedback_tests_passed": 10,
+  "full_four_camera_manifest_checked": 782,
+  "full_manifest_passed": true,
+  "limits": "Room scene only; red/green, solid/dashed and pedestrian rules still need contest video scene acceptance."
+}

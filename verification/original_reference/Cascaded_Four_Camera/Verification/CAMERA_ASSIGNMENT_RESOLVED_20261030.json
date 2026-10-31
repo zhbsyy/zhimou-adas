@@ -1,0 +1,39 @@
+{
+  "recorded_local": "2026-10-30T20:02:21.387606+08:00",
+  "user_confirmation": "现在已经正常了，我刚刚两个双目摄像头的位置接反了",
+  "resolution": "User restored original assignment of the two physical stereo camera modules. Per-channel profiles now match the original calibrated cameras.",
+  "profile_revision": 2,
+  "profile_sha256": "5fb68d1649310f348fa0770b104e6b88b54a3b3510248dcb8aba97ae60787348",
+  "old_and_new_board_profile_fields_identical": true,
+  "calibration_or_parameter_change_during_this_resolution": false,
+  "gains_rgb": {
+    "front": [
+      0.928571,
+      1.114286,
+      0.975
+    ],
+    "rear": [
+      1.0625,
+      0.944444,
+      1.0
+    ]
+  },
+  "running": true,
+  "fps_5s": {
+    "compose": 20.0,
+    "render": 20.0,
+    "pcie_empty_warmup": 0.0,
+    "det": 6.8,
+    "pcie_capture": 14.4,
+    "encode_submit": 20.0,
+    "jpeg": 19.8,
+    "lane": 6.2
+  },
+  "errors": [],
+  "optical_scope": "Correct appearance confirmed by user after reconnecting; no instrument color accuracy or all-lighting claim.",
+  "connection_map": {
+    "front": "original calibrated FRONT stereo module -> black RK3568+PG2L50H local camera -> top-left",
+    "rear": "original calibrated REAR stereo module -> red PGL50H -> SFP -> bottom-left"
+  },
+  "optional_calibration_client": "CALIBRATE_COLORS.py is a newly provided maintenance client, not deployed or required for current normal operation."
+}

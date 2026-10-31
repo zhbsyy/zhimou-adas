@@ -1,0 +1,20 @@
+{
+  "recorded_local": "2026-10-30T19:02:26.869906+08:00",
+  "scope": "Copied directory + local imports + threshold boundary; no live control or NPU",
+  "passed": true,
+  "copied_files": 108,
+  "python_sources_parsed": 59,
+  "pc_entry_relocated": true,
+  "pc_dashboard_resolved_inside_module": true,
+  "RK_import_check": {
+    "owned_imports": 22,
+    "class10_threshold": 0.3,
+    "other_class_025_retained": true,
+    "NPU_initialized": false
+  },
+  "board_package_files_checked": 30,
+  "no_live_services_started": true,
+  "installed_python_CARLA_SDK_still_required": true,
+  "platform_only_module_not_imported": "Mpp_Decoder/p2_native_mpp_source.py requires Linux fcntl; source parsed and hash checked only",
+  "note": "Imports only on Windows; not an aarch64 MPP build or RKNN inference test."
+}

@@ -1,0 +1,21 @@
+{
+  "recorded_local": "2026-10-30T18:58:14.149819+08:00",
+  "python_executable": "D:\\python3.12.4\\python.exe",
+  "python": "3.12.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "opencv-python": "5.0.0.93",
+    "PyQt5": "5.15.11",
+    "PyQt5-Qt5": "5.15.2",
+    "PyQt5-sip": "12.20.0",
+    "pyserial": "3.5",
+    "carla": "0.9.16",
+    "networkx": "3.6.1",
+    "shapely": "2.1.2",
+    "scipy": "1.18.1"
+  },
+  "carla_root": "D:/CARLA_download",
+  "carla_agents": "D:/CARLA_download/PythonAPI/carla/agents",
+  "scope": "Read-only version snapshot of the working PC; no install or upgrade."
+}

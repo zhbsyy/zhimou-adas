@@ -1,0 +1,79 @@
+{
+  "schema": "cascade_camera_color.v1",
+  "binding": "sfp_tx_camera_frame_fix_20261014+sfp_rx_no_overlay_20261014",
+  "revision": 2,
+  "cameras": {
+    "front": {
+      "crop": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "swap_rb": false,
+      "gains_rgb": [
+        0.928571,
+        1.114286,
+        0.975
+      ],
+      "status": "neutral_calibrated_color_targets_pending",
+      "reference": {
+        "median_bgr": [
+          160.0,
+          140.0,
+          168.0
+        ],
+        "target": 156.0,
+        "sample_count": 9,
+        "first_seq": 2373,
+        "last_seq": 2393,
+        "roi": [
+          0.3,
+          0.3,
+          0.7,
+          0.7
+        ],
+        "stage": "after_fixed_channel_order_before_gain_or_overlay",
+        "source_epoch": "507b6a7c976a0f8f65896917",
+        "recorded_utc": "2025-03-18T21:36:00.211388+00:00",
+        "recorded_board_clock_note": "Board clock may be wrong; revision identifies order"
+      }
+    },
+    "rear": {
+      "crop": [
+        0,
+        360,
+        640,
+        360
+      ],
+      "swap_rb": true,
+      "gains_rgb": [
+        1.0625,
+        0.944444,
+        1.0
+      ],
+      "status": "neutral_calibrated_color_targets_pending",
+      "reference": {
+        "median_bgr": [
+          136.0,
+          144.0,
+          128.0
+        ],
+        "target": 136.0,
+        "sample_count": 9,
+        "first_seq": 2844,
+        "last_seq": 2866,
+        "roi": [
+          0.3,
+          0.3,
+          0.7,
+          0.7
+        ],
+        "stage": "after_fixed_channel_order_before_gain_or_overlay",
+        "source_epoch": "507b6a7c976a0f8f65896917",
+        "recorded_utc": "2025-03-18T21:36:23.435378+00:00",
+        "recorded_board_clock_note": "Board clock may be wrong; revision identifies order"
+      }
+    }
+  }
+}

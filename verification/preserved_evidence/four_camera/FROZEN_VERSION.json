@@ -1,0 +1,151 @@
+{
+  "freeze_id": "cascaded_four_camera_20261030_class10_040",
+  "user_acceptance": "四路摄像头输入这个部分初步完成；整理为独立模块",
+  "models": {
+    "A_rk3568_int8.rknn": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543",
+    "R15_256x448_patched_native_int8.rknn": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289"
+  },
+  "class10_min_confidence": 0.4,
+  "other_confidence": 0.25,
+  "detector_scope": "full four-view mosaic in one 640x640 call",
+  "R15_scope": "Front only, 256x448 uint8 NHWC",
+  "camera_profile_revision": 2,
+  "camera_color": {
+    "front": {
+      "crop": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "swap_rb": false,
+      "gains_rgb": [
+        0.928571,
+        1.114286,
+        0.975
+      ],
+      "status": "neutral_calibrated_color_targets_pending",
+      "reference": {
+        "median_bgr": [
+          160.0,
+          140.0,
+          168.0
+        ],
+        "target": 156.0,
+        "sample_count": 9,
+        "first_seq": 2373,
+        "last_seq": 2393,
+        "roi": [
+          0.3,
+          0.3,
+          0.7,
+          0.7
+        ],
+        "stage": "after_fixed_channel_order_before_gain_or_overlay",
+        "source_epoch": "507b6a7c976a0f8f65896917",
+        "recorded_utc": "2025-03-18T21:36:00.211388+00:00",
+        "recorded_board_clock_note": "Board clock may be wrong; revision identifies order"
+      }
+    },
+    "rear": {
+      "crop": [
+        0,
+        360,
+        640,
+        360
+      ],
+      "swap_rb": true,
+      "gains_rgb": [
+        1.0625,
+        0.944444,
+        1.0
+      ],
+      "status": "neutral_calibrated_color_targets_pending",
+      "reference": {
+        "median_bgr": [
+          136.0,
+          144.0,
+          128.0
+        ],
+        "target": 136.0,
+        "sample_count": 9,
+        "first_seq": 2844,
+        "last_seq": 2866,
+        "roi": [
+          0.3,
+          0.3,
+          0.7,
+          0.7
+        ],
+        "stage": "after_fixed_channel_order_before_gain_or_overlay",
+        "source_epoch": "507b6a7c976a0f8f65896917",
+        "recorded_utc": "2025-03-18T21:36:23.435378+00:00",
+        "recorded_board_clock_note": "Board clock may be wrong; revision identifies order"
+      }
+    }
+  },
+  "fpga": [
+    {
+      "project": "FPGA_Black_PG2L50H_RX/Build_Project/project.pds",
+      "references_checked": 226,
+      "bitstream": "cascade_fov_pg2l50h_20261029.sbit",
+      "sha256": "d63eee870d652f49cce62ffd62c460c4fdf3d70414320e35e3bec8271ce8c6a7"
+    },
+    {
+      "project": "FPGA_Red_PGL50H_TX/Build_Project/stereo_sfp_tx.pds",
+      "references_checked": 69,
+      "bitstream": "sfp_tx_camera_frame_fix_20261014.sbit",
+      "sha256": "104da43e186af66ab4f44ec6566a757e966a949011587c46ca868272e3d7e6d0"
+    }
+  ],
+  "pc_console_byte_identical_to_current_source": false,
+  "observed_fps_5s": {
+    "compose": 20.16,
+    "render": 20.16,
+    "encode_submit": 19.96,
+    "jpeg": 20.16,
+    "pcie_capture": 15.97,
+    "det": 7.38,
+    "lane": 6.59
+  },
+  "observed_errors": [],
+  "board_collected_launcher_validated": true,
+  "long_duration_or_full_timing_signoff": false,
+  "relocation_scope": "Relocated physical pipeline previously verified; current detector class10 updated to0.40, latest PC console copied independently. Color/model/FPGA unchanged.",
+  "dependencies": [
+    "RK3568 Linux kernel 6.1.99; native RKNN Runtime 2.3.0/driver 0.9.8",
+    "working Linux Python venv copied by provided tool",
+    "GStreamer mppjpegenc and v4l2-ctl",
+    "Windows Python per snapshot; CARLA optional for physical video display",
+    "PDS 2022.2-SP6.4 for JTAG/build"
+  ],
+  "observed_fps_second_5s": {
+    "compose": 20.0,
+    "render": 20.0,
+    "encode_submit": 20.0,
+    "jpeg": 20.0,
+    "pcie_capture": 15.8,
+    "det": 7.2,
+    "lane": 6.8
+  },
+  "collected_cpu_contract_tests": 9,
+  "collected_path_tests": 3,
+  "policy_update_20261030": {
+    "class10_before": 0.6,
+    "class10_after": 0.4,
+    "other_detection_classes": 0.25,
+    "R15_lane_threshold_unchanged": 0.6,
+    "board_deployment": "User reported update complete;8083closed during release sync, new live0.40not rechecked"
+  },
+  "last_synced_local": "2026-10-30T21:18:21.315231+08:00",
+  "pc_console": {
+    "version": "navigation_reliability.v1.5",
+    "business_modules": "local independent copies",
+    "entry_adaptation": "own settings and default PCIe8083",
+    "original_three_modes_preserved": true,
+    "AEB_default": false,
+    "CARLA_auto_started": false
+  },
+  "observed_fps_scope": "Historical measurements at class10=0.60; not a new0.40 throughput measurement",
+  "release_sync_record": "Verification/RELEASE_SYNC_20261030.json"
+}

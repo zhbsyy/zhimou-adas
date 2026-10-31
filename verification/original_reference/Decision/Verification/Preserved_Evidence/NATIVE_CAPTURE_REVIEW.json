@@ -1,0 +1,136 @@
+{
+  "source": "C:\\Users\\lenovo\\Desktop\\run_6ztnr6zi",
+  "source_report_sha256": "a17b2f66f2030faa8fb84375b38e0d041821471495edda5232cb87de254e6f07",
+  "models_started": false,
+  "phases": [
+    {
+      "delay_us": 10,
+      "records": [
+        {
+          "index": 2,
+          "raw_sha256": "baebf275abb781e9ebf0494764ec4f706763b3d0fcdbdd01424b91c1a41a20d5",
+          "zero_rows": 0,
+          "sentinel_pixels": 0
+        },
+        {
+          "index": 3,
+          "raw_sha256": "bb50bfb1ba82cba15476c02eb7d16cde92596e69a4038170e5ea76a4656b31d8",
+          "zero_rows": 0,
+          "sentinel_pixels": 0
+        },
+        {
+          "index": 4,
+          "raw_sha256": "bb50bfb1ba82cba15476c02eb7d16cde92596e69a4038170e5ea76a4656b31d8",
+          "zero_rows": 0,
+          "sentinel_pixels": 0
+        },
+        {
+          "index": 5,
+          "raw_sha256": "9d6be9208a93d12f96b325fd81b7445f7af8d60414588b164e34047471b5894f",
+          "zero_rows": 0,
+          "sentinel_pixels": 0
+        }
+      ],
+      "left_even_unique": 3,
+      "left_odd_unique": 3,
+      "consecutive_changes": [
+        {
+          "even": {
+            "changed_pixels": 92874,
+            "mean_abs_delta": 3.486736111111111
+          },
+          "odd": {
+            "changed_pixels": 92891,
+            "mean_abs_delta": 3.4783217592592592
+          }
+        },
+        {
+          "even": {
+            "changed_pixels": 0,
+            "mean_abs_delta": 0.0
+          },
+          "odd": {
+            "changed_pixels": 0,
+            "mean_abs_delta": 0.0
+          }
+        },
+        {
+          "even": {
+            "changed_pixels": 92674,
+            "mean_abs_delta": 3.6752199074074072
+          },
+          "odd": {
+            "changed_pixels": 92993,
+            "mean_abs_delta": 3.665787037037037
+          }
+        }
+      ],
+      "visual_review": "05 left and full: no previous two-scene alternating-row comb; chair/window scene, still color cast"
+    },
+    {
+      "delay_us": 40,
+      "records": [
+        {
+          "index": 2,
+          "raw_sha256": "5a43e88982a19e82e9243f740c6a1c2b025cba7d8705ffc04ea88120dba07d8b",
+          "zero_rows": 0,
+          "sentinel_pixels": 0
+        },
+        {
+          "index": 3,
+          "raw_sha256": "45d3123aa95961cdd1605c47df908f9139bd0196968b8ec72b1fd48023b04933",
+          "zero_rows": 0,
+          "sentinel_pixels": 0
+        },
+        {
+          "index": 4,
+          "raw_sha256": "fe212947a58f9417e9dbadf8d9e93272eebca59ee17d545ac027457c05a7203d",
+          "zero_rows": 0,
+          "sentinel_pixels": 0
+        },
+        {
+          "index": 5,
+          "raw_sha256": "4111e7eed49e7d77eda8cadbeada3645137968a50aa6cf238e2b0ca07573245c",
+          "zero_rows": 0,
+          "sentinel_pixels": 0
+        }
+      ],
+      "left_even_unique": 4,
+      "left_odd_unique": 4,
+      "consecutive_changes": [
+        {
+          "even": {
+            "changed_pixels": 93217,
+            "mean_abs_delta": 3.5468055555555558
+          },
+          "odd": {
+            "changed_pixels": 93601,
+            "mean_abs_delta": 3.531736111111111
+          }
+        },
+        {
+          "even": {
+            "changed_pixels": 93240,
+            "mean_abs_delta": 3.5042708333333334
+          },
+          "odd": {
+            "changed_pixels": 92805,
+            "mean_abs_delta": 3.4874768518518517
+          }
+        },
+        {
+          "even": {
+            "changed_pixels": 93416,
+            "mean_abs_delta": 3.5805439814814815
+          },
+          "odd": {
+            "changed_pixels": 93266,
+            "mean_abs_delta": 3.5646064814814813
+          }
+        }
+      ],
+      "visual_review": "05 left and full: no previous two-scene alternating-row comb; chair/window scene, still color cast"
+    }
+  ],
+  "limits": "Only eight post-warmup frames, no model load and no deliberate motion. No optical FPS, inference speed or long-run stability acceptance; noise can change image hashes. The diagnostic used an A5 initializer; the live trial restores the original zero initializer."
+}

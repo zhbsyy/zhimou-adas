@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "scope": "PC test fixtures over UART/UDP + actual CARLA; no physical Android/RK",
+  "phases": [
+    {
+      "name": "pure_navigation_no_RK",
+      "speed_kmh": 9.80593588875669,
+      "gear": "D",
+      "horizontal_speed_kmh": 9.92530803592274,
+      "result": {
+        "drive": true,
+        "brake": false,
+        "phase": "navigation",
+        "reason": "按导航行驶（AEB关闭）",
+        "resumed": false
+      },
+      "position": [
+        -3.496077537536621,
+        24.69599151611328
+      ],
+      "route_name": "PC协议回归目标",
+      "path_count": 87
+    },
+    {
+      "name": "RK_report_present_but_AEB_off",
+      "speed_kmh": 14.245099516740783,
+      "gear": "D",
+      "horizontal_speed_kmh": 14.373924607908707,
+      "result": {
+        "drive": true,
+        "brake": false,
+        "phase": "navigation",
+        "reason": "按导航行驶（AEB关闭）",
+        "resumed": false
+      },
+      "position": [
+        -1.765492558479309,
+        24.691757202148438
+      ],
+      "route_name": "PC协议回归目标",
+      "path_count": 87
+    },
+    {
+      "name": "AEB_stop",
+      "speed_kmh": 0.06630024130385977,
+      "gear": "D",
+      "horizontal_speed_kmh": 0.06629808548794118,
+      "result": {
+        "drive": false,
+        "brake": true,
+        "phase": "braking",
+        "reason": "前方行人，紧急制动",
+        "resumed": false
+      },
+      "position": [
+        0.6430187225341797,
+        24.690404891967773
+      ],
+      "route_name": "PC协议回归目标",
+      "path_count": 87
+    },
+    {
+      "name": "missing_detection_does_not_resume",
+      "speed_kmh": 0.0009246294225205776,
+      "gear": "D",
+      "horizontal_speed_kmh": 1.493602486927221e-06,
+      "result": {
+        "drive": false,
+        "brake": true,
+        "phase": "waiting_clear",
+        "reason": "车辆已停，确认行人通过",
+        "resumed": false
+      },
+      "position": [
+        0.6433323621749878,
+        24.690404891967773
+      ],
+      "route_name": "PC协议回归目标",
+      "path_count": 87
+    },
+    {
+      "name": "resumed_original_navigation",
+      "speed_kmh": 3.107310319590059,
+      "gear": "D",
+      "horizontal_speed_kmh": 3.3659726232966536,
+      "result": {
+        "drive": true,
+        "brake": false,
+        "phase": "navigation",
+        "reason": "按导航行驶（AEB开启）",
+        "resumed": false
+      },
+      "position": [
+        0.7862710356712341,
+        24.690336227416992
+      ],
+      "route_name": "PC协议回归目标",
+      "path_count": 87
+    },
+    {
+      "name": "manual_pause_blocks_auto_resume",
+      "speed_kmh": 0.0,
+      "gear": "P",
+      "horizontal_speed_kmh": 0.0,
+      "result": {
+        "drive": false,
+        "brake": false,
+        "phase": "paused",
+        "reason": "手动暂停/驻车",
+        "resumed": false
+      },
+      "position": [
+        0.9470738172531128,
+        24.690176010131836
+      ],
+      "route_name": "PC协议回归目标",
+      "path_count": 87
+    },
+    {
+      "name": "reconnect_does_not_silently_resume",
+      "speed_kmh": 0.0,
+      "gear": "P",
+      "horizontal_speed_kmh": 0.0,
+      "result": {
+        "drive": false,
+        "brake": false,
+        "phase": "fault",
+        "reason": "测试感知中断；请明确继续",
+        "resumed": false
+      },
+      "position": [
+        0.947120726108551,
+        24.690176010131836
+      ],
+      "route_name": "PC协议回归目标",
+      "path_count": 87
+    }
+  ],
+  "received_android_telemetry_frames": 54,
+  "control_error": ""
+}

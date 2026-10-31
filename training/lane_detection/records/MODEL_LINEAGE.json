@@ -1,0 +1,60 @@
+{
+  "model": "R15 TwinLiteNet+ Small",
+  "training_input_nchw": [
+    1,
+    3,
+    384,
+    640
+  ],
+  "deployment_input_uint8_nhwc": [
+    1,
+    256,
+    448,
+    3
+  ],
+  "direct_classes": [
+    "background",
+    "direct"
+  ],
+  "lane_classes": [
+    "background",
+    "solid",
+    "dashed"
+  ],
+  "stages": [
+    {
+      "name": "long_laneonly_a2d2_v2",
+      "actual_last_epoch": 25,
+      "configured_epochs": 70,
+      "trainer_sha256": "01075072c23d5c8c39046ab0ebbd24b0855c3d90d1a7da6a0b23baa0f7796a1c",
+      "init_checkpoint": "runs\\R12_china_carla_autotrain\\selected_model\\R12_twinlitenet_small_direct2_lane3.pt",
+      "init_sha256": "a65c6ea3f9a6a3f26a3baa91fb372a4ac860263e027f3e92b22418eb49c7d0e3"
+    },
+    {
+      "name": "long_target_refine_v3",
+      "actual_last_epoch": 16,
+      "configured_epochs": 45,
+      "trainer_sha256": "4753025df162bd01b4c5c1f410f9fdbbab1bf9b0e4064fc36786a7b01ecc2a5c",
+      "init_checkpoint": "runs\\R15_external_data_training\\candidate_checkpoints\\laneonly_best_e25.pt",
+      "init_sha256": "233ce62621b75f7216bd9e5c3a84c14846f4958894354f39c0b282fb7688932b"
+    },
+    {
+      "name": "long_dashed_recall_v4",
+      "actual_last_epoch": 35,
+      "configured_epochs": 35,
+      "trainer_sha256": "4753025df162bd01b4c5c1f410f9fdbbab1bf9b0e4064fc36786a7b01ecc2a5c",
+      "init_checkpoint": "runs\\R15_external_data_training\\candidate_checkpoints\\targetmix_e15.pt",
+      "init_sha256": "ea6438a37c21d1b390b2b2123546fa29efc489df5b76fff60aaf5f3260375411"
+    }
+  ],
+  "selected_epoch": 32,
+  "selected_pt_sha256": "664b642c8476fc1bdcfb39dec04db05c8173651b398a8cf711a92918338a77c0",
+  "current_deployed_rknn_sha256": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289",
+  "raw_training_dataset_included": false,
+  "calibration_images_included": 160,
+  "notes": [
+    "Original source files copied byte-for-byte; three exact trainer snapshots match their configuration hashes.",
+    "Training data paths remain historical; datasets must be restored before retraining.",
+    "PT-to-ONNX parity record preserved; no newly rebuilt RKNN or new board validation claimed."
+  ]
+}

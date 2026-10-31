@@ -1,0 +1,34 @@
+{
+  "loaded_tensors": 270,
+  "source_tensors": 282,
+  "skipped_shape_or_name": [
+    "out_ll.up_conv.deconv.weight",
+    "out_ll.up_conv.bn.weight",
+    "out_ll.up_conv.bn.bias",
+    "out_ll.up_conv.bn.running_mean",
+    "out_ll.up_conv.bn.running_var",
+    "out_ll.up_conv.act.weight",
+    "out_ll.conv2.conv.weight",
+    "out_ll.conv2.bn.weight",
+    "out_ll.conv2.bn.bias",
+    "out_ll.conv2.bn.running_mean",
+    "out_ll.conv2.bn.running_var",
+    "out_ll.conv2.act.weight"
+  ],
+  "new_missing_keys": [
+    "out_ll.up_conv.deconv.weight",
+    "out_ll.up_conv.bn.weight",
+    "out_ll.up_conv.bn.bias",
+    "out_ll.up_conv.bn.running_mean",
+    "out_ll.up_conv.bn.running_var",
+    "out_ll.up_conv.act.weight",
+    "out_ll.conv2.conv.weight",
+    "out_ll.conv2.bn.weight",
+    "out_ll.conv2.bn.bias",
+    "out_ll.conv2.bn.running_mean",
+    "out_ll.conv2.bn.running_var",
+    "out_ll.conv2.act.weight"
+  ],
+  "unexpected_keys": [],
+  "params": 121635
+}

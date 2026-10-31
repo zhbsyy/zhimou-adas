@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-29",
+  "stage": "board_static_fov_passed_console_preview_online",
+  "build": {
+    "command": [
+      "C:/pango/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+      "-project",
+      "project.pds",
+      "-run",
+      "gen_bit_stream"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 410.83,
+    "hardware_programmed": false,
+    "build_success": true,
+    "errors": [],
+    "bitstream": "cascade_fov_fpga_trial_20261029\\cascade_fov_pg2l50h_20261029.sbit",
+    "sha256": "d63eee870d652f49cce62ffd62c460c4fdf3d70414320e35e3bec8271ce8c6a7",
+    "bytes": 1839324,
+    "optical_acceptance": false,
+    "timing_review_required": true
+  },
+  "functional_simulation_pass": true,
+  "same_clock_timing_failures": [],
+  "cross_clock_failure_group_rows": 18,
+  "color_profile_backed_up": true,
+  "accepted_color_changed": false,
+  "Final_submission_changed": false,
+  "optical_acceptance": false,
+  "user_board_feedback": "已启动且正常，我们现在打开总控台到那里做画面显示",
+  "static_optical_review_passed": true,
+  "after_review": "analysis\\cascade_fov_20261029\\accepted_trial_1793275518235096300\\AFTER_REVIEW.json",
+  "effective_color_configuration_unchanged": true,
+  "observed_compose_fps": 19.9,
+  "observed_errors": 0,
+  "front_after_from_before_scale_xy": [
+    0.45803481340408325,
+    0.4678094983100891
+  ],
+  "motion_boundary_test": "No separate deliberate moving-edge result; user reported normal operation",
+  "console": {
+    "process_id": 17304,
+    "visible_window_confirmed": true,
+    "video_online": "http://192.168.2.3:8083/stream",
+    "source_badge": "PCIE",
+    "mode": "calibrated physical four-view preview; RKNN not integrated",
+    "engine_started": false
+  }
+}

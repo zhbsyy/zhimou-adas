@@ -1,0 +1,119 @@
+{
+  "source": "C:\\Users\\lenovo\\.codex\\attachments\\d39ad9ce-beb5-45fd-84e1-84fed4688855\\已粘贴的文本.txt",
+  "source_sha256": "4527195f58dd6311b8d17771a76151ef2ca27f89f9339aef897630e58f88a455",
+  "live_windows": [
+    {
+      "capture": 14.6,
+      "det": 5.4,
+      "lane": 5.0,
+      "render": 14.4,
+      "jpeg": 11.0
+    },
+    {
+      "capture": 21.9,
+      "det": 8.0,
+      "lane": 7.6,
+      "render": 21.9,
+      "jpeg": 21.7
+    },
+    {
+      "capture": 18.2,
+      "det": 7.8,
+      "lane": 7.2,
+      "render": 18.4,
+      "jpeg": 18.6
+    },
+    {
+      "capture": 14.1,
+      "det": 7.8,
+      "lane": 6.8,
+      "render": 13.9,
+      "jpeg": 13.7
+    },
+    {
+      "capture": 13.3,
+      "det": 7.5,
+      "lane": 7.0,
+      "render": 13.5,
+      "jpeg": 13.7
+    },
+    {
+      "capture": 13.9,
+      "det": 7.4,
+      "lane": 6.8,
+      "render": 13.7,
+      "jpeg": 13.7
+    },
+    {
+      "capture": 14.3,
+      "det": 7.5,
+      "lane": 6.7,
+      "render": 14.1,
+      "jpeg": 14.1
+    }
+  ],
+  "raw_summary": {
+    "runtime_backend": "native_buffered",
+    "roi_overlay": false,
+    "display_mode": "cached",
+    "publication_mode": "hardware_callback",
+    "lane_argmax": "planar",
+    "frame_age_valid": false,
+    "warmup_s": 10.0,
+    "observation_s": 28.521238679999897,
+    "counts": {
+      "cap_count": 360,
+      "det_count": 185,
+      "lane_count": 170,
+      "processed_count": 360,
+      "stream_count": 360
+    },
+    "fps": {
+      "cap_count": 12.622172691694654,
+      "det_count": 6.486394299898642,
+      "lane_count": 5.960470437744698,
+      "processed_count": 12.622172691694654,
+      "stream_count": 12.622172691694654
+    },
+    "cpu_seconds_process_tree_sampled": 74.73,
+    "cpu_core_percent_sampled": 262.8159977723913,
+    "cpu_sample_seconds": 28.43434213799992,
+    "cpu_samples": 21,
+    "cpu_note": "100%=one core. Includes seen descendants; first/last partial lifetimes can be missed.",
+    "stage_ema_ms": {
+      "det_call_ms": 48.822521512100515,
+      "lane_call_ms": 72.97851391050654,
+      "r15_pre_ms": 18.274958000347397,
+      "r15_post_ms": 10.250916999666515,
+      "lane_draw_ms": 22.778989515967442,
+      "vis_draw_ms": 1.2626546129742215,
+      "enc_ms": 3.1795869694746153,
+      "age_ms": -1.0,
+      "inf_age_ms": 152.89735794067383
+    },
+    "errors": [],
+    "rate_gate": false,
+    "note": "Rate gate only. Unique CARLA source frames, visual quality, frame age and long-run behavior require checks. Callback mode publishes each parsed hardware JPEG once; legacy mode may drain several outputs into one publication. Callback age_ms=-1 means not measured. No exact matched-frame or PC-to-board end-to-end latency here."
+  },
+  "stereo_ms_at_exit": 36.194082999827515,
+  "collision_ms_ema_at_exit": 88.4332255412093,
+  "source_age_ms_at_exit": 3224.52,
+  "visual_result_reported_by_user": "No stripes or ghosting in this trial",
+  "findings": [
+    "Actual live capture window rate fell from 21.9 to 13.3..14.3; not only an EMA artifact.",
+    "Encoder input/output sampled queues are zero; submissions and hardware outputs track capture.",
+    "RKNN call durations do not show a comparable monotonic slowdown; CPU boundary/draw durations increase.",
+    "cap_fps is EMA of reciprocal frame intervals; it differs from count/time window rates.",
+    "TrialMetrics.finish is called after source close and thread joins; stopped time biases summary rates downward.",
+    "Stereo validate/remap still runs before selecting targets, even on empty detections.",
+    "video_demo AEB decisions use image height bands, not stereo ranges; ranges are still exposed as diagnostics."
+  ],
+  "not_proven": [
+    "thermal throttling",
+    "current CPU/DMC governor or clock change",
+    "sole root cause of throughput decline",
+    "unique optical frame rate",
+    "long-run image stability"
+  ],
+  "next": "Keep the native reader. Measure CPU/DMC clocks and temperature during high/low live rates; correct rate measurement before further performance comparisons. No FPGA/model or live-code edits in this review."
+}

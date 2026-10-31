@@ -1,0 +1,29 @@
+{
+  "updated_local_date": "2026-10-31",
+  "PC_console": "navigation_reliability.v1.5",
+  "PC_panel": "stereo_console.v0.1.5",
+  "PC_feedback_tests": 10,
+  "submission_closure_tests": 9,
+  "python_sources_syntax_checked": 96,
+  "PowerShell_scripts_syntax": "passed",
+  "PC_relocation_imports": "passed; isolated Python and independent temporary path with spaces",
+  "board_files_compared_to_previous_manifest": 81,
+  "board_files_byte_identical": true,
+  "RK_rule_regression": "138 existing checks were run at the earlier board freeze, not repeated in this PC-only update",
+  "real_RK_relocated_entry": "User started /userdata/Final submission/Decision/Board_RK3568/START_DECISION.sh; health and live PC state observed",
+  "live_check": "Preserved_Evidence/REPRODUCTION_20261030.json",
+  "live_acceptance_scope": [
+    "RK live video",
+    "CARLA front/rear images",
+    "RK accepted stop request",
+    "brake light actual flags",
+    "zero body displacement"
+  ],
+  "not_repeated": [
+    "full red/green scene acceptance",
+    "all boundary and pedestrian scene acceptance",
+    "long-run performance"
+  ],
+  "current_running_console_restarted_during_packaging": false,
+  "old_validation": "Preserved_Evidence/LOCAL_VALIDATION_20261027.json"
+}

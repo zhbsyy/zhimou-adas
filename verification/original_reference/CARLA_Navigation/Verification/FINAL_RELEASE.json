@@ -1,0 +1,36 @@
+{
+  "module": "CARLA_Navigation",
+  "frozen_local": "2026-10-30T18:58:14.149819+08:00",
+  "pc_version": "navigation_reliability.v1.5",
+  "rk_protocol": "carla_nav_aeb.control.v3",
+  "detector_class10_threshold": 0.3,
+  "other_detector_threshold": 0.25,
+  "person_association_threshold": 0.4,
+  "models": [
+    {
+      "file": "Board_RK3568/Models/A_rk3568_int8.rknn",
+      "sha256": "65111dd43d15d289d6001657832b77bb4e68a1afa277684564517eef8c4d9543",
+      "bytes": 4650599
+    },
+    {
+      "file": "Board_RK3568/Models/classes_11.txt",
+      "sha256": "ebe61c75ee4588b20b0a42792bba119021f9ef8bed196300b170ebdc060f8dbe",
+      "bytes": 92
+    },
+    {
+      "file": "Board_RK3568/Models/R15_256x448_patched_native_int8.rknn",
+      "sha256": "65a233fef461d89f1413bddc9d0316e24aaa310512caac686d88bab388c8c289",
+      "bytes": 824922
+    }
+  ],
+  "original_three_modes_preserved": true,
+  "aeb_off_rk_optional": true,
+  "aeb_on_requires_current_RK": true,
+  "range_source": "CARLA_actor_truth",
+  "runtime_changes_this_packaging": false,
+  "other_submission_modules_modified": false,
+  "PC_entry": "PC_Windows/START_CONSOLE.cmd",
+  "RK_entry": "Board_RK3568/START_CARLA_AEB.sh",
+  "platform_dependencies": "Environment/README_zh.md",
+  "android_deployed_binary_not_hash_verified": true
+}

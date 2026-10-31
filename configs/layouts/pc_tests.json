@@ -1,0 +1,41 @@
+{
+  "schema": "source_layout.v1",
+  "files": {
+    "Tests/test_console_feedback.py": {
+      "source": "tests/legacy_pc/test_console_feedback.py",
+      "sha256": "f1bc22ce12bb7f8c632592c704bf59a2dde682dec7cb7cb81be5052327548f54"
+    },
+    "Tests/check_crossing_live.py": {
+      "source": "tests/legacy_pc/check_crossing_live.py",
+      "sha256": "77e3c3289bf53549ecafc45d92167aa5a31ee51f13c0b5c61270f3ce915098ed"
+    },
+    "Tests/check_motion_real_rk.py": {
+      "source": "tests/legacy_pc/check_motion_real_rk.py",
+      "sha256": "c5846bc702774e0b02dd3b06c34d8e38132d74e14c55064f007940296592baf3"
+    },
+    "Tests/pc_integration_check.py": {
+      "source": "tests/legacy_pc/pc_integration_check.py",
+      "sha256": "dd29efedde36418e089a2568325f5f2cc788473c48a3fe23670592675d742345"
+    },
+    "Tests/test_motion.py": {
+      "source": "tests/legacy_pc/test_motion.py",
+      "sha256": "1efdfae3203e3d375fd5eafe2e6c31bf5a14289e51318523a90aad94569c2c33"
+    },
+    "Tests/test_navigation_modes.py": {
+      "source": "tests/legacy_pc/test_navigation_modes.py",
+      "sha256": "ad52d1200e9682e4a25ff9a68a84226ce92287613df0659b4297ed3817da7f1d"
+    },
+    "Tests/test_reliability.py": {
+      "source": "tests/legacy_pc/test_reliability.py",
+      "sha256": "98db8dfbb41caf574e9d23c3b77ef46169d1a3b917cf71779c3b1edb4e37bd87"
+    },
+    "Tests/test_session_health.py": {
+      "source": "tests/legacy_pc/test_session_health.py",
+      "sha256": "606a9ca3459dc6a383e6b52b602022f322ae690ac462c5c8f1013ae62728d1eb"
+    },
+    "Tests/test_view_mailbox.py": {
+      "source": "tests/legacy_pc/test_view_mailbox.py",
+      "sha256": "9d0073375b0745c095513c66336cdd35aa26b94c32ffa5191a20ff04d7c2bf97"
+    }
+  }
+}

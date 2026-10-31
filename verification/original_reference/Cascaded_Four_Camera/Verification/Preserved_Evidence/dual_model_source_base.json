@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-29",
+  "copied": {
+    "cap_reader.py": {
+      "source": "cascade_camera_color_20261029\\cap_reader.py",
+      "sha256": "5e6ea5bee63a5e60f544951a30c7e216071f222cb8eb4a7d3a16e118b8451170",
+      "unchanged": true
+    },
+    "pcie_frame.py": {
+      "source": "cascade_camera_color_20261029\\pcie_frame.py",
+      "sha256": "ae16df95d3b59a431cb88f7ae8f81767e24b2abdc2a74b5594acf02d6d441038",
+      "unchanged": true
+    },
+    "frame_align.py": {
+      "source": "cascade_camera_color_20261029\\frame_align.py",
+      "sha256": "fac44b85e6c8d27adf11c3af489cdf998cdd3377991afa291d535dfd372245b9",
+      "unchanged": true
+    },
+    "usb_source.py": {
+      "source": "cascade_camera_color_20261029\\usb_source.py",
+      "sha256": "aa811589c1f9ae3f1c27ec94979bf785c288f4a3b75af002ec040b373da3996b",
+      "unchanged": true
+    },
+    "camera_ports.py": {
+      "source": "cascade_camera_color_20261029\\camera_ports.py",
+      "sha256": "f20fafc2bf65d6d1552d8481fc1e96e08e4ca9faa9cf48374c4bca509711fb5a",
+      "unchanged": true
+    },
+    "color_profiles.py": {
+      "source": "cascade_camera_color_20261029\\color_profiles.py",
+      "sha256": "024c75993b8c67e6e3bb6cf2acdcaf213c1e88e1fbd10eec0a496213158b89e4",
+      "unchanged": true
+    },
+    "runtime_backend.py": {
+      "source": "r15_postprocess_trial_20261024\\runtime_backend.py",
+      "sha256": "44cb715d1ac7fd7398721025d65bf41596bf8ac5545896d5e225ec9987752fa9",
+      "unchanged": true
+    },
+    "native_api.py": {
+      "source": "r15_postprocess_trial_20261024\\native_api.py",
+      "sha256": "590eb31bae0f604fb031c2219978c2c15f7a97a7ebb059300d7d40a5ed55b92e",
+      "unchanged": true
+    },
+    "r15_front_fast.py": {
+      "source": "r15_postprocess_trial_20261024\\r15_front_fast.py",
+      "sha256": "0208e9a02b6abf47595f3b916a699ddeebae0be8bff457abcff3f929458ed652",
+      "unchanged": true
+    },
+    "postprocess_candidate.py": {
+      "source": "r15_postprocess_trial_20261024\\postprocess_candidate.py",
+      "sha256": "832146ae05f4ee0eb6d3d1f6373a82bd4523cae4a35e0b0ca059c49bb5d62588",
+      "unchanged": true
+    },
+    "cached_display.py": {
+      "source": "r15_postprocess_trial_20261024\\cached_display.py",
+      "sha256": "12806ff5f4c87f99c8a369ae2da50a81422f5d595655160388036927f2f3c844",
+      "unchanged": true
+    },
+    "hw_jpeg.py": {
+      "source": "r15_postprocess_trial_20261024\\hw_jpeg.py",
+      "sha256": "7b29e93be2d6d4310efae99f26319da43ef7a00ba961ff1264e79fa87f9effff",
+      "unchanged": true
+    },
+    "pcie_post.py": {
+      "source": "reference\\board_files\\pcie_post.py",
+      "sha256": "ce2e707a4ba1f50f321079b194b73811dcbdfd95c78ea6d8a961a83a499570b6",
+      "unchanged": true
+    },
+    "pcie_preflight.py": {
+      "source": "rk_decision_stereo_candidate_20261025\\pcie_preflight.py",
+      "sha256": "94c93946c461d18a025e4c544171e06608cdab1d1ed3905679f3306e95d34446",
+      "unchanged": true
+    },
+    "classes_11.txt": {
+      "source": "r15_int8_dual_model_bundle_20261024\\classes_11.txt",
+      "sha256": "ebe61c75ee4588b20b0a42792bba119021f9ef8bed196300b170ebdc060f8dbe",
+      "unchanged": true
+    },
+    "config/accepted_camera_profiles.json": {
+      "source": "analysis\\cascade_fov_20261029\\accepted_camera_profiles.json",
+      "sha256": "5fb68d1649310f348fa0770b104e6b88b54a3b3510248dcb8aba97ae60787348",
+      "note": "Logical live API backup of user-accepted revision 2; actual board profile takes precedence on first start"
+    }
+  },
+  "scope": "New physical four-view dual-model adapter; all copies listed above unchanged",
+  "class10_policy": "hardcoded >=0.60 before publication and drawing; other classes >=0.25",
+  "color_and_fov_change": false,
+  "final_submission_modified": false,
+  "hardware_validation": "pending new dual-model run; inherited color/FOV accepted separately"
+}

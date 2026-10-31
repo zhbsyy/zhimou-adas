@@ -1,0 +1,11 @@
+{
+  "python_executable": "D:/python3.12.4/python.exe",
+  "carla_root": "D:/CARLA_download",
+  "rk_ip": "192.168.2.3",
+  "pc_ip": "192.168.2.10",
+  "decision_port": 18088,
+  "decision_video_port": 18089,
+  "four_camera_video_port": 8083,
+  "carla_video_port": 18084,
+  "carla_input_port": 8081
+}

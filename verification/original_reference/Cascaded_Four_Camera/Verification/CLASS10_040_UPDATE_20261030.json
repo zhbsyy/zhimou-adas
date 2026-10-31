@@ -1,0 +1,29 @@
+{
+  "recorded_local": "2026-10-30T20:16:35.490874+08:00",
+  "requested_class10_threshold": 0.4,
+  "previous_threshold": 0.6,
+  "other_classes_unchanged": 0.25,
+  "R15_line_confidence_unchanged": 0.6,
+  "models_unchanged": true,
+  "camera_profile_unchanged": true,
+  "camera_profile_sha256": "5fb68d1649310f348fa0770b104e6b88b54a3b3510248dcb8aba97ae60787348",
+  "changed_runtime_files": [
+    "Board_RK3568/Inference_Four_Views/detection_policy.py",
+    "Board_RK3568/Inference_Four_Views/quad_infer.py"
+  ],
+  "display_labels": "Video footer and page title now format CLASS10_MIN_CONFIDENCE",
+  "software_checks": {
+    "inference_contract_tests": 9,
+    "passed": true,
+    "record": "Verification/LOCAL_VALIDATION.json",
+    "updater_known_source_color_preserved": true,
+    "updater_idempotent": true,
+    "updater_unknown_source_refused": true
+  },
+  "board_deployment": "user reported complete; latest sync found8083closed, so live0.40verification not yet recorded",
+  "updater": "Board_RK3568/APPLY_CLASS10_040.py",
+  "instructions": "Documentation/CLASS10_040_UPDATE_zh.md",
+  "historical_records": "MIGRATION_CHECK, CONSOLE_REFRESH and Preserved_Evidence retain the thresholds actually measured at their original capture time.",
+  "submission_files_updated_in_place": true,
+  "last_synced_local": "2026-10-30T21:18:21.315231+08:00"
+}

@@ -1,0 +1,93 @@
+{
+  "copied_local": "2026-10-30T18:58:14.149819+08:00",
+  "source_project": "Android13_Cockpit_UART",
+  "scope": "Current local source reference; installed Raspberry Pi APK hash was not collected.",
+  "not_included": [
+    "old emulator APKs",
+    "build caches",
+    "baseline_backup",
+    "emulator host bridge"
+  ],
+  "files": [
+    {
+      "file": "build.gradle",
+      "sha256": "8c3e116b0b5ecbd35917d5cfa08dc6445759d70903fcb1a09183f7a539b4bc15",
+      "bytes": 73
+    },
+    {
+      "file": "settings.gradle",
+      "sha256": "738b25115b0a17b74ae82ad34d89484384fde205c9363fd6aeee9744e32ef0ba",
+      "bytes": 334
+    },
+    {
+      "file": "gradle.properties",
+      "sha256": "bb154113902d3f6299ec1001cb78f41aecfc8a70a21f3ab877023ba1ab4769e1",
+      "bytes": 107
+    },
+    {
+      "file": "build_debug_apk.ps1",
+      "sha256": "09494a20ce86cf1518977691cefb04976239f7b20349c68d8cd362fd0240d393",
+      "bytes": 3567
+    },
+    {
+      "file": "app/build.gradle",
+      "sha256": "fda16699bcb0efb804e09b7f75a1d7028dec30e372c1074a1babcee5616b99c0",
+      "bytes": 309
+    },
+    {
+      "file": "app/src/main/AndroidManifest.xml",
+      "sha256": "8bf7aeedb648dcf8f06bb2c6365d52d47c6fef968c84b7fabcd48e10bfa8ab9f",
+      "bytes": 1755
+    },
+    {
+      "file": "app/src/main/assets/town10_map.json",
+      "sha256": "a24dc2fe4f159b1426d4f7a4ad3be6559bdd08b166c5424fe5d8e73964900bf9",
+      "bytes": 176225
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/BootReceiver.java",
+      "sha256": "75c74991f7568084aa9da7a6aaded60fa69604250aa9513569cb5b95f3b499c1",
+      "bytes": 1225
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/CockpitMapView.java",
+      "sha256": "8950013b26dbc6326ce4bf37a93c3a02bb155afe155cbaa0aafc0c8a9b4f85ba",
+      "bytes": 23435
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/CockpitNavActivity.java",
+      "sha256": "65a6a1d7706ab98fa8e35e3a0ffcdd46559a619b59d46a566f8838543902c77c",
+      "bytes": 30448
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/GatewayService.java",
+      "sha256": "85ed0f301f2d9b243c1c3d5e950124705afa4284583024f09e95990151ca9df6",
+      "bytes": 21073
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/GearLinkage.java",
+      "sha256": "23c0b35a7924a2e45ec0adf37d857c14d364fd6f38866ce07aa3a937f6c11f0c",
+      "bytes": 7307
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/MainActivity.java",
+      "sha256": "dafdef301351f094105766539256a9bcb8e10f03f66bf975bf7a122c356cb3ad",
+      "bytes": 17333
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/NavFrame.java",
+      "sha256": "ba24998986def10b10ea27e775c867c7f8fb5193fc37947d484beef61e5a3e22",
+      "bytes": 4958
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/TcpBridgeClient.java",
+      "sha256": "b98ca431ba62dc572481753a14d5bbb2dc6d834f79c30bc70ac3177b0913c176",
+      "bytes": 5417
+    },
+    {
+      "file": "app/src/main/java/cn/embedded/amapgateway/TownMapData.java",
+      "sha256": "60feba4404c4fe5e6e0c7ab324847d4403e816b1fa8db8f5add28b4e709733b1",
+      "bytes": 19871
+    }
+  ]
+}
